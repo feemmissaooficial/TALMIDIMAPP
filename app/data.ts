@@ -95,6 +95,13 @@ export const stages: Stage[] = [
           "titulo": "Permanecer antes de Produzir",
           "texto": "João 15 mostra que Deus não procura apenas pessoas ocupadas, mas discípulos que permanecem nEle. A produtividade espiritual nasce da permanência, não a substitui."
         },
+        "resumoTelas": [
+          "Vivemos em uma cultura que valoriza resultados e desempenho. Sem perceber, podemos levar essa lógica para a vida cristã, acreditando que Deus se agrada de nós pelo quanto fazemos. Mas Jesus nos ensina que a vida do discípulo começa em um lugar diferente: a comunhão com Ele.",
+          "Ao afirmar: \"Eu sou a videira verdadeira\", Jesus mostra que a fonte da vida espiritual não está em nosso esforço, mas em nossa ligação com Ele. Assim como um ramo não pode viver separado da videira, nenhum discípulo pode produzir frutos duradouros longe de Cristo.",
+          "Permanecer em Jesus significa cultivar diariamente um relacionamento com Ele por meio da oração, da leitura da Palavra e da obediência. O fruto da vida cristã não é produzido pela força humana, mas pela ação de Deus naqueles que permanecem unidos ao Filho.",
+          "Quanto mais permanecemos em Cristo, mais nosso caráter é transformado. O serviço deixa de ser um peso e passa a ser uma resposta de amor. A missão não nasce da obrigação, mas de um coração que foi moldado pela presença de Deus.",
+          "Frase-chave: Antes de produzir para Cristo, o discípulo precisa permanecer em Cristo. Desafio: Reserve hoje 20 minutos para ler João 15.1–8. Ore sem pressa e permaneça alguns minutos em silêncio diante de Deus, permitindo que Ele fortaleça sua comunhão com Cristo. Oração: Senhor Jesus, ensina-me a permanecer em Ti todos os dias. Que minha vida produza frutos que glorifiquem o Pai porque estou ligado à verdadeira Videira. Amém."
+        ],
         "artigo": {
           "titulo": "Dia 2 — Permanecer antes de Produzir",
           "url": "https://feemmissao.com.br/2026/07/30/dia-2-permanecer-antes-de-produzir/"
@@ -124,6 +131,13 @@ export const stages: Stage[] = [
           "titulo": "A voz do Bom Pastor",
           "texto": "Deus fala principalmente por sua Palavra, iluminada pelo Espírito Santo, conduzindo o discípulo à obediência. Aplicação: crie um ambiente de silêncio, leia lentamente, anote percepções e obedeça ao que foi compreendido."
         },
+        "resumoTelas": [
+          "Deus continua falando ao seu povo. Muitas pessoas esperam experiências extraordinárias, mas Jesus ensina que suas ovelhas aprendem a reconhecer sua voz porque vivem em relacionamento com Ele. A intimidade desenvolve uma escuta sensível.",
+          "A principal forma pela qual Deus fala hoje é por meio das Escrituras. Quando lemos a Bíblia com atenção e dependemos da ação do Espírito Santo, somos conduzidos a conhecer a vontade de Deus e a discernir sua direção para a vida.",
+          "Ouvir a voz de Deus vai além de adquirir conhecimento. O verdadeiro discípulo responde com obediência. Cada passo de fidelidade fortalece a comunhão com Cristo e torna a voz do Bom Pastor cada vez mais familiar.",
+          "Em um mundo cheio de distrações, precisamos criar espaço para ouvir Deus. Separar tempo para a leitura da Palavra, a oração e o silêncio diante do Senhor permitem que nosso coração seja moldado e direcionado por sua voz.",
+          "Frase-chave: O discípulo aprende a reconhecer a voz de Deus quando caminha diariamente com o Bom Pastor. Desafio: Leia João 10.27–30 duas vezes. Na primeira leitura, observe o que Jesus diz sobre suas ovelhas. Na segunda, pergunte: \"Senhor, o que desejas me ensinar hoje?\" Anote uma decisão prática e coloque-a em ação. Oração: Senhor Jesus, abre meus ouvidos espirituais para reconhecer tua voz. Dá-me um coração atento à tua Palavra e coragem para obedecer àquilo que o Senhor me ensinar. Amém."
+        ],
         "artigo": {
           "titulo": "Dia 3 — A Voz do Bom Pastor",
           "url": "https://feemmissao.com.br/2026/07/30/dia-3-a-voz-do-bom-pastor/"
@@ -154,6 +168,13 @@ export const stages: Stage[] = [
           "titulo": "Ouvir, Crer e Obedecer",
           "texto": "A obediência é fruto do amor a Deus, não mera obrigação. A prática cotidiana confirma o discipulado e molda o caráter de Cristo."
         },
+        "resumoTelas": [
+          "Deus fala conosco por meio da sua Palavra, mas ouvir é apenas o início da caminhada. O verdadeiro discípulo responde ao que Deus revela, permitindo que a verdade transforme sua maneira de viver.",
+          "Tiago compara a Palavra de Deus a um espelho. Ela revela quem realmente somos e mostra o que precisa ser transformado. Ler a Bíblia sem colocar seus ensinamentos em prática é como olhar para um espelho e sair sem mudar nada.",
+          "A obediência não nasce do medo, mas do amor por Deus. Cada pequena decisão de fidelidade fortalece nossa comunhão com Cristo e molda nosso caráter. O discipulado é construído por meio de atitudes diárias de obediência.",
+          "Nem sempre obedecer será fácil, mas Deus nunca nos conduz por um caminho que não seja para o nosso bem. Quando respondemos à sua voz com confiança, experimentamos crescimento espiritual e uma vida cada vez mais semelhante à de Jesus.",
+          "Frase-chave: O discípulo demonstra que ouviu a voz de Deus quando coloca sua Palavra em prática. Desafio: Identifique uma verdade que Deus já lhe mostrou por meio das Escrituras e dê hoje um passo concreto de obediência. Ao final do dia, registre como essa decisão impactou sua caminhada com Cristo. Oração: Pai, livra-me de ser apenas um ouvinte da tua Palavra. Dá-me coragem para obedecer ao que o Senhor me ensina e transforma minha vida para que minhas atitudes revelem minha fé. Em nome de Jesus, amém."
+        ],
         "artigo": {
           "titulo": "Dia 4 — Respondendo à Voz de Deus",
           "url": "https://feemmissao.com.br/2026/07/30/dia-4-respondendo-a-voz-de-deus/"
@@ -184,6 +205,13 @@ export const stages: Stage[] = [
           "titulo": "O privilégio de falar com o Pai",
           "texto": "Fundamentos bíblicos da oração, exemplos de Jesus, a importância da perseverança e da confiança em Deus, com aplicações práticas para o cotidiano."
         },
+        "resumoTelas": [
+          "A oração é muito mais do que um momento para apresentar pedidos a Deus. Ela é o caminho pelo qual cultivamos nossa comunhão com o Pai. Assim como todo relacionamento cresce por meio do diálogo, nossa intimidade com Deus se fortalece quando fazemos da oração um hábito diário.",
+          "Ao pedir que Jesus os ensinasse a orar, os discípulos aprenderam que Deus é um Pai amoroso. A oração nos aproxima dele com confiança, ajudando-nos a buscar não apenas nossas necessidades, mas também a viver de acordo com a sua vontade.",
+          "A oração transforma primeiro quem ora. Na presença de Deus, nosso coração é moldado, nossa fé é fortalecida e aprendemos a confiar mesmo quando as respostas não chegam no tempo que esperamos. A comunhão com Deus nos torna mais semelhantes a Cristo.",
+          "Jesus nos ensina a perseverar em oração. O Pai sempre ouve seus filhos e sabe do que precisamos. Mais do que conceder bênçãos, Deus deseja nos dar o maior presente de todos: sua própria presença, por meio do Espírito Santo.",
+          "Frase-chave: O discípulo cresce em intimidade com Deus quando transforma a oração em um estilo de vida. Desafio: Reserve hoje pelo menos quinze minutos para estar a sós com Deus. Leia Lucas 11.1–13, converse com o Pai sobre o que está em seu coração e permaneça alguns minutos em silêncio, permitindo que Ele fale com você por meio da sua Palavra. Oração: Pai amado, ensina-me a desfrutar da tua presença todos os dias. Que a oração seja mais do que um hábito; seja o lugar onde minha fé é fortalecida e meu coração é transformado. Em nome de Jesus, amém."
+        ],
         "artigo": {
           "titulo": "Dia 5 — Uma Vida de Oração",
           "url": "https://feemmissao.com.br/2026/07/30/dia-5-uma-vida-de-oracao/"

@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  /* DAY MODE (Default) */
+  --bg-main: #fdfbf6;
+  --text-main: #1a202c;
+  --text-muted: #1a202c;
+  --bg-card: #ffffff;
+  --border-color: #c69c6d;
+  --accent: #c69c6d;
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme="dark"] {
+  /* NIGHT MODE */
+  --bg-main: #0a0f0a;
+  --text-main: #eaddc5;
+  --text-muted: rgba(234, 221, 197, 0.7);
+  --bg-card: #111812;
+  --border-color: rgba(198, 156, 109, 0.2);
+  --accent: #c69b5c;
+  --card-shadow: 0 10px 30px rgba(198, 155, 92, 0.05);
+}
+
+@theme inline {
+  --color-bg-main: var(--bg-main);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-bg-card: var(--bg-card);
+  --color-border-color: var(--border-color);
+  --color-accent: var(--accent);
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}

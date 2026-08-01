@@ -240,7 +240,7 @@ export default function HojePage() {
             className="bg-white border border-[#f0e4cd] rounded-2xl p-4 flex flex-col items-center gap-2 shadow-sm active:scale-95 transition-transform"
           >
             <BookText size={20} className="text-[#8b6131]" />
-            <span className="text-[12px] font-bold text-[#243525]">Diário</span>
+            <span className="text-[12px] font-bold text-[#243525]">Memorial</span>
           </button>
           <button
             onClick={() => router.push("/dashboard")}

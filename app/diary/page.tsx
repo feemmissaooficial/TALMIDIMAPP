@@ -95,7 +95,7 @@ export default function DiaryPage() {
       <div className="pt-12 pb-8 px-6 border-b border-[#c69b5c]/10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a201c] to-[#0a0f0a]">
         <div className="flex items-center gap-3 mb-2">
           <BookText className="text-[#c69b5c]" size={28} />
-          <h1 className="text-[28px] font-serif font-bold text-white">Diário</h1>
+          <h1 className="text-[28px] font-serif font-bold text-white">Memorial da Estação</h1>
         </div>
         <p className="text-[#eaddc5]/70 text-[14px]">Suas memórias e a voz de Deus registradas na Jornada.</p>
         
@@ -104,7 +104,7 @@ export default function DiaryPage() {
           className="mt-6 w-full bg-gradient-to-r from-[#d5b080] to-[#b38a53] text-[#111812] py-4 rounded-xl font-bold shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2"
         >
           <PenLine size={20} />
-          Escrever no Diário
+          Escrever no Memorial
         </button>
       </div>
 
@@ -113,7 +113,7 @@ export default function DiaryPage() {
         {entries.length === 0 ? (
           <div className="text-center py-12 opacity-50">
             <BookText size={48} className="mx-auto mb-4 opacity-30" />
-            <p>Seu diário está em branco.</p>
+            <p>Seu Memorial da Estação está em branco.</p>
             <p className="text-[12px] mt-1">Comece registrando o que Deus tem feito.</p>
           </div>
         ) : (
@@ -197,7 +197,7 @@ export default function DiaryPage() {
               disabled={saving}
               className="w-full bg-[#c69b5c] text-[#111812] py-4 rounded-xl font-bold shadow-lg active:scale-95 transition-all disabled:opacity-50"
             >
-              {saving ? "Guardando..." : "Guardar no Diário"}
+              {saving ? "Guardando..." : "Guardar no Memorial"}
             </button>
           </div>
         </div>

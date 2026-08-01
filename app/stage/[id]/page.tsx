@@ -602,10 +602,10 @@ function StagePageContent() {
                           {step === "diario" && currentDayData.diarioPerguntas && (
                             <div className="mb-6">
                               <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
-                                {currentDayData.consolidacao ? "Memorial da Semana" : "Diário Espiritual"}
+                                {currentDayData.consolidacao ? "Memorial da Semana" : "Memorial da Estação"}
                               </span>
                               {diarioSaved ? (
-                                <p className="text-[14px] text-text-main/70">Registrado no seu Diário. Você pode rever tudo na aba Diário.</p>
+                                <p className="text-[14px] text-text-main/70">Registrado no seu Memorial da Estação. Você pode rever tudo na aba Memorial.</p>
                               ) : (
                                 <>
                                   <textarea
@@ -625,7 +625,7 @@ function StagePageContent() {
                                     disabled={diarioSaving}
                                     className="w-full bg-accent text-white py-2.5 rounded-lg font-bold text-[13px] disabled:opacity-50"
                                   >
-                                    {diarioSaving ? "Guardando..." : "Guardar no Diário"}
+                                    {diarioSaving ? "Guardando..." : "Guardar no Memorial da Estação"}
                                   </button>
                                 </>
                               )}

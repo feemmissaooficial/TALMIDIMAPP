@@ -295,7 +295,7 @@ export default function RadarResultPage() {
         </div>
 
         <button
-          onClick={() => router.push("/pdd")}
+          onClick={() => router.push("/pdd/intro")}
           className="w-full bg-gradient-to-r from-[#d5b080] to-[#b38a53] text-[#111812] py-4 rounded-[16px] font-bold shadow-[0_10px_25px_rgba(198,155,92,0.2)] active:scale-95 transition-all flex items-center justify-center gap-2"
         >
           Criar meu PDD Digital <ArrowRight size={20} />

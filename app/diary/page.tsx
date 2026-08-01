@@ -93,6 +93,17 @@ export default function DiaryPage() {
       
       {/* Header */}
       <div className="pt-12 pb-8 px-6 border-b border-[#c69b5c]/10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#1a201c] to-[#0a0f0a]">
+        {/* Botão Voltar (pedido do Nilton): depois de registrar no Memorial,
+            não existia nenhum jeito claro de voltar pro dia — só o menu
+            inferior, que não é óbvio. Agora tem volta direta pra onde a
+            pessoa estava. */}
+        <button
+          onClick={() => router.back()}
+          className="flex items-center gap-1 text-[#eaddc5]/70 text-[13px] font-bold mb-4 active:scale-95 transition-transform"
+        >
+          <ChevronLeft size={20} />
+          Voltar
+        </button>
         <div className="flex items-center gap-3 mb-2">
           <BookText className="text-[#c69b5c]" size={28} />
           <h1 className="text-[28px] font-serif font-bold text-white">Memorial da Estação</h1>

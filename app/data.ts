@@ -28,6 +28,10 @@ type DayContent = {
   // telas numeradas — Tela 1, Tela 2...). Quando presente, o carrossel do
   // Artigo usa exatamente essas telas em vez de dividir o texto sozinho.
   resumoTelas?: string[];
+  // Desafio específico do artigo do dia (pedido do Nilton: tirar o "Desafio"
+  // de dentro do carrossel do artigo, pra não duplicar com a Prática da
+  // Estação, e mostrar esse texto junto da prática de TSD/leitura bíblica).
+  desafioArtigo?: string;
   reflexao?: string[];
   diarioPerguntas?: string[];
   oracaoSugerida?: string;
@@ -100,8 +104,10 @@ export const stages: Stage[] = [
           "Ao afirmar: \"Eu sou a videira verdadeira\", Jesus mostra que a fonte da vida espiritual não está em nosso esforço, mas em nossa ligação com Ele. Assim como um ramo não pode viver separado da videira, nenhum discípulo pode produzir frutos duradouros longe de Cristo.",
           "Permanecer em Jesus significa cultivar diariamente um relacionamento com Ele por meio da oração, da leitura da Palavra e da obediência. O fruto da vida cristã não é produzido pela força humana, mas pela ação de Deus naqueles que permanecem unidos ao Filho.",
           "Quanto mais permanecemos em Cristo, mais nosso caráter é transformado. O serviço deixa de ser um peso e passa a ser uma resposta de amor. A missão não nasce da obrigação, mas de um coração que foi moldado pela presença de Deus.",
-          "Frase-chave: Antes de produzir para Cristo, o discípulo precisa permanecer em Cristo. Desafio: Reserve hoje 20 minutos para ler João 15.1–8. Ore sem pressa e permaneça alguns minutos em silêncio diante de Deus, permitindo que Ele fortaleça sua comunhão com Cristo. Oração: Senhor Jesus, ensina-me a permanecer em Ti todos os dias. Que minha vida produza frutos que glorifiquem o Pai porque estou ligado à verdadeira Videira. Amém."
+          "Antes de produzir para Cristo, o discípulo precisa permanecer em Cristo.",
+          "Senhor Jesus, ensina-me a permanecer em Ti todos os dias. Que minha vida produza frutos que glorifiquem o Pai porque estou ligado à verdadeira Videira. Amém."
         ],
+        "desafioArtigo": "Reserve hoje 20 minutos para ler João 15.1–8. Ore sem pressa e permaneça alguns minutos em silêncio diante de Deus, permitindo que Ele fortaleça sua comunhão com Cristo.",
         "artigo": {
           "titulo": "Dia 2 — Permanecer antes de Produzir",
           "url": "https://feemmissao.com.br/2026/07/30/dia-2-permanecer-antes-de-produzir/"
@@ -136,8 +142,10 @@ export const stages: Stage[] = [
           "A principal forma pela qual Deus fala hoje é por meio das Escrituras. Quando lemos a Bíblia com atenção e dependemos da ação do Espírito Santo, somos conduzidos a conhecer a vontade de Deus e a discernir sua direção para a vida.",
           "Ouvir a voz de Deus vai além de adquirir conhecimento. O verdadeiro discípulo responde com obediência. Cada passo de fidelidade fortalece a comunhão com Cristo e torna a voz do Bom Pastor cada vez mais familiar.",
           "Em um mundo cheio de distrações, precisamos criar espaço para ouvir Deus. Separar tempo para a leitura da Palavra, a oração e o silêncio diante do Senhor permitem que nosso coração seja moldado e direcionado por sua voz.",
-          "Frase-chave: O discípulo aprende a reconhecer a voz de Deus quando caminha diariamente com o Bom Pastor. Desafio: Leia João 10.27–30 duas vezes. Na primeira leitura, observe o que Jesus diz sobre suas ovelhas. Na segunda, pergunte: \"Senhor, o que desejas me ensinar hoje?\" Anote uma decisão prática e coloque-a em ação. Oração: Senhor Jesus, abre meus ouvidos espirituais para reconhecer tua voz. Dá-me um coração atento à tua Palavra e coragem para obedecer àquilo que o Senhor me ensinar. Amém."
+          "O discípulo aprende a reconhecer a voz de Deus quando caminha diariamente com o Bom Pastor.",
+          "Senhor Jesus, abre meus ouvidos espirituais para reconhecer tua voz. Dá-me um coração atento à tua Palavra e coragem para obedecer àquilo que o Senhor me ensinar. Amém."
         ],
+        "desafioArtigo": "Leia João 10.27–30 duas vezes. Na primeira leitura, observe o que Jesus diz sobre suas ovelhas. Na segunda, pergunte: \"Senhor, o que desejas me ensinar hoje?\" Anote uma decisão prática e coloque-a em ação.",
         "artigo": {
           "titulo": "Dia 3 — A Voz do Bom Pastor",
           "url": "https://feemmissao.com.br/2026/07/30/dia-3-a-voz-do-bom-pastor/"
@@ -173,8 +181,10 @@ export const stages: Stage[] = [
           "Tiago compara a Palavra de Deus a um espelho. Ela revela quem realmente somos e mostra o que precisa ser transformado. Ler a Bíblia sem colocar seus ensinamentos em prática é como olhar para um espelho e sair sem mudar nada.",
           "A obediência não nasce do medo, mas do amor por Deus. Cada pequena decisão de fidelidade fortalece nossa comunhão com Cristo e molda nosso caráter. O discipulado é construído por meio de atitudes diárias de obediência.",
           "Nem sempre obedecer será fácil, mas Deus nunca nos conduz por um caminho que não seja para o nosso bem. Quando respondemos à sua voz com confiança, experimentamos crescimento espiritual e uma vida cada vez mais semelhante à de Jesus.",
-          "Frase-chave: O discípulo demonstra que ouviu a voz de Deus quando coloca sua Palavra em prática. Desafio: Identifique uma verdade que Deus já lhe mostrou por meio das Escrituras e dê hoje um passo concreto de obediência. Ao final do dia, registre como essa decisão impactou sua caminhada com Cristo. Oração: Pai, livra-me de ser apenas um ouvinte da tua Palavra. Dá-me coragem para obedecer ao que o Senhor me ensina e transforma minha vida para que minhas atitudes revelem minha fé. Em nome de Jesus, amém."
+          "O discípulo demonstra que ouviu a voz de Deus quando coloca sua Palavra em prática.",
+          "Pai, livra-me de ser apenas um ouvinte da tua Palavra. Dá-me coragem para obedecer ao que o Senhor me ensina e transforma minha vida para que minhas atitudes revelem minha fé. Em nome de Jesus, amém."
         ],
+        "desafioArtigo": "Identifique uma verdade que Deus já lhe mostrou por meio das Escrituras e dê hoje um passo concreto de obediência. Ao final do dia, registre como essa decisão impactou sua caminhada com Cristo.",
         "artigo": {
           "titulo": "Dia 4 — Respondendo à Voz de Deus",
           "url": "https://feemmissao.com.br/2026/07/30/dia-4-respondendo-a-voz-de-deus/"
@@ -210,8 +220,10 @@ export const stages: Stage[] = [
           "Ao pedir que Jesus os ensinasse a orar, os discípulos aprenderam que Deus é um Pai amoroso. A oração nos aproxima dele com confiança, ajudando-nos a buscar não apenas nossas necessidades, mas também a viver de acordo com a sua vontade.",
           "A oração transforma primeiro quem ora. Na presença de Deus, nosso coração é moldado, nossa fé é fortalecida e aprendemos a confiar mesmo quando as respostas não chegam no tempo que esperamos. A comunhão com Deus nos torna mais semelhantes a Cristo.",
           "Jesus nos ensina a perseverar em oração. O Pai sempre ouve seus filhos e sabe do que precisamos. Mais do que conceder bênçãos, Deus deseja nos dar o maior presente de todos: sua própria presença, por meio do Espírito Santo.",
-          "Frase-chave: O discípulo cresce em intimidade com Deus quando transforma a oração em um estilo de vida. Desafio: Reserve hoje pelo menos quinze minutos para estar a sós com Deus. Leia Lucas 11.1–13, converse com o Pai sobre o que está em seu coração e permaneça alguns minutos em silêncio, permitindo que Ele fale com você por meio da sua Palavra. Oração: Pai amado, ensina-me a desfrutar da tua presença todos os dias. Que a oração seja mais do que um hábito; seja o lugar onde minha fé é fortalecida e meu coração é transformado. Em nome de Jesus, amém."
+          "O discípulo cresce em intimidade com Deus quando transforma a oração em um estilo de vida.",
+          "Pai amado, ensina-me a desfrutar da tua presença todos os dias. Que a oração seja mais do que um hábito; seja o lugar onde minha fé é fortalecida e meu coração é transformado. Em nome de Jesus, amém."
         ],
+        "desafioArtigo": "Reserve hoje pelo menos quinze minutos para estar a sós com Deus. Leia Lucas 11.1–13, converse com o Pai sobre o que está em seu coração e permaneça alguns minutos em silêncio, permitindo que Ele fale com você por meio da sua Palavra.",
         "artigo": {
           "titulo": "Dia 5 — Uma Vida de Oração",
           "url": "https://feemmissao.com.br/2026/07/30/dia-5-uma-vida-de-oracao/"

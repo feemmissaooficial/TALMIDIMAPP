@@ -26,6 +26,7 @@ export default function PracticesTab({ id, dayIndex }: { id: string; dayIndex: n
   });
 
   const stage = getStage(id);
+  const currentDayData = stage?.days.find((d) => d.day === dayIndex);
 
   useEffect(() => {
     const loadPractices = async () => {
@@ -132,6 +133,14 @@ export default function PracticesTab({ id, dayIndex }: { id: string; dayIndex: n
             <div>
               <span className="block font-bold text-text-main">Tempo a Sós com Deus (TSD)</span>
               <span className="text-[13px] text-text-muted">15 min de oração + 15 min de leitura bíblica.</span>
+              {/* Desafio do artigo do dia (pedido do Nilton: em vez de
+                  duplicar como "tarefa" dentro do carrossel do artigo,
+                  aparece aqui, junto da leitura bíblica). */}
+              {currentDayData?.desafioArtigo && (
+                <span className="block text-[13px] text-text-muted mt-2 pt-2 border-t border-accent/10 leading-relaxed">
+                  {currentDayData.desafioArtigo}
+                </span>
+              )}
             </div>
           </label>
 

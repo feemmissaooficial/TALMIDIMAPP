@@ -14,7 +14,7 @@ import { getStage } from "../../data";
 export const GLOBAL_STAGE_KEY = "_global";
 export const todayEpochDay = () => Math.floor(Date.now() / 86400000);
 
-export default function PracticesTab({ id, dayIndex }: { id: string; dayIndex: number }) {
+export default function PracticesTab({ id, dayIndex, onChange }: { id: string; dayIndex: number; onChange?: () => void }) {
   const supabase = createClient();
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -93,6 +93,11 @@ export default function PracticesTab({ id, dayIndex }: { id: string; dayIndex: n
       // Revert if error
       setPractices(prev => ({ ...prev, [field]: !newValue }));
       alert("Erro ao salvar prática.");
+    } else {
+      // Avisa o componente pai (agora que Práticas não é mais aba separada,
+      // ninguém troca de aba pra disparar a reavaliação do "Concluir Dia" —
+      // precisa avisar direto quando uma prática é marcada).
+      onChange?.();
     }
     setSaving(false);
   };

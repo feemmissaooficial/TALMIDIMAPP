@@ -48,10 +48,12 @@ function StagePageContent() {
   const [dayIndex, setDayIndex] = useState<number>(1);
   const [profile, setProfile] = useState<string>("male");
   const [isLoading, setIsLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<"conteudo" | "praticas" | "pontuacao">("conteudo");
 
-  // Trava de avanço: só libera "Concluir" quando as 3 colunas (Conteúdo,
-  // Práticas, Pontuação) estiverem marcadas para o dia/estação atual.
+  // Trava de avanço: só libera "Concluir" quando Conteúdo, Práticas e
+  // Pontuação estiverem marcados para o dia/estação atual. Antes eram 3
+  // abas separadas que a pessoa tinha que lembrar de visitar uma por uma —
+  // pedido do Nilton (alinhado ao ET-011): tudo agora é um fluxo único,
+  // Práticas e Pontuação entram como mais passos do mesmo carrossel.
   const [contentRead, setContentRead] = useState(false);
   const [practicesDone, setPracticesDone] = useState(false);
   const [scoreDone, setScoreDone] = useState(false);
@@ -83,50 +85,50 @@ function StagePageContent() {
     setContentRead(localStorage.getItem(key) === "1");
   }, [id, dayIndex]);
 
-  useEffect(() => {
-    const checkCompletionStatus = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
-      if (!session) return;
+  const checkCompletionStatus = async () => {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) return;
 
-      // TSD e Intercessão agora são hábito diário único (linha "_global"
-      // por dia do calendário) — só a prática específica da estação
-      // continua guardada por estação/dia. Precisa ler as duas linhas.
-      const [globalRes, stageRes] = await Promise.all([
-        supabase
-          .from("user_practices")
-          .select("tsd_done, intercession_done")
-          .eq("user_id", session.user.id)
-          .eq("stage_id", GLOBAL_STAGE_KEY)
-          .eq("day_number", todayEpochDay())
-          .single(),
-        supabase
-          .from("user_practices")
-          .select("specific_practice_done")
-          .eq("user_id", session.user.id)
-          .eq("stage_id", id)
-          .eq("day_number", dayIndex)
-          .single(),
-      ]);
-
-      setPracticesDone(
-        !!globalRes.data?.tsd_done &&
-          !!globalRes.data?.intercession_done &&
-          !!stageRes.data?.specific_practice_done
-      );
-
-      const { data: scoreData } = await supabase
-        .from("user_station_scores")
-        .select("score")
+    // TSD e Intercessão agora são hábito diário único (linha "_global"
+    // por dia do calendário) — só a prática específica da estação
+    // continua guardada por estação/dia. Precisa ler as duas linhas.
+    const [globalRes, stageRes] = await Promise.all([
+      supabase
+        .from("user_practices")
+        .select("tsd_done, intercession_done")
+        .eq("user_id", session.user.id)
+        .eq("stage_id", GLOBAL_STAGE_KEY)
+        .eq("day_number", todayEpochDay())
+        .single(),
+      supabase
+        .from("user_practices")
+        .select("specific_practice_done")
         .eq("user_id", session.user.id)
         .eq("stage_id", id)
-        .single();
+        .eq("day_number", dayIndex)
+        .single(),
+    ]);
 
-      setScoreDone(!!scoreData && scoreData.score !== null && scoreData.score !== undefined);
-    };
+    setPracticesDone(
+      !!globalRes.data?.tsd_done &&
+        !!globalRes.data?.intercession_done &&
+        !!stageRes.data?.specific_practice_done
+    );
+
+    const { data: scoreData } = await supabase
+      .from("user_station_scores")
+      .select("score")
+      .eq("user_id", session.user.id)
+      .eq("stage_id", id)
+      .single();
+
+    setScoreDone(!!scoreData && scoreData.score !== null && scoreData.score !== undefined);
+  };
+
+  useEffect(() => {
     checkCompletionStatus();
-    // Reavalia sempre que o usuário troca de aba (pode ter acabado de marcar
-    // algo em Práticas ou Pontuação e voltado para Conteúdo).
-  }, [id, dayIndex, activeTab, supabase]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id, dayIndex, supabase]);
 
   const toggleContentRead = () => {
     if (typeof window === "undefined") return;
@@ -448,34 +450,11 @@ function StagePageContent() {
               )}
             </div>
 
-            {/* TAB SWITCHER */}
-            <div className="flex bg-text-main/5 rounded-xl p-1 mb-8 relative z-20 shadow-sm border border-accent/10">
-              <button 
-                onClick={() => setActiveTab("conteudo")}
-                className={`flex-1 py-2 text-[13px] font-bold rounded-lg transition-all
-                  ${activeTab === "conteudo" ? "bg-bg-card text-text-main shadow-sm" : "text-text-muted"}`}
-              >
-                Conteúdo
-              </button>
-              <button 
-                onClick={() => setActiveTab("praticas")}
-                className={`flex-1 py-2 text-[13px] font-bold rounded-lg transition-all
-                  ${activeTab === "praticas" ? "bg-bg-card text-text-main shadow-sm" : "text-text-muted"}`}
-              >
-                Práticas
-              </button>
-              <button 
-                onClick={() => setActiveTab("pontuacao")}
-                className={`flex-1 py-2 text-[13px] font-bold rounded-lg transition-all
-                  ${activeTab === "pontuacao" ? "bg-bg-card text-text-main shadow-sm" : "text-text-muted"}`}
-              >
-                Pontuação
-              </button>
-            </div>
-
-            {/* TAB: CONTEÚDO */}
-            {activeTab === "conteudo" && (
-              <div className="animate-fade-in-left">
+            {/* FLUXO ÚNICO (ET-011): antes eram 3 abas separadas (Conteúdo,
+                Práticas, Pontuação) que a pessoa tinha que lembrar de
+                visitar uma por uma — pedido do Nilton pra restaurar o
+                fluxo original do documento, tudo em sequência. */}
+            <div className="animate-fade-in-left">
                 {currentDayData.tema ? (
                   <>
                     {/* CARD DO DIA — tema e versículo, sempre visíveis (ET-011) */}
@@ -496,11 +475,17 @@ function StagePageContent() {
                     {(() => {
                       // Uma coisa por tela (ET-011) — o wizard monta a lista de
                       // passos existentes pra este dia e mostra só o atual.
-                      type StepKey = "video" | "artigo" | "reflexao" | "diario" | "conclusao";
+                      // Ordem do ET-011: Vídeo, Artigo, Reflexão, Prática,
+                      // Diário, Oração/Conclusão. Práticas sempre entra (é
+                      // hábito diário); Pontuação só entra se ainda não foi
+                      // feita nesta estação (é avaliação semanal, não diária).
+                      type StepKey = "video" | "artigo" | "reflexao" | "praticas" | "pontuacao" | "diario" | "conclusao";
                       const steps: StepKey[] = [];
                       if (currentDayData.videoRoteiro) steps.push("video");
                       if (currentDayData.artigoRico) steps.push("artigo");
                       if (currentDayData.reflexao?.length) steps.push("reflexao");
+                      steps.push("praticas");
+                      if (!scoreDone) steps.push("pontuacao");
                       if (currentDayData.diarioPerguntas) steps.push("diario");
                       steps.push("conclusao");
 
@@ -596,6 +581,18 @@ function StagePageContent() {
                                   </li>
                                 ))}
                               </ul>
+                            </div>
+                          )}
+
+                          {step === "praticas" && (
+                            <div className="mb-6">
+                              <PracticesTab id={id} dayIndex={dayIndex} onChange={checkCompletionStatus} />
+                            </div>
+                          )}
+
+                          {step === "pontuacao" && (
+                            <div className="mb-6">
+                              <ScoreTab id={id} onChange={checkCompletionStatus} />
                             </div>
                           )}
 
@@ -778,23 +775,25 @@ function StagePageContent() {
                         <span className="text-[13px] text-text-muted">Ser, Saber e Fazer deste dia.</span>
                       </div>
                     </label>
+
+                    {/* PRÁTICAS — dias de prática contínua (8-21) não têm
+                        carrossel, então Práticas (e Pontuação, só na
+                        primeira vez da estação) entram direto na sequência. */}
+                    <div className="mb-6">
+                      <PracticesTab id={id} dayIndex={dayIndex} onChange={checkCompletionStatus} />
+                    </div>
+                    {!scoreDone && (
+                      <div className="mb-6">
+                        <ScoreTab id={id} onChange={checkCompletionStatus} />
+                      </div>
+                    )}
                   </>
                 )}
               </div>
-            )}
 
-            {activeTab === "praticas" && (
-              <PracticesTab id={id} dayIndex={dayIndex} />
-            )}
-
-            {activeTab === "pontuacao" && (
-              <ScoreTab id={id} />
-            )}
-
-            {/* COMPLETE BUTTON — fora das abas de propósito (pedido do
-                Nilton): antes só existia dentro de "Conteúdo", e quem
-                terminava em Práticas ou Pontuação ficava sem saber como
-                avançar de dia. Agora aparece sempre, em qualquer aba. */}
+            {/* BOTÃO DE CONCLUIR — sempre visível ao final do fluxo único
+                (antes ficava escondido dependendo da aba; agora não tem
+                mais abas, só esse fluxo, então sempre aparece no fim). */}
             <div className="flex justify-center mt-8">
               <CompleteButton id={id} dayIndex={dayIndex} canComplete={canComplete} />
             </div>

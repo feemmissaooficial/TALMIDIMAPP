@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "../../../utils/supabase/client";
 
-export default function ScoreTab({ id }: { id: string }) {
+export default function ScoreTab({ id, onChange }: { id: string; onChange?: () => void }) {
   const router = useRouter();
   const supabase = createClient();
   const [loading, setLoading] = useState(true);
@@ -52,6 +52,7 @@ export default function ScoreTab({ id }: { id: string }) {
       }, { onConflict: "user_id, stage_id" });
 
     setSaving(false);
+    onChange?.();
   };
 
   if (loading) return <div className="p-8 text-center text-text-main/50">Carregando...</div>;

@@ -100,14 +100,14 @@ export const stages: Stage[] = [
           "texto": "João 15 mostra que Deus não procura apenas pessoas ocupadas, mas discípulos que permanecem nEle. A produtividade espiritual nasce da permanência, não a substitui."
         },
         "resumoTelas": [
-          "Vivemos em uma cultura que valoriza resultados e desempenho. Sem perceber, podemos levar essa lógica para a vida cristã, acreditando que Deus se agrada de nós pelo quanto fazemos. Mas Jesus nos ensina que a vida do discípulo começa em um lugar diferente: a comunhão com Ele.",
-          "Ao afirmar: \"Eu sou a videira verdadeira\", Jesus mostra que a fonte da vida espiritual não está em nosso esforço, mas em nossa ligação com Ele. Assim como um ramo não pode viver separado da videira, nenhum discípulo pode produzir frutos duradouros longe de Cristo.",
-          "Permanecer em Jesus significa cultivar diariamente um relacionamento com Ele por meio da oração, da leitura da Palavra e da obediência. O fruto da vida cristã não é produzido pela força humana, mas pela ação de Deus naqueles que permanecem unidos ao Filho.",
-          "Quanto mais permanecemos em Cristo, mais nosso caráter é transformado. O serviço deixa de ser um peso e passa a ser uma resposta de amor. A missão não nasce da obrigação, mas de um coração que foi moldado pela presença de Deus.",
-          "Antes de produzir para Cristo, o discípulo precisa permanecer em Cristo.",
-          "Senhor Jesus, ensina-me a permanecer em Ti todos os dias. Que minha vida produza frutos que glorifiquem o Pai porque estou ligado à verdadeira Videira. Amém."
+          "Vivemos pressionados a produzir resultados, e essa lógica muitas vezes afeta nossa vida espiritual. Jesus nos convida a algo maior: permanecer Nele.",
+          "Assim como o ramo só produz fruto quando permanece ligado à videira, nossa vida só floresce quando permanecemos em Cristo.",
+          "O ativismo religioso nunca substitui a comunhão com Deus. Antes do fazer vem o ser; antes da missão vem a presença.",
+          "A intimidade cresce por meio da oração, da Palavra e da constância. Os frutos aparecem naturalmente em quem permanece em Cristo.",
+          "O segredo da vida cristã não é produzir mais, mas permanecer mais.",
+          "Pai, ensina-me a permanecer em Ti todos os dias. Amém."
         ],
-        "desafioArtigo": "Reserve hoje 20 minutos para ler João 15.1–8. Ore sem pressa e permaneça alguns minutos em silêncio diante de Deus, permitindo que Ele fortaleça sua comunhão com Cristo.",
+        "desafioArtigo": "Reserve um horário para estar com Deus hoje.",
         "artigo": {
           "titulo": "Dia 2 — Permanecer antes de Produzir",
           "url": "https://feemmissao.com.br/2026/07/30/dia-2-permanecer-antes-de-produzir/"

@@ -51,8 +51,25 @@ export default function CompleteButton({
       // Libera a próxima estação (se houver) sem resetar a atual — a atual
       // segue disponível para prática até completar o dia 21.
       const currentIndex = stageOrder.indexOf(id);
-      const saved = localStorage.getItem("talmidim-progress");
-      const currentProgress = saved !== null ? Number(saved) : 0;
+
+      // O progresso "de verdade" é o do banco, não o do localStorage —
+      // localStorage é só um cache pra quando não há sessão. Se comparar
+      // com um valor antigo do aparelho (ex.: depois de um reset de conta
+      // no banco), o cadeado da próxima estação nunca abre, porque o app
+      // acha que a pessoa "já passou" daquele ponto quando na verdade o
+      // banco está zerado. Bug reportado pelo Nilton no Dia 7.
+      let currentProgress = 0;
+      if (userId) {
+        const { data: unlockData } = await supabase
+          .from('user_stage_unlocks')
+          .select('current_stage_index')
+          .eq('user_id', userId)
+          .single();
+        currentProgress = unlockData?.current_stage_index ?? 0;
+      } else {
+        const saved = localStorage.getItem("talmidim-progress");
+        currentProgress = saved !== null ? Number(saved) : 0;
+      }
 
       if (currentIndex >= currentProgress && currentIndex + 1 < stageOrder.length) {
         const nextIndex = currentIndex + 1;

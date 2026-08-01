@@ -40,13 +40,10 @@ export default function StartPage() {
   const supabase = createClient();
   
   // Ordem pedida pelo Nilton (documento ET-003 + fluxo da Fase 0): depois do
-  // Splash, a próxima tela precisa ser Login/Cadastro — não o texto "Antes
-  // de iniciar a jornada". Esse texto continua existindo, só passou pra
-  // depois da escolha de perfil (etapa 5), como uma ponte antes do
-  // onboarding real, em vez de travar a entrada logo na abertura.
+  // Splash, a próxima tela é Login/Cadastro. A tela "Antes de iniciar a
+  // jornada" foi removida por pedido dele — não faz parte do fluxo oficial.
   const [step, setStep] = useState(3);
   const [selectedMode, setSelectedMode] = useState("pessoal");
-  const [pendingProfile, setPendingProfile] = useState<string | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [mounted, setMounted] = useState(false);
   
@@ -129,38 +126,6 @@ export default function StartPage() {
       {/* Background Decorators (Ondas Elegantes) */}
       <div className="absolute top-0 left-0 w-[120vw] h-[120vw] max-w-[700px] max-h-[700px] border-[1px] border-[#eaddc5]/30 rounded-full -translate-x-[40%] -translate-y-[40%] pointer-events-none transition-transform duration-1000"></div>
       <div className="absolute bottom-0 right-0 w-[100vw] h-[100vw] max-w-[600px] max-h-[600px] border-[1px] border-[#eaddc5]/40 rounded-full translate-x-[40%] translate-y-[40%] pointer-events-none transition-transform duration-1000"></div>
-
-      {/* --- PASSO 1: O AVISO / PROPÓSITO --- */}
-      {step === 1 && (
-        <div className="w-full max-w-[420px] relative z-10 flex flex-col h-full max-h-[100dvh] px-8 py-12 justify-center animate-in fade-in duration-700">
-           <div className="flex justify-center mb-8 opacity-60">
-              <LeafIcon />
-           </div>
-           <h1 className="text-[34px] font-bold text-[#1f3020] leading-[1.1] tracking-tight font-serif text-center mb-10 drop-shadow-sm">
-             Antes de iniciar<br/>a jornada
-           </h1>
-           <div className="space-y-6 text-[15px] text-[#3b5238] leading-relaxed text-center px-2">
-              <p>
-                Este material não nasceu de um projeto editorial, mas da caminhada pastoral.
-              </p>
-              <p>
-                Ele não apresenta novidades teológicas, mas chama você a viver de forma intencional aquilo que sempre esteve no centro da fé cristã.
-              </p>
-              <p className="font-bold text-[#b58b54] text-[16px] italic pt-4">
-                "Este livro não foi escrito para ser apenas lido, mas para ser vivido."
-              </p>
-           </div>
-           
-           <div className="mt-16">
-              <button
-                onClick={() => pendingProfile && selectProfile(pendingProfile)}
-                className="w-full bg-gradient-to-r from-[#d5b080] to-[#c69b5c] text-white py-4 rounded-[16px] font-bold shadow-[0_10px_25px_rgba(213,176,128,0.3)] active:scale-95 transition-all tracking-wide"
-              >
-                Compreendi. Estou pronto.
-              </button>
-           </div>
-        </div>
-      )}
 
       {/* --- PASSO 2: MODALIDADES --- */}
       {step === 2 && (
@@ -314,7 +279,7 @@ export default function StartPage() {
 
             {/* BOTÃO HOMEM */}
             <button
-              onClick={() => { setPendingProfile("male"); setStep(1); }}
+              onClick={() => selectProfile("male")}
               className="w-full bg-gradient-to-b from-[#40543c] to-[#263724] hover:from-[#496245] hover:to-[#2e422c] text-left py-3.5 px-5 rounded-[18px] shadow-[0_15px_30px_rgba(38,55,36,0.3),inset_0_2px_2px_rgba(255,255,255,0.15)] transition-all active:scale-95 flex items-center gap-4 group"
             >
               <div className="w-[44px] h-[44px] rounded-full border border-[#d5b080]/30 bg-gradient-to-br from-[#2a3c28] to-[#1e2a1d] shadow-[inset_0_2px_4px_rgba(0,0,0,0.5)] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">
@@ -331,7 +296,7 @@ export default function StartPage() {
 
             {/* BOTÃO MULHER */}
             <button
-              onClick={() => { setPendingProfile("female"); setStep(1); }}
+              onClick={() => selectProfile("female")}
               className="w-full bg-gradient-to-b from-[#d5b080] to-[#b38a53] hover:from-[#dfba88] hover:to-[#c69b5c] text-left py-3.5 px-5 rounded-[18px] shadow-[0_15px_30px_rgba(179,138,83,0.3),inset_0_2px_2px_rgba(255,255,255,0.3)] transition-all active:scale-95 flex items-center gap-4 group"
             >
               <div className="w-[44px] h-[44px] rounded-full border border-white/40 bg-gradient-to-br from-[#c69d66] to-[#a67c4b] shadow-[inset_0_2px_4px_rgba(0,0,0,0.3)] flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform">

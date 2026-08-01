@@ -780,20 +780,6 @@ function StagePageContent() {
                     </label>
                   </>
                 )}
-
-                {/* COMPLETE BUTTON */}
-                <div className="flex justify-center mt-4">
-                  <CompleteButton id={id} dayIndex={dayIndex} canComplete={canComplete} />
-                </div>
-                {!canComplete && (
-                  <p className="text-[12px] text-text-muted text-center mt-4 px-4 leading-relaxed">
-                    Marque {!contentRead && "Conteúdo"}
-                    {!contentRead && (!practicesDone || !scoreDone) && ", "}
-                    {!practicesDone && "Práticas"}
-                    {!practicesDone && !scoreDone && " e "}
-                    {!scoreDone && "Pontuação"} para avançar de dia.
-                  </p>
-                )}
               </div>
             )}
 
@@ -803,6 +789,23 @@ function StagePageContent() {
 
             {activeTab === "pontuacao" && (
               <ScoreTab id={id} />
+            )}
+
+            {/* COMPLETE BUTTON — fora das abas de propósito (pedido do
+                Nilton): antes só existia dentro de "Conteúdo", e quem
+                terminava em Práticas ou Pontuação ficava sem saber como
+                avançar de dia. Agora aparece sempre, em qualquer aba. */}
+            <div className="flex justify-center mt-8">
+              <CompleteButton id={id} dayIndex={dayIndex} canComplete={canComplete} />
+            </div>
+            {!canComplete && (
+              <p className="text-[12px] text-text-muted text-center mt-4 px-4 leading-relaxed">
+                Marque {!contentRead && "Conteúdo"}
+                {!contentRead && (!practicesDone || !scoreDone) && ", "}
+                {!practicesDone && "Práticas"}
+                {!practicesDone && !scoreDone && " e "}
+                {!scoreDone && "Pontuação"} para avançar de dia.
+              </p>
             )}
 
           </div>

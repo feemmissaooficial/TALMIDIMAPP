@@ -124,7 +124,7 @@ export default function SettingsPage() {
               </div>
               <div>
                 <h3 className="text-[16px] font-bold text-text-main">Intercessão (PDD)</h3>
-                <p className="text-[12px] text-text-muted leading-tight mt-1">Lembrete para orar pelas 5 pessoas do seu Plano de Discipulado.</p>
+                <p className="text-[12px] text-text-muted leading-tight mt-1">Lembrete para orar por 5 pessoas de seu círculo de relacionamentos.</p>
               </div>
             </div>
             <input 

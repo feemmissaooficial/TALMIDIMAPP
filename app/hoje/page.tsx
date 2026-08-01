@@ -227,7 +227,7 @@ export default function HojePage() {
               />
               <div>
                 <span className="block font-bold text-[#243525] text-[14px]">5 Pessoas em Oração</span>
-                <span className="text-[12px] text-[#3b5238]/70">Oração intercessória diária pelas 5 pessoas do seu PDD.</span>
+                <span className="text-[12px] text-[#3b5238]/70">Orar por 5 pessoas de seu círculo de relacionamentos.</span>
               </div>
             </label>
           </div>

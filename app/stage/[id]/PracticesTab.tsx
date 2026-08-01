@@ -145,7 +145,7 @@ export default function PracticesTab({ id, dayIndex }: { id: string; dayIndex: n
             />
             <div>
               <span className="block font-bold text-text-main">5 Pessoas em Oração</span>
-              <span className="text-[13px] text-text-muted">Oração intercessória diária pelas 5 pessoas do seu PDD.</span>
+              <span className="text-[13px] text-text-muted">Orar por 5 pessoas de seu círculo de relacionamentos.</span>
             </div>
           </label>
         </div>

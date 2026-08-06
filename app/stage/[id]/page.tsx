@@ -67,17 +67,19 @@ function StagePageContent() {
   const [diarioSaved, setDiarioSaved] = useState(false);
   const [showDayPicker, setShowDayPicker] = useState(false);
 
-  // Memorial da Semana (ET-010, Dia 7): telas próprias (Minha Maior
-  // Lembrança, Gratidão, Diário do Memorial) além das que o fluxo normal já
-  // tem. Reaproveita a mesma tabela user_diary do Memorial da Estação —
-  // sem tabela nova no banco — só formata tudo dentro de vivido_hoje/
-  // deus_falou na hora de salvar.
-  const [memLembranca, setMemLembranca] = useState("");
+  // Celebração da Semana (ET-010 v2, Dia 7): telas próprias de Gratidão e
+  // Minha Memória da Semana, salvas automaticamente (sem botão) ao avançar
+  // — reaproveita a mesma tabela user_diary do Memorial da Estação, sem
+  // tabela nova no banco.
+  const [memoriaSemana, setMemoriaSemana] = useState("");
   const [memGratidao, setMemGratidao] = useState(["", "", ""]);
-  const [memAprendizado, setMemAprendizado] = useState("");
-  const [memMomento, setMemMomento] = useState("");
-  const [memCompromisso, setMemCompromisso] = useState("");
-  const [memOracaoGratidao, setMemOracaoGratidao] = useState("");
+  const [memoriaSaved, setMemoriaSaved] = useState(false);
+
+  // Memorial da Consolidação (ET-009 v2, Dia 6): 3 campos próprios do
+  // Diário da Consolidação — aprendizado, prática e oração de forças.
+  const [consAprendizado, setConsAprendizado] = useState("");
+  const [consPratica, setConsPratica] = useState("");
+  const [consOracao, setConsOracao] = useState("");
 
   // Passo-a-passo do conteúdo rico (ET-011: uma coisa por tela — Vídeo,
   // depois Artigo, depois Reflexão, etc. — não tudo empilhado junto).
@@ -92,12 +94,12 @@ function StagePageContent() {
     setDiarioVivido("");
     setDiarioDeusFalou("");
     setDiarioSaved(false);
-    setMemLembranca("");
+    setMemoriaSemana("");
     setMemGratidao(["", "", ""]);
-    setMemAprendizado("");
-    setMemMomento("");
-    setMemCompromisso("");
-    setMemOracaoGratidao("");
+    setMemoriaSaved(false);
+    setConsAprendizado("");
+    setConsPratica("");
+    setConsOracao("");
   }, [id, dayIndex]);
 
   useEffect(() => {
@@ -176,29 +178,44 @@ function StagePageContent() {
     setDiarioSaved(true);
   };
 
-  // Diário do Memorial (ET-010, Dia 7) — junta Minha Maior Lembrança,
-  // Gratidão (3 itens), Aprendizado, Momento marcante, Compromisso e
-  // Oração de gratidão num único registro em user_diary (mesma tabela do
-  // Memorial da Estação, sem tabela nova no banco).
-  const handleSaveMemorialDiario = async () => {
+  // Gratidão + Minha Memória da Semana (ET-010 v2, Dia 7) — salva
+  // automaticamente ao sair da tela de Memória, sem precisar de botão
+  // (regra do documento: "Salvar automaticamente"). Mesma tabela user_diary
+  // da Memorial da Estação, sem tabela nova no banco.
+  const handleSaveGratidaoMemoria = async () => {
+    if (memoriaSaved) return;
     const gratidaoTexto = memGratidao
       .map((g, i) => (g.trim() ? `${i + 1}) ${g.trim()}` : null))
       .filter(Boolean)
       .join("\n");
+    const vivido = memoriaSemana.trim() ? `Minha Memória da Semana: ${memoriaSemana.trim()}` : "";
+    const deusFalou = gratidaoTexto ? `Gratidão:\n${gratidaoTexto}` : "";
+
+    if (!vivido.trim() && !deusFalou.trim()) return;
+
+    setDiarioSaving(true);
+    const { data: { session } } = await supabase.auth.getSession();
+    if (session) {
+      await supabase.from("user_diary").insert({
+        user_id: session.user.id,
+        vivido_hoje: vivido || "—",
+        deus_falou: deusFalou || "—",
+      });
+    }
+    setDiarioSaving(false);
+    setMemoriaSaved(true);
+  };
+
+  // Diário/Memorial da Consolidação (ET-009 v2, Dia 6) — aprendizado,
+  // prática e oração de forças, num único registro em user_diary.
+  const handleSaveConsolidacaoDiario = async () => {
     const vivido = [
-      memLembranca.trim() && `Maior lembrança da semana: ${memLembranca.trim()}`,
-      gratidaoTexto && `Gratidão:\n${gratidaoTexto}`,
-      memAprendizado.trim() && `Maior aprendizado: ${memAprendizado.trim()}`,
-      memMomento.trim() && `Momento marcante: ${memMomento.trim()}`,
+      consAprendizado.trim() && `Principal aprendizado da semana: ${consAprendizado.trim()}`,
+      consPratica.trim() && `Como pretendo colocar em prática: ${consPratica.trim()}`,
     ]
       .filter(Boolean)
       .join("\n\n");
-    const deusFalou = [
-      memCompromisso.trim() && `Compromisso para a próxima semana: ${memCompromisso.trim()}`,
-      memOracaoGratidao.trim() && `Oração de gratidão: ${memOracaoGratidao.trim()}`,
-    ]
-      .filter(Boolean)
-      .join("\n\n");
+    const deusFalou = consOracao.trim() ? `Oração pedindo forças: ${consOracao.trim()}` : "";
 
     if (!vivido.trim() && !deusFalou.trim()) return;
 
@@ -527,12 +544,12 @@ function StagePageContent() {
                       )}
                       {currentDayData.consolidacao && (
                         <p className="text-[12px] font-bold text-accent bg-accent/10 rounded-xl px-4 py-3 mt-3">
-                          Você caminhou vários dias na direção de uma vida mais íntima com Deus. Hoje é tempo de parar, olhar para trás, agradecer e fortalecer aquilo que Deus já começou a fazer.
+                          Durante os últimos cinco dias Deus falou ao seu coração por meio da Palavra. Hoje não conheceremos um novo conteúdo. Hoje vamos parar, revisar e consolidar aquilo que Deus já começou a fazer em sua vida.
                         </p>
                       )}
                       {currentDayData.memorialSemana && (
                         <p className="text-[12px] font-bold text-accent bg-accent/10 rounded-xl px-4 py-3 mt-3">
-                          Você concluiu sua primeira semana. Hoje é tempo de recordar, agradecer e celebrar aquilo que Deus fez em sua caminhada.
+                          Durante esta semana Deus caminhou com você. Hoje não vamos estudar. Hoje vamos celebrar aquilo que Deus fez em sua vida.
                         </p>
                       )}
                       {currentDayData.mensagemAbertura && (
@@ -549,22 +566,24 @@ function StagePageContent() {
                       // Diário, Oração/Conclusão. Práticas sempre entra (é
                       // hábito diário); Pontuação só entra se ainda não foi
                       // feita nesta estação (é avaliação semanal, não diária).
-                      type StepKey = "video" | "artigo" | "revisao" | "reflexao" | "desafio" | "timeline" | "lembranca" | "gratidao" | "praticas" | "pontuacao" | "diario" | "conclusao";
+                      type StepKey = "video" | "artigo" | "revisao" | "reflexao" | "desafio" | "timeline" | "gratidao" | "memoria" | "celebracao" | "praticas" | "pontuacao" | "diario" | "conclusao";
                       const steps: StepKey[] = [];
                       if (currentDayData.videoRoteiro) steps.push("video");
                       if (currentDayData.artigoRico) steps.push("artigo");
-                      // Dia de Consolidação (ET-009, Dia 6): Revisão da Semana
-                      // entra antes da Autoavaliação (reflexao), com cards dos
-                      // dias já concluídos (tema + versículo de cada um).
+                      // Dia de Consolidação (ET-009 v2, Dia 6): Revisão da
+                      // Semana entra antes da Autoavaliação (reflexao), com
+                      // cards dos dias já concluídos (tema + versículo).
                       if (currentDayData.consolidacao) steps.push("revisao");
                       if (currentDayData.reflexao?.length) steps.push("reflexao");
                       if (currentDayData.desafioSemana) steps.push("desafio");
-                      // Dia do Memorial da Semana (ET-010): substitui o artigo
-                      // por Linha do Tempo, Minha Maior Lembrança e Gratidão.
+                      // Celebração da Semana (ET-010 v2, Dia 7): substitui o
+                      // artigo por Linha da Fidelidade de Deus, Gratidão,
+                      // Minha Memória da Semana e Celebração.
                       if (currentDayData.memorialSemana) {
                         steps.push("timeline");
-                        steps.push("lembranca");
                         steps.push("gratidao");
+                        steps.push("memoria");
+                        steps.push("celebracao");
                       }
                       steps.push("praticas");
                       if (!scoreDone) steps.push("pontuacao");
@@ -587,7 +606,13 @@ function StagePageContent() {
 
                       const goNext = () => {
                         if (isArticleMidway) setArtigoSlide((s) => s + 1);
-                        else setContentStep((s) => Math.min(s + 1, steps.length - 1));
+                        else {
+                          // ET-010 v2: Gratidão e Minha Memória da Semana
+                          // salvam automaticamente, sem botão — ao avançar
+                          // pra tela seguinte (Celebração), já guarda tudo.
+                          if (step === "memoria") handleSaveGratidaoMemoria();
+                          setContentStep((s) => Math.min(s + 1, steps.length - 1));
+                        }
                       };
                       const goBack = () => {
                         if (isArticleStep && artigoSlide > 0) setArtigoSlide((s) => s - 1);
@@ -689,7 +714,7 @@ function StagePageContent() {
                           {step === "desafio" && currentDayData.desafioSemana && (
                             <div className="mb-6">
                               <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
-                                Desafio da Semana
+                                Meu Compromisso para Hoje
                               </span>
                               <p className="text-[16px] font-medium text-text-main leading-relaxed">
                                 {currentDayData.desafioSemana}
@@ -700,37 +725,23 @@ function StagePageContent() {
                           {step === "timeline" && (
                             <div className="mb-6">
                               <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
-                                Linha do Tempo · {stage.title}
+                                Linha da Fidelidade de Deus
                               </span>
                               <div className="space-y-3">
-                                {stage.days.slice(0, dayIndex - 1).map((d) => (
+                                {stage.days.slice(0, dayIndex - 1).filter((d) => d.tema).map((d) => (
                                   <div key={d.day} className="flex gap-3 p-3 rounded-xl border border-accent/20 bg-bg-card/50">
                                     <div className="w-7 h-7 rounded-full bg-accent/15 text-accent flex items-center justify-center font-bold text-[12px] flex-shrink-0">
                                       {d.day}
                                     </div>
-                                    <p className="text-[13px] text-text-main/80 leading-snug">
-                                      {d.tema || d.title} — {d.confronto}
-                                    </p>
+                                    <div>
+                                      <span className="block text-[13px] font-bold text-text-main">{d.tema}</span>
+                                      {d.versiculo && (
+                                        <p className="text-[12px] italic text-text-main/70 leading-snug">{d.versiculo}</p>
+                                      )}
+                                    </div>
                                   </div>
                                 ))}
                               </div>
-                            </div>
-                          )}
-
-                          {step === "lembranca" && (
-                            <div className="mb-6">
-                              <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
-                                Minha Maior Lembrança
-                              </span>
-                              <p className="text-[15px] font-medium text-text-main mb-3 leading-relaxed">
-                                Qual foi o momento em que você mais percebeu Deus agindo nesta semana?
-                              </p>
-                              <textarea
-                                value={memLembranca}
-                                onChange={(e) => setMemLembranca(e.target.value)}
-                                placeholder="Escreva sobre esse momento..."
-                                className="w-full min-h-[100px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none"
-                              />
                             </div>
                           )}
 
@@ -740,7 +751,7 @@ function StagePageContent() {
                                 Gratidão
                               </span>
                               <p className="text-[15px] font-medium text-text-main mb-3 leading-relaxed">
-                                Registre três motivos de gratidão relacionados à sua caminhada nesta semana.
+                                Pelas quais bênçãos desta semana você deseja agradecer a Deus?
                               </p>
                               <div className="space-y-3">
                                 {memGratidao.map((g, i) => (
@@ -761,6 +772,35 @@ function StagePageContent() {
                             </div>
                           )}
 
+                          {step === "memoria" && (
+                            <div className="mb-6">
+                              <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
+                                Minha Memória da Semana
+                              </span>
+                              <p className="text-[15px] font-medium text-text-main mb-3 leading-relaxed">
+                                Se você tivesse que guardar apenas uma lembrança desta semana, qual seria?
+                              </p>
+                              <textarea
+                                value={memoriaSemana}
+                                onChange={(e) => setMemoriaSemana(e.target.value)}
+                                placeholder="Escreva sobre essa lembrança..."
+                                className="w-full min-h-[100px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none"
+                              />
+                              <p className="text-[11px] text-text-muted mt-2">Fica disponível no Memorial da Estação.</p>
+                            </div>
+                          )}
+
+                          {step === "celebracao" && currentDayData.celebracaoTexto && (
+                            <div className="mb-6">
+                              <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
+                                Celebração
+                              </span>
+                              <p className="text-[16px] font-medium text-text-main leading-relaxed">
+                                {currentDayData.celebracaoTexto}
+                              </p>
+                            </div>
+                          )}
+
                           {step === "praticas" && (
                             <div className="mb-6">
                               <PracticesTab id={id} dayIndex={dayIndex} onChange={checkCompletionStatus} />
@@ -773,45 +813,38 @@ function StagePageContent() {
                             </div>
                           )}
 
-                          {step === "diario" && currentDayData.diarioPerguntas && currentDayData.memorialSemana && (
+                          {step === "diario" && currentDayData.diarioPerguntas && currentDayData.consolidacao && (
                             <div className="mb-6">
                               <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
-                                Diário do Memorial
+                                Memorial da Consolidação
                               </span>
                               {diarioSaved ? (
                                 <p className="text-[14px] text-text-main/70">Registrado no seu Memorial da Estação. Você pode rever tudo na aba Memorial.</p>
                               ) : (
                                 <>
-                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">Maior aprendizado da semana</p>
+                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">{currentDayData.diarioPerguntas[0] || "Principal aprendizado da semana"}</p>
                                   <textarea
-                                    value={memAprendizado}
-                                    onChange={(e) => setMemAprendizado(e.target.value)}
+                                    value={consAprendizado}
+                                    onChange={(e) => setConsAprendizado(e.target.value)}
                                     placeholder="O que você aprendeu..."
                                     className="w-full min-h-[70px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none mb-3"
                                   />
-                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">Momento marcante</p>
+                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">{currentDayData.diarioPerguntas[1] || "Como pretendo colocar em prática?"}</p>
                                   <textarea
-                                    value={memMomento}
-                                    onChange={(e) => setMemMomento(e.target.value)}
-                                    placeholder="O que mais marcou você..."
+                                    value={consPratica}
+                                    onChange={(e) => setConsPratica(e.target.value)}
+                                    placeholder="Como você vai viver isso..."
                                     className="w-full min-h-[70px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none mb-3"
                                   />
-                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">Compromisso para a próxima semana</p>
+                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">{currentDayData.diarioPerguntas[2] || "Oração pedindo forças"}</p>
                                   <textarea
-                                    value={memCompromisso}
-                                    onChange={(e) => setMemCompromisso(e.target.value)}
-                                    placeholder="O que você se compromete a fazer..."
-                                    className="w-full min-h-[70px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none mb-3"
-                                  />
-                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">Oração de gratidão</p>
-                                  <textarea
-                                    value={memOracaoGratidao}
-                                    onChange={(e) => setMemOracaoGratidao(e.target.value)}
+                                    value={consOracao}
+                                    onChange={(e) => setConsOracao(e.target.value)}
                                     placeholder="Escreva sua oração..."
                                     className="w-full min-h-[70px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none mb-3"
                                   />
                                   <button
-                                    onClick={handleSaveMemorialDiario}
+                                    onClick={handleSaveConsolidacaoDiario}
                                     disabled={diarioSaving}
                                     className="w-full bg-accent text-white py-2.5 rounded-lg font-bold text-[13px] disabled:opacity-50"
                                   >
@@ -822,10 +855,10 @@ function StagePageContent() {
                             </div>
                           )}
 
-                          {step === "diario" && currentDayData.diarioPerguntas && !currentDayData.memorialSemana && (
+                          {step === "diario" && currentDayData.diarioPerguntas && !currentDayData.consolidacao && (
                             <div className="mb-6">
                               <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
-                                {currentDayData.consolidacao ? "Memorial da Semana" : "Memorial da Estação"}
+                                Memorial da Estação
                               </span>
                               {diarioSaved ? (
                                 <p className="text-[14px] text-text-main/70">Registrado no seu Memorial da Estação. Você pode rever tudo na aba Memorial.</p>

@@ -54,6 +54,10 @@ type DayContent = {
   // Nos dias de consolidação/memorial isso já é feito pelo texto fixo de
   // consolidacao/memorialSemana — este campo é só para os dias "normais".
   mensagemAbertura?: string;
+  // Tela "Celebração" do Dia 7 revisado (ET-010 v2): texto de adoração
+  // livre, distinto da Oração (oracaoSugerida) e do Encerramento/Envio
+  // (encerramento).
+  celebracaoTexto?: string;
 };
 
 type Stage = {
@@ -267,23 +271,23 @@ export const stages: Stage[] = [
         "confronto": "Sua vida devocional é disciplina real ou depende de sentir vontade?",
         "direcao": "Intimidade com Deus se constrói no dia que você não quer ir. A fidelidade não espera o sentimento.",
         "acao": "Mesmo sem vontade: sente, abre a Bíblia.\nLeia Salmo 63 inteiro.\nOre em voz alta por 10 minutos.\nSe vier dispersão, volte. Sem se condenar.",
-        "tema": "Consolidação da semana",
+        "tema": "Dia 6 — Consolidação da Semana",
         "consolidacao": true,
-        "videoRoteiro": "Resumo dos temas da semana (Dias 1 a 5), encorajamento pastoral e convite para uma resposta prática.",
+        "videoRoteiro": "Recordar os temas dos Dias 1 a 5; destacar o progresso da caminhada; mostrar como os temas se conectam; incentivar a prática contínua. Sem conteúdo novo.",
         "reflexao": [
           "O que Deus mais falou comigo nesta semana?",
           "Em qual área percebi maior crescimento?",
           "Qual hábito preciso fortalecer?",
           "O que ainda preciso entregar ao Senhor?"
         ],
-        "desafioSemana": "Escolha um dos aprendizados desta semana e viva-o de forma intencional hoje. Ao final do dia registre como Deus agiu durante essa experiência.",
+        "desafioSemana": "Escolha um dos aprendizados desta semana. Viva esse aprendizado de maneira intencional durante o dia de hoje. Ao final do dia você registrará como Deus trabalhou através dessa decisão. Não é um desafio novo. É colocar em prática aquilo que já foi aprendido.",
         "diarioPerguntas": [
-          "Qual foi o principal aprendizado da semana?",
-          "Escreva uma oração de gratidão.",
-          "Qual compromisso você assume para a próxima semana?"
+          "Principal aprendizado da semana",
+          "Como pretendo colocar esse aprendizado em prática?",
+          "Escreva uma breve oração pedindo forças para viver esse compromisso."
         ],
-        "oracaoSugerida": "Senhor, obrigado por tudo o que tens me ensinado. Ajuda-me a transformar conhecimento em prática e a permanecer firme na caminhada contigo.",
-        "encerramento": "Parabéns! Amanhã celebraremos o Memorial da Semana, recordando a fidelidade de Deus e preparando o coração para continuar a jornada."
+        "oracaoSugerida": "Senhor, obrigado porque tens falado comigo durante esta semana. Ajuda-me a transformar aquilo que aprendi em um novo estilo de vida. Dá-me perseverança para viver tua Palavra todos os dias. Amém.",
+        "encerramento": "Parabéns. Hoje você consolidou os aprendizados desta primeira semana. Amanhã não será um dia de estudo. Será um dia para celebrar a fidelidade de Deus, recordar sua caminhada e agradecer por tudo o que Ele realizou em sua vida."
       },
       {
         "day": 7,
@@ -291,16 +295,12 @@ export const stages: Stage[] = [
         "confronto": "O que mudou em você desde o início desta estação? Deus está falando — você está ouvindo?",
         "direcao": "Revise a semana. O TSD não é ritual — é relacionamento. O que você levou de real para Deus esta semana?",
         "acao": "Reserve 30 minutos hoje.\nReleia o que escreveu durante a semana.\nOre de gratidão pelos dias cumpridos.\nPeça a Deus que aprofunde o que começou.",
-        "tema": "Memorial da Semana 1",
-        "versiculo": "Lamentações 3.22-23 — \"As misericórdias do Senhor são a causa de não sermos consumidos... renovam-se cada manhã.\"",
+        "tema": "Celebração da Semana",
         "memorialSemana": true,
-        "videoRoteiro": "Recapitulação da semana, testemunho inspirador, incentivo pastoral e preparação para a segunda semana da estação.",
-        "diarioPerguntas": [
-          "Qual foi o maior aprendizado desta semana?",
-          "Qual o momento marcante desta semana e o compromisso que você leva para a próxima?"
-        ],
-        "oracaoSugerida": "Senhor, obrigado por caminhar comigo durante esta semana. Que eu nunca esqueça tua fidelidade e continue crescendo em intimidade contigo. Amém.",
-        "encerramento": "Parabéns! Você concluiu a primeira semana da Estação 1. Continue firme. Uma nova semana começa amanhã, levando você ainda mais perto de Deus."
+        "videoRoteiro": "Agradecimento pela semana; testemunhos inspiradores; celebração da fidelidade de Deus; encorajamento para perseverar. Sem revisão, sem conteúdo novo.",
+        "celebracaoTexto": "Reserve alguns minutos para agradecer a Deus. Louve ao Senhor pela caminhada desta semana. Reconheça sua fidelidade. Celebre aquilo que Ele começou a fazer em sua vida.",
+        "oracaoSugerida": "Senhor, obrigado porque estiveste comigo durante toda esta semana. Obrigado por tua Palavra. Obrigado pelas pequenas transformações que começaste em meu coração. Que eu continue caminhando contigo na próxima semana. Amém.",
+        "encerramento": "🎉 Parabéns! Você concluiu a primeira semana da Estação Intimidade com Deus. Celebre o que Deus já fez. Amanhã uma nova semana começa. Continue caminhando. Cada passo o aproxima mais de Cristo."
       },
       {
         "day": 8,

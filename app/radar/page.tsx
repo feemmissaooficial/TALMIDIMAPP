@@ -121,6 +121,9 @@ export default function RadarPage() {
             <p className="text-[#eaddc5]/80 text-[16px] leading-relaxed">
               A autoavaliação será fiel na medida em que pontuar levando em consideração seu <strong>comportamento real e não o ideal</strong>, ou seja, aquilo que faz e não aquilo que gostaria de ser ou fazer.
             </p>
+            <p className="text-[#eaddc5]/80 text-[16px] leading-relaxed">
+              Para responder, tome como base os <strong>últimos dois anos</strong> da sua caminhada — não só o que está vivendo hoje.
+            </p>
           </div>
           <button
             onClick={() => {

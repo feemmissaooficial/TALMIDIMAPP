@@ -39,6 +39,21 @@ type DayContent = {
   // Dia de consolidação (ex.: Dia 6 de cada semana): não tem conteúdo
   // novo, é revisão da semana — muda só um texto de aviso na tela.
   consolidacao?: boolean;
+  // Dia do Memorial da Semana (ET-010, Dia 7 de cada estação): substitui o
+  // fluxo tradicional de artigo por Vídeo Memorial, Linha do Tempo dos dias
+  // anteriores, Minha Maior Lembrança e Gratidão — telas próprias, geradas
+  // pelo componente, não por texto fixo aqui. videoRoteiro/oracaoSugerida/
+  // encerramento continuam sendo usados normalmente para as telas que já
+  // existem no fluxo (Vídeo Memorial e Oração/Celebração).
+  memorialSemana?: boolean;
+  // Desafio da Semana (ET-009, Dia 6): prática específica do dia de
+  // consolidação, distinta da autoavaliação (reflexao) e do diário.
+  desafioSemana?: string;
+  // Tela/mensagem de abertura do dia (ET-004 a ET-008): frase de
+  // acolhimento específica do dia, mostrada antes do resto do conteúdo.
+  // Nos dias de consolidação/memorial isso já é feito pelo texto fixo de
+  // consolidacao/memorialSemana — este campo é só para os dias "normais".
+  mensagemAbertura?: string;
 };
 
 type Stage = {
@@ -60,6 +75,7 @@ export const stages: Stage[] = [
         "acao": "Encontre um lugar silencioso.\nDesligue o celular.\nFique 15 minutos em oração — fale com Deus em voz baixa.\nDepois leia 15 minutos a Palavra em silêncio.\nNão pule. Não reduza. Faça inteiro.",
         "tema": "Intimidade com Deus",
         "versiculo": "Antes de servir, ensinar ou liderar, todo discípulo aprende a permanecer em Cristo.",
+        "mensagemAbertura": "Durante os próximos 21 dias você será convidado a fortalecer sua intimidade com Deus. Antes de servir, ensinar ou liderar, todo discípulo aprende a permanecer em Cristo. Esta estação é um convite para caminhar diariamente com o Senhor.",
         "videoRoteiro": "Acolhida ao participante, explicação da importância da intimidade com Deus e como aproveitar a jornada: um dia de cada vez, com constância e sinceridade.",
         "artigoRico": {
           "titulo": "O convite para caminhar com Deus",
@@ -94,6 +110,7 @@ export const stages: Stage[] = [
         "direcao": "A Palavra não é conteúdo para consumir. É a voz de Deus para ouvir. Leia hoje com ouvidos de discípulo.",
         "acao": "Abra em Salmos.\nLeia um salmo inteiro em voz alta, devagar.\nSublinhe uma frase que te confrontou.\nOre sobre essa frase por 5 minutos.\nEscreva o que Deus disse.",
         "tema": "Permanecer antes de produzir",
+        "mensagemAbertura": "Ontem você iniciou sua jornada. Hoje você descobrirá que o segredo da vida cristã não é fazer mais, mas permanecer mais perto de Deus.",
         "videoRoteiro": "Retomar o Dia 1; explicar João 15 e a imagem da videira; mostrar que intimidade precede serviço; convidar o participante a viver esse princípio ainda hoje.",
         "artigoRico": {
           "titulo": "Permanecer antes de Produzir",
@@ -132,6 +149,7 @@ export const stages: Stage[] = [
         "acao": "Escreva 5 nomes em um papel.\nOre por cada um pelo nome — mínimo 2 minutos por pessoa.\nSem pressa. Sem atalho.\nGuarde o papel para os próximos dias.",
         "tema": "Aprendendo a ouvir a voz de Deus",
         "versiculo": "João 10:27 — \"As minhas ovelhas ouvem a minha voz; eu as conheço, e elas me seguem.\"",
+        "mensagemAbertura": "Hoje você será desafiado a desacelerar para ouvir Aquele que deseja falar com você todos os dias.",
         "videoRoteiro": "Retomada dos dias anteriores; apresentação de João 10; exemplos práticos de como cultivar uma escuta sensível; convite à prática do dia.",
         "artigoRico": {
           "titulo": "A voz do Bom Pastor",
@@ -171,6 +189,7 @@ export const stages: Stage[] = [
         "acao": "Acorde 20 minutos mais cedo amanhã.\nAntes de qualquer tela: ore.\nLeia um capítulo dos Evangelhos.\nPeça a Deus que fale com você hoje especificamente.",
         "tema": "Respondendo à voz de Deus",
         "versiculo": "Tiago 1:22 — \"Sejam praticantes da Palavra, e não apenas ouvintes.\"",
+        "mensagemAbertura": "Deus já falou com você. Hoje o desafio é responder. Toda transformação começa quando a Palavra encontra um coração obediente.",
         "videoRoteiro": "Recordar os três primeiros dias; explicar que conhecimento sem obediência produz estagnação; exemplos bíblicos de resposta imediata; desafio de um passo concreto hoje.",
         "artigoRico": {
           "titulo": "Ouvir, Crer e Obedecer",
@@ -210,6 +229,7 @@ export const stages: Stage[] = [
         "acao": "Escolha uma refeição para não fazer hoje.\nNos momentos em que sentiria fome, ore em vez de comer.\nDedique esse tempo ao TSD.\nAo fim do dia, escreva o que Deus fez nesse tempo.",
         "tema": "Cultivando uma vida de oração",
         "versiculo": "1 Tessalonicenses 5:17 — \"Orem continuamente.\"",
+        "mensagemAbertura": "Conversar com Deus transforma a maneira como enfrentamos cada dia. Hoje você dará mais um passo para fazer da oração um hábito de vida.",
         "videoRoteiro": "Apresentar a oração como diálogo com Deus; desfazer a ideia de que é necessário usar palavras elaboradas; incentivar uma rotina simples e constante de oração.",
         "artigoRico": {
           "titulo": "O privilégio de falar com o Pai",
@@ -256,6 +276,7 @@ export const stages: Stage[] = [
           "Qual hábito preciso fortalecer?",
           "O que ainda preciso entregar ao Senhor?"
         ],
+        "desafioSemana": "Escolha um dos aprendizados desta semana e viva-o de forma intencional hoje. Ao final do dia registre como Deus agiu durante essa experiência.",
         "diarioPerguntas": [
           "Qual foi o principal aprendizado da semana?",
           "Escreva uma oração de gratidão.",
@@ -269,7 +290,17 @@ export const stages: Stage[] = [
         "title": "Dia 7",
         "confronto": "O que mudou em você desde o início desta estação? Deus está falando — você está ouvindo?",
         "direcao": "Revise a semana. O TSD não é ritual — é relacionamento. O que você levou de real para Deus esta semana?",
-        "acao": "Reserve 30 minutos hoje.\nReleia o que escreveu durante a semana.\nOre de gratidão pelos dias cumpridos.\nPeça a Deus que aprofunde o que começou."
+        "acao": "Reserve 30 minutos hoje.\nReleia o que escreveu durante a semana.\nOre de gratidão pelos dias cumpridos.\nPeça a Deus que aprofunde o que começou.",
+        "tema": "Memorial da Semana 1",
+        "versiculo": "Lamentações 3.22-23 — \"As misericórdias do Senhor são a causa de não sermos consumidos... renovam-se cada manhã.\"",
+        "memorialSemana": true,
+        "videoRoteiro": "Recapitulação da semana, testemunho inspirador, incentivo pastoral e preparação para a segunda semana da estação.",
+        "diarioPerguntas": [
+          "Qual foi o maior aprendizado desta semana?",
+          "Qual o momento marcante desta semana e o compromisso que você leva para a próxima?"
+        ],
+        "oracaoSugerida": "Senhor, obrigado por caminhar comigo durante esta semana. Que eu nunca esqueça tua fidelidade e continue crescendo em intimidade contigo. Amém.",
+        "encerramento": "Parabéns! Você concluiu a primeira semana da Estação 1. Continue firme. Uma nova semana começa amanhã, levando você ainda mais perto de Deus."
       },
       {
         "day": 8,

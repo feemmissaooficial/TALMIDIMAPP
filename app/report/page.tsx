@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "../../utils/supabase/client";
 import { radarAreas } from "../radar/data";
-import { ArrowLeft, Download, FileText, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, Download, FileText, CheckCircle2, Info } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import BottomNav from "../components/BottomNav";
@@ -221,6 +221,14 @@ export default function ReportPage() {
                     <CheckCircle2 className="text-[#c69b5c]" size={20} />
                   </div>
                   <h2 className="text-[20px] font-bold text-white uppercase tracking-wider">Plano de Discipulado</h2>
+                  <button
+                    type="button"
+                    onClick={() => router.push("/pdd/intro")}
+                    aria-label="O que é o PDD?"
+                    className="text-[#c69b5c]/70 active:scale-90 transition-transform ml-auto"
+                  >
+                    <Info size={16} />
+                  </button>
                 </div>
                 
                 {userData.pdd && userData.pdd.length > 0 ? (

@@ -67,6 +67,18 @@ function StagePageContent() {
   const [diarioSaved, setDiarioSaved] = useState(false);
   const [showDayPicker, setShowDayPicker] = useState(false);
 
+  // Memorial da Semana (ET-010, Dia 7): telas próprias (Minha Maior
+  // Lembrança, Gratidão, Diário do Memorial) além das que o fluxo normal já
+  // tem. Reaproveita a mesma tabela user_diary do Memorial da Estação —
+  // sem tabela nova no banco — só formata tudo dentro de vivido_hoje/
+  // deus_falou na hora de salvar.
+  const [memLembranca, setMemLembranca] = useState("");
+  const [memGratidao, setMemGratidao] = useState(["", "", ""]);
+  const [memAprendizado, setMemAprendizado] = useState("");
+  const [memMomento, setMemMomento] = useState("");
+  const [memCompromisso, setMemCompromisso] = useState("");
+  const [memOracaoGratidao, setMemOracaoGratidao] = useState("");
+
   // Passo-a-passo do conteúdo rico (ET-011: uma coisa por tela — Vídeo,
   // depois Artigo, depois Reflexão, etc. — não tudo empilhado junto).
   const [contentStep, setContentStep] = useState(0);
@@ -77,6 +89,15 @@ function StagePageContent() {
   useEffect(() => {
     setContentStep(0);
     setArtigoSlide(0);
+    setDiarioVivido("");
+    setDiarioDeusFalou("");
+    setDiarioSaved(false);
+    setMemLembranca("");
+    setMemGratidao(["", "", ""]);
+    setMemAprendizado("");
+    setMemMomento("");
+    setMemCompromisso("");
+    setMemOracaoGratidao("");
   }, [id, dayIndex]);
 
   useEffect(() => {
@@ -149,6 +170,45 @@ function StagePageContent() {
         user_id: session.user.id,
         vivido_hoje: diarioVivido || "—",
         deus_falou: diarioDeusFalou || "—",
+      });
+    }
+    setDiarioSaving(false);
+    setDiarioSaved(true);
+  };
+
+  // Diário do Memorial (ET-010, Dia 7) — junta Minha Maior Lembrança,
+  // Gratidão (3 itens), Aprendizado, Momento marcante, Compromisso e
+  // Oração de gratidão num único registro em user_diary (mesma tabela do
+  // Memorial da Estação, sem tabela nova no banco).
+  const handleSaveMemorialDiario = async () => {
+    const gratidaoTexto = memGratidao
+      .map((g, i) => (g.trim() ? `${i + 1}) ${g.trim()}` : null))
+      .filter(Boolean)
+      .join("\n");
+    const vivido = [
+      memLembranca.trim() && `Maior lembrança da semana: ${memLembranca.trim()}`,
+      gratidaoTexto && `Gratidão:\n${gratidaoTexto}`,
+      memAprendizado.trim() && `Maior aprendizado: ${memAprendizado.trim()}`,
+      memMomento.trim() && `Momento marcante: ${memMomento.trim()}`,
+    ]
+      .filter(Boolean)
+      .join("\n\n");
+    const deusFalou = [
+      memCompromisso.trim() && `Compromisso para a próxima semana: ${memCompromisso.trim()}`,
+      memOracaoGratidao.trim() && `Oração de gratidão: ${memOracaoGratidao.trim()}`,
+    ]
+      .filter(Boolean)
+      .join("\n\n");
+
+    if (!vivido.trim() && !deusFalou.trim()) return;
+
+    setDiarioSaving(true);
+    const { data: { session } } = await supabase.auth.getSession();
+    if (session) {
+      await supabase.from("user_diary").insert({
+        user_id: session.user.id,
+        vivido_hoje: vivido || "—",
+        deus_falou: deusFalou || "—",
       });
     }
     setDiarioSaving(false);
@@ -467,7 +527,17 @@ function StagePageContent() {
                       )}
                       {currentDayData.consolidacao && (
                         <p className="text-[12px] font-bold text-accent bg-accent/10 rounded-xl px-4 py-3 mt-3">
-                          Hoje não há novo conteúdo. É dia de consolidar o que Deus já começou a fazer em você esta semana.
+                          Você caminhou vários dias na direção de uma vida mais íntima com Deus. Hoje é tempo de parar, olhar para trás, agradecer e fortalecer aquilo que Deus já começou a fazer.
+                        </p>
+                      )}
+                      {currentDayData.memorialSemana && (
+                        <p className="text-[12px] font-bold text-accent bg-accent/10 rounded-xl px-4 py-3 mt-3">
+                          Você concluiu sua primeira semana. Hoje é tempo de recordar, agradecer e celebrar aquilo que Deus fez em sua caminhada.
+                        </p>
+                      )}
+                      {currentDayData.mensagemAbertura && (
+                        <p className="text-[13px] text-text-main/70 italic leading-relaxed mt-3">
+                          {currentDayData.mensagemAbertura}
                         </p>
                       )}
                     </div>
@@ -479,11 +549,23 @@ function StagePageContent() {
                       // Diário, Oração/Conclusão. Práticas sempre entra (é
                       // hábito diário); Pontuação só entra se ainda não foi
                       // feita nesta estação (é avaliação semanal, não diária).
-                      type StepKey = "video" | "artigo" | "reflexao" | "praticas" | "pontuacao" | "diario" | "conclusao";
+                      type StepKey = "video" | "artigo" | "revisao" | "reflexao" | "desafio" | "timeline" | "lembranca" | "gratidao" | "praticas" | "pontuacao" | "diario" | "conclusao";
                       const steps: StepKey[] = [];
                       if (currentDayData.videoRoteiro) steps.push("video");
                       if (currentDayData.artigoRico) steps.push("artigo");
+                      // Dia de Consolidação (ET-009, Dia 6): Revisão da Semana
+                      // entra antes da Autoavaliação (reflexao), com cards dos
+                      // dias já concluídos (tema + versículo de cada um).
+                      if (currentDayData.consolidacao) steps.push("revisao");
                       if (currentDayData.reflexao?.length) steps.push("reflexao");
+                      if (currentDayData.desafioSemana) steps.push("desafio");
+                      // Dia do Memorial da Semana (ET-010): substitui o artigo
+                      // por Linha do Tempo, Minha Maior Lembrança e Gratidão.
+                      if (currentDayData.memorialSemana) {
+                        steps.push("timeline");
+                        steps.push("lembranca");
+                        steps.push("gratidao");
+                      }
                       steps.push("praticas");
                       if (!scoreDone) steps.push("pontuacao");
                       if (currentDayData.diarioPerguntas) steps.push("diario");
@@ -527,7 +609,7 @@ function StagePageContent() {
                           {step === "video" && (
                             <div className="mb-6">
                               <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
-                                Vídeo do Dia · em produção
+                                {currentDayData.memorialSemana ? "Vídeo Memorial · em produção" : "Vídeo do Dia · em produção"}
                               </span>
                               <p className="text-[15px] text-text-main/90 leading-relaxed">{currentDayData.videoRoteiro}</p>
                             </div>
@@ -569,10 +651,30 @@ function StagePageContent() {
                             </div>
                           )}
 
+                          {step === "revisao" && (
+                            <div className="mb-6">
+                              <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
+                                Revisão da Semana
+                              </span>
+                              <div className="space-y-3">
+                                {stage.days.slice(0, dayIndex - 1).filter((d) => d.tema).map((d) => (
+                                  <div key={d.day} className="p-4 rounded-xl border border-accent/20 bg-bg-card/50">
+                                    <span className="block text-[11px] uppercase tracking-wide text-text-muted font-bold mb-1">
+                                      Dia {d.day} · {d.tema}
+                                    </span>
+                                    {d.versiculo && (
+                                      <p className="text-[13px] italic text-text-main/80 leading-relaxed">{d.versiculo}</p>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
                           {step === "reflexao" && currentDayData.reflexao && (
                             <div className="mb-6">
                               <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
-                                Reflexão Guiada
+                                {currentDayData.consolidacao ? "Autoavaliação Espiritual" : "Reflexão Guiada"}
                               </span>
                               <ul className="space-y-4">
                                 {currentDayData.reflexao.map((q, i) => (
@@ -581,6 +683,81 @@ function StagePageContent() {
                                   </li>
                                 ))}
                               </ul>
+                            </div>
+                          )}
+
+                          {step === "desafio" && currentDayData.desafioSemana && (
+                            <div className="mb-6">
+                              <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
+                                Desafio da Semana
+                              </span>
+                              <p className="text-[16px] font-medium text-text-main leading-relaxed">
+                                {currentDayData.desafioSemana}
+                              </p>
+                            </div>
+                          )}
+
+                          {step === "timeline" && (
+                            <div className="mb-6">
+                              <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
+                                Linha do Tempo · {stage.title}
+                              </span>
+                              <div className="space-y-3">
+                                {stage.days.slice(0, dayIndex - 1).map((d) => (
+                                  <div key={d.day} className="flex gap-3 p-3 rounded-xl border border-accent/20 bg-bg-card/50">
+                                    <div className="w-7 h-7 rounded-full bg-accent/15 text-accent flex items-center justify-center font-bold text-[12px] flex-shrink-0">
+                                      {d.day}
+                                    </div>
+                                    <p className="text-[13px] text-text-main/80 leading-snug">
+                                      {d.tema || d.title} — {d.confronto}
+                                    </p>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {step === "lembranca" && (
+                            <div className="mb-6">
+                              <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
+                                Minha Maior Lembrança
+                              </span>
+                              <p className="text-[15px] font-medium text-text-main mb-3 leading-relaxed">
+                                Qual foi o momento em que você mais percebeu Deus agindo nesta semana?
+                              </p>
+                              <textarea
+                                value={memLembranca}
+                                onChange={(e) => setMemLembranca(e.target.value)}
+                                placeholder="Escreva sobre esse momento..."
+                                className="w-full min-h-[100px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none"
+                              />
+                            </div>
+                          )}
+
+                          {step === "gratidao" && (
+                            <div className="mb-6">
+                              <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
+                                Gratidão
+                              </span>
+                              <p className="text-[15px] font-medium text-text-main mb-3 leading-relaxed">
+                                Registre três motivos de gratidão relacionados à sua caminhada nesta semana.
+                              </p>
+                              <div className="space-y-3">
+                                {memGratidao.map((g, i) => (
+                                  <input
+                                    key={i}
+                                    type="text"
+                                    value={g}
+                                    onChange={(e) => {
+                                      const next = [...memGratidao];
+                                      next[i] = e.target.value;
+                                      setMemGratidao(next);
+                                    }}
+                                    placeholder={`Motivo ${i + 1}`}
+                                    className="w-full bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent"
+                                  />
+                                ))}
+                              </div>
                             </div>
                           )}
 
@@ -596,7 +773,56 @@ function StagePageContent() {
                             </div>
                           )}
 
-                          {step === "diario" && currentDayData.diarioPerguntas && (
+                          {step === "diario" && currentDayData.diarioPerguntas && currentDayData.memorialSemana && (
+                            <div className="mb-6">
+                              <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
+                                Diário do Memorial
+                              </span>
+                              {diarioSaved ? (
+                                <p className="text-[14px] text-text-main/70">Registrado no seu Memorial da Estação. Você pode rever tudo na aba Memorial.</p>
+                              ) : (
+                                <>
+                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">Maior aprendizado da semana</p>
+                                  <textarea
+                                    value={memAprendizado}
+                                    onChange={(e) => setMemAprendizado(e.target.value)}
+                                    placeholder="O que você aprendeu..."
+                                    className="w-full min-h-[70px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none mb-3"
+                                  />
+                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">Momento marcante</p>
+                                  <textarea
+                                    value={memMomento}
+                                    onChange={(e) => setMemMomento(e.target.value)}
+                                    placeholder="O que mais marcou você..."
+                                    className="w-full min-h-[70px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none mb-3"
+                                  />
+                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">Compromisso para a próxima semana</p>
+                                  <textarea
+                                    value={memCompromisso}
+                                    onChange={(e) => setMemCompromisso(e.target.value)}
+                                    placeholder="O que você se compromete a fazer..."
+                                    className="w-full min-h-[70px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none mb-3"
+                                  />
+                                  <p className="text-[13px] font-bold text-text-main/70 mb-1">Oração de gratidão</p>
+                                  <textarea
+                                    value={memOracaoGratidao}
+                                    onChange={(e) => setMemOracaoGratidao(e.target.value)}
+                                    placeholder="Escreva sua oração..."
+                                    className="w-full min-h-[70px] bg-bg-card/50 border border-accent/20 rounded-lg p-3 text-[14px] text-text-main placeholder:text-text-muted/60 focus:outline-none focus:border-accent resize-none mb-3"
+                                  />
+                                  <button
+                                    onClick={handleSaveMemorialDiario}
+                                    disabled={diarioSaving}
+                                    className="w-full bg-accent text-white py-2.5 rounded-lg font-bold text-[13px] disabled:opacity-50"
+                                  >
+                                    {diarioSaving ? "Guardando..." : "Guardar no Memorial da Estação"}
+                                  </button>
+                                </>
+                              )}
+                            </div>
+                          )}
+
+                          {step === "diario" && currentDayData.diarioPerguntas && !currentDayData.memorialSemana && (
                             <div className="mb-6">
                               <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
                                 {currentDayData.consolidacao ? "Memorial da Semana" : "Memorial da Estação"}

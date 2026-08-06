@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "../../utils/supabase/client";
 import BottomNav from "../components/BottomNav";
-import { Trophy, Lock, Leaf, Compass, Flame, Heart, Hammer, Eye, Crown, Bell, X, Star } from "lucide-react";
+import { Trophy, Lock, Leaf, Compass, Flame, Heart, Hammer, Eye, Crown, Bell, X, Star, HelpCircle } from "lucide-react";
 import { getStage, stageOrder } from "../data";
 
 type Badge = {
@@ -108,8 +108,20 @@ export default function DashboardPage() {
         </div>
         
         <p className="text-[#eaddc5]/70 text-[14px]">Sua prateleira de insígnias e vitórias na Jornada.</p>
-        
-        <div className="mt-8 bg-[#111812] border border-[#c69b5c]/20 rounded-2xl p-4 flex items-center justify-between">
+
+        {/* Explicação do conceito (pedido do Nilton: ele não achou nada
+            explicando o que são as insígnias em lugar nenhum do app). */}
+        <div className="mt-4 bg-[#111812] border border-[#c69b5c]/20 rounded-2xl p-4">
+          <div className="flex items-center gap-2 mb-1.5">
+            <HelpCircle size={15} className="text-[#c69b5c]" />
+            <span className="text-[11px] font-bold uppercase tracking-widest text-[#c69b5c]">O que são as insígnias?</span>
+          </div>
+          <p className="text-[13px] text-[#eaddc5]/80 leading-relaxed">
+            Cada insígnia marca uma estação concluída: 7 dias de fundamento e 21 dias de prática. Elas não são troféus para colecionar — representam perseverança e a formação do caráter de Cristo em você, não um curso terminado.
+          </p>
+        </div>
+
+        <div className="mt-4 bg-[#111812] border border-[#c69b5c]/20 rounded-2xl p-4 flex items-center justify-between">
           <div>
             <div className="text-[11px] font-bold tracking-widest text-[#c69b5c] uppercase mb-1">Progresso Global</div>
             <div className="text-white font-medium">{totalUnlocked} de {totalAvailable} Estações</div>
@@ -167,7 +179,13 @@ export default function DashboardPage() {
                 <p className="text-[11px] uppercase tracking-wider text-[#c69b5c] text-center font-bold">
                   {stageInfo?.title}
                 </p>
-                
+
+                {/* Pedido do Nilton: insígnia travada não dizia quando
+                    desbloqueava — só ficava cinza, sem explicação. */}
+                {!isUnlocked && (
+                  <p className="text-[10px] text-white/30 text-center mt-1">Desbloqueia no Dia 21</p>
+                )}
+
                 {/* Glow se desbloqueado */}
                 {isUnlocked && (
                   <div className="absolute -top-10 -right-10 w-24 h-24 bg-[#c69b5c]/20 blur-2xl rounded-full pointer-events-none"></div>

@@ -123,7 +123,17 @@ export default function SettingsPage() {
                 <Users className="text-accent" size={20} />
               </div>
               <div>
-                <h3 className="text-[16px] font-bold text-text-main">Intercessão (PDD)</h3>
+                <div className="flex items-center gap-1.5">
+                  <h3 className="text-[16px] font-bold text-text-main">Intercessão (PDD)</h3>
+                  <button
+                    type="button"
+                    onClick={() => router.push("/pdd/intro")}
+                    aria-label="O que é o PDD?"
+                    className="text-accent/70 active:scale-90 transition-transform"
+                  >
+                    <Info size={14} />
+                  </button>
+                </div>
                 <p className="text-[12px] text-text-muted leading-tight mt-1">Lembrete para orar por 5 pessoas de seu círculo de relacionamentos.</p>
               </div>
             </div>

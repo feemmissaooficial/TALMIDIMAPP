@@ -16,6 +16,15 @@ const HandHeartIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+// Mockup aprovado por Nilton ("PERFEITO! Pode implementar."): ícone de
+// bússola pra representar a ideia de "direção/foco" do PDD.
+const CompassIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={className}>
+    <circle cx="12" cy="12" r="9" strokeLinecap="round" strokeLinejoin="round" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M14.5 9.5l-2 5-3-1.5 2-5 3 1.5z" />
+  </svg>
+);
+
 // Tela 7 e Tela 8 da Fase 0 (ET-003): apresentação do CONCEITO do PDD e o
 // convite ao compromisso — sem nenhuma criação de dado ainda. A criação real
 // do PDD (formulário de áreas, plano de ação, parceiro e assinatura)
@@ -23,12 +32,15 @@ const HandHeartIcon = ({ className }: { className?: string }) => (
 // documento pede: "apenas o conceito, sem criação pelo aplicativo".
 const screens = [
   {
-    icon: BookIcon,
+    icon: CompassIcon,
     lines: [
-      "Plano de Desenvolvimento Discipular",
-      "Com base no seu diagnóstico, o aplicativo destacará áreas que merecem atenção especial durante a jornada. Seu Plano de Desenvolvimento Discipular servirá como referência para acompanhar seu progresso.",
+      "O que é o PDD?",
+      "PDD é o seu Plano de Ação de Desenvolvimento Discipular — um compromisso pessoal, escrito diante de Deus, para se tornar praticante da Palavra e não só ouvinte.",
+      "Você escolhe até 2 áreas da sua vida espiritual que quer desenvolver nas próximas 3 semanas, e assume o compromisso de agir nelas todos os dias.",
+      "Foco: até 2 áreas do seu Radar. Duração: 3 semanas de prática diária. Termina com uma assinatura de compromisso.",
+      "O PDD é seu — o Talmidim só te ajuda a registrar essa decisão.",
     ],
-    buttonLabel: "Assumir compromisso",
+    buttonLabel: "Entendi, vamos montar meu PDD",
   },
   {
     icon: HandHeartIcon,

@@ -634,9 +634,31 @@ function StagePageContent() {
                           {step === "video" && (
                             <div className="mb-6">
                               <span className="block text-[11px] uppercase tracking-wide text-accent font-bold mb-3">
-                                {currentDayData.memorialSemana ? "Vídeo Memorial · em produção" : "Vídeo do Dia · em produção"}
+                                {currentDayData.memorialSemana ? "Vídeo Memorial" : "Vídeo do Dia"}
+                                {!currentDayData.videoUrl && " · em produção"}
                               </span>
-                              <p className="text-[15px] text-text-main/90 leading-relaxed">{currentDayData.videoRoteiro}</p>
+                              {currentDayData.videoUrl ? (
+                                (() => {
+                                  // Aceita tanto youtu.be/ID quanto youtube.com/watch?v=ID.
+                                  const match = currentDayData.videoUrl.match(/(?:youtu\.be\/|v=)([a-zA-Z0-9_-]+)/);
+                                  const videoId = match ? match[1] : null;
+                                  return videoId ? (
+                                    <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-black">
+                                      <iframe
+                                        src={`https://www.youtube.com/embed/${videoId}`}
+                                        title="Vídeo do dia"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        className="absolute inset-0 w-full h-full"
+                                      />
+                                    </div>
+                                  ) : (
+                                    <p className="text-[15px] text-text-main/90 leading-relaxed">{currentDayData.videoRoteiro}</p>
+                                  );
+                                })()
+                              ) : (
+                                <p className="text-[15px] text-text-main/90 leading-relaxed">{currentDayData.videoRoteiro}</p>
+                              )}
                             </div>
                           )}
 

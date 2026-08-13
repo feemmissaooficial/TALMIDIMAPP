@@ -23,6 +23,9 @@ type DayContent = {
   tema?: string;
   versiculo?: string;
   videoRoteiro?: string;
+  // Link do vídeo já gravado (YouTube). Quando presente, a tela do Vídeo
+  // mostra o player de verdade em vez do roteiro em texto.
+  videoUrl?: string;
   artigoRico?: { titulo: string; texto: string };
   // "Resumo para o aplicativo" oficial (documento próprio do Nilton, em
   // telas numeradas — Tela 1, Tela 2...). Quando presente, o carrossel do
@@ -81,6 +84,7 @@ export const stages: Stage[] = [
         "versiculo": "Antes de servir, ensinar ou liderar, todo discípulo aprende a permanecer em Cristo.",
         "mensagemAbertura": "Durante os próximos 21 dias você será convidado a fortalecer sua intimidade com Deus. Antes de servir, ensinar ou liderar, todo discípulo aprende a permanecer em Cristo. Esta estação é um convite para caminhar diariamente com o Senhor.",
         "videoRoteiro": "Acolhida ao participante, explicação da importância da intimidade com Deus e como aproveitar a jornada: um dia de cada vez, com constância e sinceridade.",
+        "videoUrl": "https://youtu.be/aCbf-un3ZgE",
         "artigoRico": {
           "titulo": "O convite para caminhar com Deus",
           "texto": "A vida cristã nasce do relacionamento com Deus, e não apenas do conhecimento sobre Ele. Conhecer a respeito de Deus não substitui caminhar com Ele todos os dias."
@@ -116,6 +120,7 @@ export const stages: Stage[] = [
         "tema": "Permanecer antes de produzir",
         "mensagemAbertura": "Ontem você iniciou sua jornada. Hoje você descobrirá que o segredo da vida cristã não é fazer mais, mas permanecer mais perto de Deus.",
         "videoRoteiro": "Retomar o Dia 1; explicar João 15 e a imagem da videira; mostrar que intimidade precede serviço; convidar o participante a viver esse princípio ainda hoje.",
+        "videoUrl": "https://youtu.be/HAYugdwkUSA",
         "artigoRico": {
           "titulo": "Permanecer antes de Produzir",
           "texto": "João 15 mostra que Deus não procura apenas pessoas ocupadas, mas discípulos que permanecem nEle. A produtividade espiritual nasce da permanência, não a substitui."
@@ -155,6 +160,7 @@ export const stages: Stage[] = [
         "versiculo": "João 10:27 — \"As minhas ovelhas ouvem a minha voz; eu as conheço, e elas me seguem.\"",
         "mensagemAbertura": "Hoje você será desafiado a desacelerar para ouvir Aquele que deseja falar com você todos os dias.",
         "videoRoteiro": "Retomada dos dias anteriores; apresentação de João 10; exemplos práticos de como cultivar uma escuta sensível; convite à prática do dia.",
+        "videoUrl": "https://youtu.be/zGWWJ98hxpQ",
         "artigoRico": {
           "titulo": "A voz do Bom Pastor",
           "texto": "Deus fala principalmente por sua Palavra, iluminada pelo Espírito Santo, conduzindo o discípulo à obediência. Aplicação: crie um ambiente de silêncio, leia lentamente, anote percepções e obedeça ao que foi compreendido."
@@ -195,6 +201,7 @@ export const stages: Stage[] = [
         "versiculo": "Tiago 1:22 — \"Sejam praticantes da Palavra, e não apenas ouvintes.\"",
         "mensagemAbertura": "Deus já falou com você. Hoje o desafio é responder. Toda transformação começa quando a Palavra encontra um coração obediente.",
         "videoRoteiro": "Recordar os três primeiros dias; explicar que conhecimento sem obediência produz estagnação; exemplos bíblicos de resposta imediata; desafio de um passo concreto hoje.",
+        "videoUrl": "https://youtu.be/QctdiznKeUQ",
         "artigoRico": {
           "titulo": "Ouvir, Crer e Obedecer",
           "texto": "A obediência é fruto do amor a Deus, não mera obrigação. A prática cotidiana confirma o discipulado e molda o caráter de Cristo."
@@ -235,6 +242,7 @@ export const stages: Stage[] = [
         "versiculo": "1 Tessalonicenses 5:17 — \"Orem continuamente.\"",
         "mensagemAbertura": "Conversar com Deus transforma a maneira como enfrentamos cada dia. Hoje você dará mais um passo para fazer da oração um hábito de vida.",
         "videoRoteiro": "Apresentar a oração como diálogo com Deus; desfazer a ideia de que é necessário usar palavras elaboradas; incentivar uma rotina simples e constante de oração.",
+        "videoUrl": "https://youtu.be/hM4P-98vNew",
         "artigoRico": {
           "titulo": "O privilégio de falar com o Pai",
           "texto": "Fundamentos bíblicos da oração, exemplos de Jesus, a importância da perseverança e da confiança em Deus, com aplicações práticas para o cotidiano."

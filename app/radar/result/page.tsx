@@ -1,22 +1,27 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "../../../utils/supabase/client";
 import { radarAreas } from "../data";
 import { generateDiagnostico } from "../diagnostico";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight, Download } from "lucide-react";
+import html2canvas from "html2canvas";
+import jsPDF from "jspdf";
 
 export default function RadarResultPage() {
   const router = useRouter();
   const supabase = createClient();
-  
+  const exportRef = useRef<HTMLDivElement>(null);
+
   const [mounted, setMounted] = useState(false);
   const [history, setHistory] = useState<any[]>([]);
   const [scores, setScores] = useState<number[]>([]);
   const [previousScores, setPreviousScores] = useState<number[] | null>(null);
   const [totalScore, setTotalScore] = useState(0);
   const [previousTotal, setPreviousTotal] = useState<number | null>(null);
+  const [userName, setUserName] = useState("Discipulo");
+  const [generating, setGenerating] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -33,9 +38,12 @@ export default function RadarResultPage() {
         .eq("user_id", session.user.id)
         .order("created_at", { ascending: false });
         
+      const metaName = session.user.user_metadata?.name;
+      if (metaName) setUserName(metaName);
+
       if (data && data.length > 0) {
         setHistory(data);
-        
+
         // Latest score
         const latestData = data[0];
         const areaScores = radarAreas.map(area => latestData[`score_${area.id}`] || 0);
@@ -95,6 +103,38 @@ export default function RadarResultPage() {
   const oldDataPoints = previousScores ? previousScores.map((score, i) => getPoint(angles[i], (score / maxScore) * radius)) : null;
   const oldDataPolygon = oldDataPoints ? oldDataPoints.map(p => `${p.x},${p.y}`).join(" ") : null;
 
+  const generatePDF = async () => {
+    if (!exportRef.current) return;
+    setGenerating(true);
+
+    try {
+      const canvas = await html2canvas(exportRef.current, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: "#0a0f0a"
+      });
+
+      const imgData = canvas.toDataURL("image/png");
+
+      const pdf = new jsPDF({
+        orientation: "portrait",
+        unit: "mm",
+        format: "a4"
+      });
+
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+      pdf.save(`Radar_Talmidim_${userName.replace(/\s+/g, "_")}.pdf`);
+    } catch (err) {
+      console.error("Erro ao gerar PDF:", err);
+      alert("Houve um erro ao gerar o PDF.");
+    } finally {
+      setGenerating(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#0a0f0a] text-[#eaddc5] flex flex-col items-center pb-24 font-sans">
       <div className="w-full bg-[#111812] pt-12 pb-8 px-6 text-center border-b border-[#c69b5c]/10">
@@ -123,7 +163,9 @@ export default function RadarResultPage() {
       </div>
 
       <div className="w-full max-w-[500px] px-6 mt-8 flex flex-col items-center animate-in zoom-in-95 duration-1000">
-        
+
+      <div ref={exportRef} className="w-full flex flex-col items-center bg-[#0a0f0a] p-2">
+        <h2 className="text-[16px] font-serif font-bold text-white mb-4">Radar Discipular de {userName}</h2>
         {/* Radar Chart */}
         <div className="relative w-full aspect-square max-w-[350px] mb-8">
           <svg viewBox={`0 0 ${size} ${size}`} className="w-full h-full overflow-visible">
@@ -266,6 +308,20 @@ export default function RadarResultPage() {
             ))}
           </div>
         </div>
+      </div>
+
+      <button
+        onClick={generatePDF}
+        disabled={generating}
+        className="w-full bg-[#111812] border border-[#c69b5c]/40 text-[#c69b5c] py-3.5 rounded-[16px] font-bold active:scale-95 transition-all flex items-center justify-center gap-2 mb-8 disabled:opacity-50"
+      >
+        {generating ? (
+          <div className="w-4 h-4 border-2 border-[#c69b5c]/30 border-t-[#c69b5c] rounded-full animate-spin"></div>
+        ) : (
+          <Download size={18} />
+        )}
+        {generating ? "Gerando PDF..." : "Baixar meu Radar (PDF)"}
+      </button>
 
         {/* REFLEXÃO — etapa Radar -> Diagnóstico -> Reflexão -> PDD.
             Perguntas adaptadas das perguntas de reflexão do livro. Salva

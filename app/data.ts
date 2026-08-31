@@ -419,35 +419,126 @@ export const stages: Stage[] = [
         "title": "Dia 1",
         "confronto": "Nos últimos 7 dias, quanto tempo intencional você dedicou à sua família — sem tela, sem distração?",
         "direcao": "Estação 2: Família. O discípulo que não cuida de quem está ao seu lado perde a base da formação. A missão começa em casa.",
-        "acao": "Hoje: refeição com a família — sem celular na mesa.\nConversa real: cada um fala algo do seu dia.\nOre junto ao fim da refeição.\nSe você mora sozinho: ligue para um familiar com intenção real."
+        "acao": "Hoje: refeição com a família — sem celular na mesa.\nConversa real: cada um fala algo do seu dia.\nOre junto ao fim da refeição.\nSe você mora sozinho: ligue para um familiar com intenção real.",
+        "artigoRico": {
+          "titulo": "Quando a Fé Chega em Casa",
+          "texto": "Dá para orar todo dia, estudar a Bíblia e nunca faltar à igreja — e ainda assim perder a paciência com quem mais amamos. A fé cristã precisa alcançar a maneira como vivemos dentro de casa."
+        },
+        "resumoTelas": [
+          "É possível orar, estudar a Bíblia e participar da igreja e, ainda assim, ter dificuldade para viver a fé dentro de casa. Isso acontece porque é nos relacionamentos mais próximos que nossa fé encontra a vida real. É ali que somos confrontados com nossas limitações, nossos hábitos, nossas palavras e nossas reações.",
+          "O discipulado não transforma apenas aquilo que fazemos na igreja. Ele transforma a maneira como vivemos com as pessoas que Deus colocou ao nosso lado. Por isso, hoje não comece tentando mudar ninguém. Comece olhando para você.",
+          "Como você fala com sua família? Como reage quando está cansado ou contrariado? Você tem estado presente? Tem demonstrado amor? Como lida com os conflitos? Não olhe para essas perguntas para encontrar culpa. Olhe para perceber.",
+          "Antes de transformar uma atitude, precisamos reconhecê-la. Antes de mudar alguma coisa dentro de casa, precisamos permitir que Deus nos mostre como temos vivido. A fé começa a chegar em casa quando aquilo que cremos sobre Deus começa a aparecer na maneira como tratamos as pessoas mais próximas de nós."
+        ],
+        "artigo": {
+          "titulo": "Quando a Fé Chega em Casa",
+          "url": "https://feemmissao.com.br/2026/08/31/quando-a-fe-chega-em-casa/"
+        },
+        "desafioArtigo": "Olhe para sua casa com novos olhos. Hoje, observe conscientemente sua maneira de se relacionar com sua família. Perceba suas palavras, suas reações, seus momentos de presença e também aquilo que costuma gerar tensão. Não tente resolver tudo. Apenas observe e pergunte: O que da minha caminhada com Deus já pode ser percebido na maneira como trato minha família?",
+        "diarioPerguntas": [
+          "O que percebi sobre mim hoje?"
+        ]
       },
       {
         "day": 2,
         "title": "Dia 2",
         "confronto": "Você ora com sua família regularmente — ou isso é esporádico e sem compromisso?",
         "direcao": "O culto doméstico não é tarefa dos pastores — é responsabilidade do discípulo dentro de casa.",
-        "acao": "Reúna sua família hoje.\nLeia um trecho curto da Bíblia — Josué 24:15.\nOre juntos por 5 minutos — cada um ora uma frase.\nFaça isso pelo menos 3 vezes esta semana."
+        "acao": "Reúna sua família hoje.\nLeia um trecho curto da Bíblia — Josué 24:15.\nOre juntos por 5 minutos — cada um ora uma frase.\nFaça isso pelo menos 3 vezes esta semana.",
+        "artigoRico": {
+          "titulo": "Presença que Comunica Amor",
+          "texto": "Estar perto de alguém não significa necessariamente estar presente. A presença verdadeira exige atenção, escuta e disposição para compartilhar a vida com o outro."
+        },
+        "resumoTelas": [
+          "Estar perto de alguém não significa necessariamente estar presente. Podemos morar na mesma casa, fazer refeições juntos e compartilhar a rotina, mas nossa atenção pode estar sempre em outro lugar — celular, trabalho, preocupações.",
+          "Mas atenção também é uma forma de amor. Quando ouvimos de verdade, demonstramos que o outro importa. Quando deixamos de lado uma distração para conversar, comunicamos que aquele momento tem valor.",
+          "A convivência familiar não precisa de grandes acontecimentos para ser significativa. Uma refeição, uma caminhada, um café ou alguns minutos de conversa podem se tornar momentos importantes quando existe presença verdadeira.",
+          "O discipulado também acontece assim: aprendemos a amar servindo, ouvindo e cuidando das pessoas que Deus colocou perto de nós. Hoje, não pense apenas em quanto tempo você passa com sua família — pense em como você está presente quando está com ela."
+        ],
+        "artigo": {
+          "titulo": "Presença que Comunica Amor",
+          "url": "https://feemmissao.com.br/2026/08/31/presenca-que-comunica-amor/"
+        },
+        "desafioArtigo": "Esteja presente. Escolha hoje um momento para estar com sua família de forma intencional. Pode ser uma refeição, uma conversa, uma caminhada ou uma atividade simples. Durante esse momento: deixe de lado as distrações; escute de verdade; faça perguntas; esteja inteiro naquele encontro. Não precisa fazer algo especial. Precisa estar presente.",
+        "diarioPerguntas": [
+          "Como foi estar verdadeiramente presente? O que percebi sobre minha família e sobre mim?"
+        ]
       },
       {
         "day": 3,
         "title": "Dia 3",
         "confronto": "Há conflito não resolvido na sua família? Você tem evitado ou enfrentado com graça?",
         "direcao": "Reconciliação é prática discipular. Não espere o outro dar o primeiro passo.",
-        "acao": "Identifique uma tensão real na sua família.\nDê o primeiro passo: converse com humildade.\nNão para ganhar — para restaurar.\nOre antes de falar."
+        "acao": "Identifique uma tensão real na sua família.\nDê o primeiro passo: converse com humildade.\nNão para ganhar — para restaurar.\nOre antes de falar.",
+        "artigoRico": {
+          "titulo": "Amor, Respeito e Serviço Dentro de Casa",
+          "texto": "Dentro de casa, nossas palavras têm um peso diferente. Amar a família não significa apenas sentir carinho — significa aprender a tratar cada pessoa com amor, respeito e disposição para servir."
+        },
+        "resumoTelas": [
+          "Dentro de casa, o amor precisa se transformar em atitudes. Amar é buscar o bem do outro. Respeitar é reconhecer seu valor. Servir é estar disposto a agir em favor dele.",
+          "\"Sujeitando-vos uns aos outros no temor de Cristo\" (Efésios 5.21). Na perspectiva de Jesus, liderança não é domínio — é saber ouvir, reconhecer a capacidade do outro e abrir espaço para que ele também lidere.",
+          "Submeter-se não significa anular-se. Significa estar disposto a considerar a necessidade legítima do outro, colocando nossa vontade em segundo plano para cuidar.",
+          "Homens e mulheres precisam ser amados e honrados — a mulher tende a valorizar sentir-se amada; o homem, sentir-se reconhecido e honrado. Não basta amar do nosso jeito: o outro consegue perceber aquilo que estamos oferecendo?",
+          "No casamento e na família, o amor aparece em pequenas escolhas: ouvir, agradecer, ajudar, encorajar, respeitar, servir e dedicar tempo. Não precisamos esperar uma ocasião especial para demonstrar amor."
+        ],
+        "artigo": {
+          "titulo": "Amor, Respeito e Serviço Dentro de Casa",
+          "url": "https://feemmissao.com.br/2026/08/31/amor-respeito-e-servico-dentro-de-casa/"
+        },
+        "desafioArtigo": "Escolha uma atitude de amor. Hoje, faça intencionalmente algo que demonstre amor, respeito ou cuidado por alguém da sua família. Se você é casado(a): separe um período de qualidade com seu cônjuge. Planeje esse momento, proteja-o das interrupções e esteja verdadeiramente presente. Não precisa ser algo caro ou extraordinário. O importante é que o outro perceba que ele é importante para você.",
+        "diarioPerguntas": [
+          "O que fiz para demonstrar amor? Como foi servir e estar presente?"
+        ]
       },
       {
         "day": 4,
         "title": "Dia 4",
         "confronto": "Seus filhos, cônjuge ou pais sabem que você está nesta jornada de discipulado? Eles veem diferença em você?",
         "direcao": "A fé que não transforma a convivência familiar é fé que ainda não chegou em casa.",
-        "acao": "Conta para sua família o que é o Talmidim.\nNão pregue — compartilhe o que está vivendo.\nPergunte o que eles percebem de diferente em você.\nOuça sem se defender."
+        "acao": "Conta para sua família o que é o Talmidim.\nNão pregue — compartilhe o que está vivendo.\nPergunte o que eles percebem de diferente em você.\nOuça sem se defender.",
+        "artigoRico": {
+          "titulo": "Quando a Fé Reúne a Família",
+          "texto": "É possível que todos em uma família sejam cristãos e, ainda assim, cada um viva sua espiritualidade de forma isolada. Existe algo especial quando uma família aprende a buscar a Deus junta."
+        },
+        "resumoTelas": [
+          "A caminhada com Deus é pessoal, mas não precisa ser vivida de forma isolada dentro de casa. Uma família pode ter membros cristãos e, ainda assim, quase nunca conversar sobre Deus, compartilhar suas lutas ou orar juntos.",
+          "Deuteronômio nos lembra que a fé deve fazer parte da vida cotidiana: em casa, no caminho, ao deitar e ao levantar. A espiritualidade familiar não é apenas cumprir uma obrigação religiosa — é criar espaço para Deus na vida que a família já vive.",
+          "Uma conversa. Uma oração. Um motivo de gratidão. Um texto bíblico. Uma necessidade compartilhada. Pequenos momentos podem ajudar a construir algo maior: uma família que aprende a reconhecer, buscar e seguir a Deus juntos.",
+          "Não precisa ser perfeito. Precisa apenas começar."
+        ],
+        "artigo": {
+          "titulo": "Quando a Fé Reúne a Família",
+          "url": "https://feemmissao.com.br/2026/08/31/quando-a-fe-reune-a-familia/"
+        },
+        "desafioArtigo": "Tempo de qualidade e fé em família. Hoje, separe um tempo intencional para estar com sua família. Conversem. Ouçam uns aos outros. Compartilhem algo sobre o dia. Depois, reservem alguns minutos para um momento simples de culto doméstico: leiam um pequeno texto bíblico; compartilhem um motivo de gratidão; conversem brevemente sobre o texto; orem juntos. Não se preocupe em fazer algo longo ou elaborado.",
+        "diarioPerguntas": [
+          "Como foi separar esse tempo para minha família? O que percebi quando buscamos a Deus juntos?"
+        ]
       },
       {
         "day": 5,
         "title": "Dia 5",
         "confronto": "Você protege o tempo com sua família — ou deixa que o trabalho, o ministério e as distrações tomem esse espaço?",
         "direcao": "Agenda revela valor. O que a sua agenda diz sobre o quanto você valoriza sua família?",
-        "acao": "Abra sua agenda da próxima semana.\nColoque um bloco fixo de tempo com a família — intocável.\nComunique isso à família hoje.\nCumpra."
+        "acao": "Abra sua agenda da próxima semana.\nColoque um bloco fixo de tempo com a família — intocável.\nComunique isso à família hoje.\nCumpra.",
+        "artigoRico": {
+          "titulo": "Discipulado Familiar: O Que Estamos Transmitindo Dentro de Casa?",
+          "texto": "Toda família transmite alguma coisa. Mesmo quando ninguém se senta para ensinar uma lição, a convivência está formando pessoas."
+        },
+        "resumoTelas": [
+          "Toda família transmite alguma coisa. Mesmo sem perceber, nossas palavras, atitudes e reações estão ensinando aqueles que convivem conosco.",
+          "A Bíblia nos chama a transmitir às próximas gerações os feitos do Senhor. E a história de Timóteo nos mostra como uma fé sincera pode marcar uma família. Mas a fé não é transmitida apenas pelo que ensinamos — ela também é percebida na maneira como vivemos.",
+          "Quando pedimos perdão. Quando enfrentamos dificuldades confiando em Deus. Quando servimos. Quando conversamos sobre aquilo que Deus tem feito. Você não precisa ser perfeito para discipular sua família — precisa viver uma fé verdadeira.",
+          "Dentro de casa, estamos transmitindo alguma coisa todos os dias. A pergunta é: o que minha vida está ensinando às pessoas que convivem comigo?"
+        ],
+        "artigo": {
+          "titulo": "Discipulado Familiar: O Que Estamos Transmitindo Dentro de Casa?",
+          "url": "https://feemmissao.com.br/2026/08/31/discipulado-familiar-o-que-estamos-transmitindo-dentro-de-casa/"
+        },
+        "desafioArtigo": "Compartilhe sua fé. Hoje, escolha um momento para conversar com alguém da sua família sobre aquilo que Deus tem feito em sua vida. Você pode: contar uma experiência em que percebeu o cuidado de Deus; compartilhar uma resposta de oração; falar sobre algo que Deus tem ensinado a você; lembrar uma situação difícil em que Deus sustentou você. Depois, pergunte: \"E você? O que Deus tem feito ou ensinado em sua vida?\" Não transforme o momento em um sermão.",
+        "diarioPerguntas": [
+          "O que compartilhei sobre minha fé? Como essa conversa aconteceu?"
+        ]
       },
       {
         "day": 6,

@@ -669,15 +669,17 @@ export const stages: Stage[] = [
           "texto": "Todo cristão deve evangelizar porque a missão não foi entregue apenas a especialistas, mas faz parte da identidade de quem foi reconciliado com Deus."
         },
         "resumoTelas": [
-          "Todo cristão deve evangelizar porque a missão não foi entregue apenas a especialistas, mas faz parte da identidade de quem foi reconciliado com Deus.",
-          "A evangelização não deve ocupar apenas um espaço periférico na vida cristã — ela está ligada à própria identidade da Igreja. O discípulo não é chamado só para receber a mensagem, mas para participar da missão daquele que o alcançou.",
-          "Paulo afirma que Deus nos reconciliou consigo por meio de Cristo e nos confiou o ministério da reconciliação (2Coríntios 5.18). Isso não significa que todos tenham o mesmo dom — mas a diversidade de funções não elimina a responsabilidade missionária comum.",
-          "Você não precisa esperar uma grande oportunidade. Sua missão começa nas relações que já fazem parte da sua vida: família, amigos, vizinhos, colegas. A missão cotidiana começa quando deixamos de perguntar \"quem vai evangelizar?\" e passamos a perguntar \"como Deus pode me usar aqui?\""
+          "Evangelização não é um programa especial da igreja nem uma tarefa reservada a pastores, missionários ou pessoas que possuem um dom específico. Ela faz parte da identidade de quem foi alcançado e reconciliado por Deus. Quem recebeu a graça de Cristo também é chamado a participar da missão de Deus.",
+          "Na Grande Comissão, Jesus chama seus discípulos para ir e fazer discípulos de todas as nações. A ordem não apresenta a missão como uma atividade opcional para alguns, mas como parte da vida de quem segue Jesus. O discípulo não é apenas alguém que recebe; ele também participa daquilo que o seu Senhor está fazendo no mundo.",
+          "Isso muda a maneira como olhamos para o cotidiano. A missão não começa quando a igreja organiza um evento evangelístico. Ela começa onde estamos: em casa, na família, entre amigos, vizinhos, colegas de trabalho e nas pessoas que Deus coloca regularmente diante de nós.",
+          "Ser enviado não significa saber responder a todas as perguntas ou possuir uma personalidade especialmente comunicativa. Significa estar disponível. Podemos começar orando, ouvindo, cuidando, servindo e compartilhando com simplicidade aquilo que Cristo fez em nossa vida.",
+          "A pergunta deste dia é simples: se sou discípulo de Jesus, onde Ele está me enviando hoje?"
         ],
         "artigo": {
           "titulo": "Todo cristão deve evangelizar? Entenda por que todo discípulo é enviado",
           "url": "https://feemmissao.com.br/2026/09/15/todo-cristao-deve-evangelizar/"
         },
+        "desafioArtigo": "Liste cinco pessoas que ainda não caminham com Cristo ou estão distantes da igreja. Comece a orar diariamente por elas.",
         "diarioPerguntas": [
           "Tenho tratado a evangelização como responsabilidade pessoal ou como tarefa de outras pessoas?",
           "Quem Deus já colocou no meu círculo de relacionamentos?",
@@ -695,15 +697,17 @@ export const stages: Stage[] = [
           "texto": "Aprender como evangelizar no dia a dia começa por integrar a fé à rotina, permitindo que atitudes, relacionamentos, conversas e cuidado expressem o evangelho."
         },
         "resumoTelas": [
-          "Evangelizar no cotidiano não significa transformar cada conversa em um discurso religioso. Significa viver uma fé integrada à rotina — Jesus ensinou que a luz deve brilhar diante das pessoas (Mateus 5.16).",
-          "As oportunidades estão nas conversas comuns. Uma pessoa compartilha uma dor, outra fala sobre uma dúvida — o discípulo atento não precisa fabricar oportunidades, aprende a reconhecê-las.",
-          "Ouça antes de falar. A escuta nos impede de transformar a evangelização em uma apresentação pronta. O evangelho é sempre anunciado a pessoas concretas, não a abstrações.",
-          "Quando houver abertura, fale com simplicidade sobre Cristo. A pergunta deixa de ser \"quando vou evangelizar?\" e passa a ser \"como minha fé está aparecendo na vida que já estou vivendo?\""
+          "A evangelização não começa necessariamente com uma conversa sobre religião. Ela começa com uma vida que torna Cristo visível. Jesus ensinou que nossas boas obras devem apontar para o Pai. Por isso, testemunhar é mais do que falar; é viver de maneira coerente com aquilo que anunciamos.",
+          "Uma fé que permanece somente no espaço privado perde oportunidades de testemunhar. As pessoas observam como tratamos os outros, como reagimos às dificuldades, como servimos, como perdoamos e como cuidamos. A coerência não substitui o anúncio do evangelho, mas cria pontes para que ele seja ouvido.",
+          "No cotidiano surgem oportunidades simples: alguém compartilha uma preocupação, pede ajuda, fala de uma dificuldade familiar ou revela um medo. Esses momentos podem se tornar espaços de oração, cuidado, escuta e testemunho. Não precisamos transformar cada conversa em um discurso religioso. Precisamos estar presentes e atentos.",
+          "Evangelizar no dia a dia é aprender a reconhecer essas oportunidades e responder com naturalidade. Uma pergunta sincera, uma oração oferecida no momento certo ou uma palavra sobre nossa esperança em Cristo pode abrir uma porta que uma abordagem artificial jamais abriria.",
+          "Hoje, portanto, não pense primeiro em encontrar uma oportunidade para falar. Pense em viver de modo que sua fé transborde para as relações que já fazem parte da sua vida."
         ],
         "artigo": {
           "titulo": "Como evangelizar no dia a dia: quando a fé transborda para a vida",
           "url": "https://feemmissao.com.br/2026/09/15/como-evangelizar-no-dia-a-dia/"
         },
+        "desafioArtigo": "Tenha hoje uma conversa intencional com alguém. Pergunte como essa pessoa está e se existe algo pelo qual você possa orar.",
         "diarioPerguntas": [
           "Minha fé é percebida nas minhas atitudes cotidianas?",
           "Tenho mais pressa de falar ou disposição para ouvir?",
@@ -721,15 +725,17 @@ export const stages: Stage[] = [
           "texto": "Perceber oportunidades para evangelizar exige atenção ao que Deus já está fazendo na vida das pessoas e disposição para participar com sabedoria, amor e presença."
         },
         "resumoTelas": [
-          "Deus está agindo no mundo antes de chegarmos a qualquer pessoa. Jesus afirmou que o Pai continua trabalhando (João 5.17). A missão não começa em nossa capacidade de produzir resultados, mas na iniciativa de Deus.",
-          "Uma oração simples pode mudar nossa maneira de caminhar: \"Senhor, leva-me às pessoas nas quais Tu já estás agindo.\" Quando oramos assim, começamos a prestar atenção.",
-          "Perceber oportunidades não significa transformar pessoas em alvos. Cada pessoa possui história, dores, perguntas e dignidade. Às vezes, participar do que Deus está fazendo significa simplesmente permanecer presente e cuidar.",
-          "Observe necessidades, conversas e momentos de abertura. Nem toda oportunidade exige uma longa explicação — às vezes o próximo passo é ouvir; em outra, é orar; em outra, compartilhar o evangelho."
+          "A missão não começa em nós. Deus já está agindo no mundo e na vida das pessoas. Jesus disse que seu Pai continua trabalhando e que Ele também trabalha. Essa percepção muda a maneira como participamos da missão: não estamos tentando fazer Deus agir; estamos procurando perceber onde Ele já está agindo e cooperar com Ele.",
+          "Por isso, uma das orações mais importantes de quem vive em missão pode ser: \"Senhor, leva-me às pessoas nas quais Tu já estás agindo\". Essa oração nos tira da ansiedade de produzir resultados e nos coloca em uma postura de atenção.",
+          "Deus pode estar trabalhando por meio de uma necessidade, de uma crise, de uma pergunta, de uma amizade, de uma busca espiritual ou até de uma situação que inicialmente parece apenas comum. Nem sempre reconheceremos imediatamente o que está acontecendo. Por isso, precisamos aprender a observar e ouvir.",
+          "Perceber não significa interpretar tudo como um sinal extraordinário. Significa estar atento às pessoas e às circunstâncias, reconhecendo que Deus pode abrir portas para cuidado, oração, testemunho e relacionamento. A nossa parte é responder quando essas oportunidades aparecem.",
+          "Depois de orar pelas cinco pessoas que você escolheu, observe-as com novos olhos. Em vez de pensar apenas em como falar com elas, pergunte: que necessidades existem? Que conversas estão surgindo? Há alguma abertura? Como posso participar do que Deus já está fazendo?"
         ],
         "artigo": {
           "titulo": "Onde Deus já está trabalhando? Como perceber oportunidades para evangelizar",
           "url": "https://feemmissao.com.br/2026/09/15/oportunidades-para-evangelizar/"
         },
+        "desafioArtigo": "Ore pelas cinco pessoas que você escolheu e peça: \"Senhor, leva-me às pessoas nas quais Tu já estás agindo.\" Durante o dia, observe necessidades, conversas e sinais de abertura.",
         "diarioPerguntas": [
           "Em quais pessoas percebo sinais de abertura, necessidade ou busca espiritual?",
           "Tenho pedido a Deus que me mostre onde Ele já está trabalhando?",
@@ -747,15 +753,17 @@ export const stages: Stage[] = [
           "texto": "Relacionamentos intencionais na evangelização não significam manipular amizades, mas amar pessoas conscientemente, estar presente e reconhecer oportunidades de oração, cuidado e testemunho."
         },
         "resumoTelas": [
-          "Relacionamentos intencionais na evangelização não significam manipular amizades, mas amar pessoas conscientemente. Ser intencional é escolher estar presente, conhecer a pessoa e permanecer disponível para o propósito de Deus.",
-          "Nos Evangelhos, Jesus encontra pessoas em diferentes contextos — conversa, pergunta, ouve, acolhe. O discipulador não procura apenas uma oportunidade para falar; procura conhecer pessoas e caminhar com elas.",
-          "1Tessalonicenses 2.8 fala do desejo de compartilhar não apenas o evangelho, mas a própria vida. Perguntas simples como \"Como você está de verdade?\" podem aprofundar relacionamentos e abrir espaço para conversas mais profundas.",
-          "Quando alguém demonstra interesse por Cristo, o relacionamento não termina — a evangelização discipuladora aponta para acompanhamento. A ponte construída para compartilhar o evangelho pode se tornar também um caminho de discipulado."
+          "A missão acontece entre pessoas. Por isso, relacionamentos não são apenas uma estratégia para evangelizar; eles fazem parte da própria maneira como Jesus se relacionava com aqueles que queria alcançar e formar. A fé é compartilhada em meio à vida real.",
+          "Paulo descreve aos tessalonicenses uma relação marcada por afeto e entrega. Ele não fala apenas de transmitir uma mensagem, mas de compartilhar a própria vida. Essa perspectiva nos ajuda a compreender que pessoas não devem ser tratadas como projetos de evangelização.",
+          "Relacionamentos intencionais significam estar perto com propósito. É prestar atenção, conhecer a história da pessoa, ouvir suas dores, lembrar de suas necessidades, oferecer ajuda, orar por ela e construir confiança. Quando existe relacionamento verdadeiro, o anúncio de Cristo deixa de ser uma abordagem isolada e passa a fazer parte de uma caminhada.",
+          "Isso não significa manipular amizades para conseguir uma oportunidade religiosa. Significa amar pessoas de maneira genuína e estar disposto a caminhar com elas. Algumas portas serão abertas rapidamente; outras exigirão tempo, paciência e presença.",
+          "A pergunta deste dia não é apenas \"Quem posso evangelizar?\", mas \"Com quem Deus me chama para caminhar?\". Quando deixamos de enxergar pessoas como alvos e começamos a enxergá-las como pessoas que Deus ama, nossa maneira de viver a missão muda."
         ],
         "artigo": {
           "titulo": "Relacionamentos intencionais: como construir pontes para compartilhar o evangelho",
           "url": "https://feemmissao.com.br/2026/09/15/relacionamentos-intencionais-na-evangelizacao/"
         },
+        "desafioArtigo": "Escolha uma das cinco pessoas e faça um gesto concreto de cuidado: uma ligação, uma mensagem, uma visita ou uma ajuda.",
         "diarioPerguntas": [
           "Tenho demonstrado interesse genuíno pelas pessoas ou apenas procurado oportunidades para falar?",
           "Quem precisa de uma conversa, uma oração ou um gesto concreto de cuidado da minha parte?",
@@ -773,15 +781,18 @@ export const stages: Stage[] = [
           "texto": "Aprender como fazer discípulos é compreender que a missão de Jesus vai além de anunciar o evangelho: envolve acompanhar pessoas, ensiná-las a viver a fé e ajudá-las a multiplicar."
         },
         "resumoTelas": [
-          "Evangelização e discipulado não são duas etapas independentes da missão cristã. Na prática de Jesus e dos apóstolos, anúncio, relacionamento, formação e envio faziam parte de um mesmo movimento.",
-          "Uma profissão de fé é importante, mas o chamado de Jesus é para uma vida de seguimento. A pergunta não é apenas \"a pessoa aceitou?\", mas também \"como ela está caminhando?\"",
-          "Discipulado não se resume a transmitir informações. Envolve relacionamento, exemplo, prática, correção, encorajamento e obediência. Quem discipula não ocupa o centro — ajuda outra pessoa a olhar para Cristo.",
-          "2Timóteo 2.2 apresenta uma visão multiplicadora: aquilo que foi recebido é transmitido a pessoas fiéis que também poderão ensinar outros. O discipulado amadurece quando aquele que foi cuidado começa a cuidar de outros."
+          "Fazer discípulos é o centro da Grande Comissão. Mas precisamos compreender isso como Jesus e os apóstolos viviam a missão: não como uma sequência de programas separados, mas como um movimento integrado de presença, relacionamento, anúncio, formação, envio e multiplicação.",
+          "A distinção entre evangelização e discipulado pode ser útil para explicar diferentes aspectos da missão, mas é apenas didática. Jesus não separava sua vida em momentos chamados \"evangelização\" e \"discipulado\". Ele estava com pessoas, anunciava o Reino, chamava-as para segui-lo, ensinava, corrigia, cuidava, formava e enviava. Tudo fazia parte de sua missão.",
+          "Por isso, não precisamos pensar: primeiro evangelizo, depois a pessoa se converte e somente então começo o discipulado. A evangelização já pode ser discipuladora quando anuncia Cristo com o propósito de conduzir pessoas a segui-lo. E o discipulado continua sendo missionário quando forma discípulos que também são enviados.",
+          "Fazer discípulos envolve caminhar. É ajudar alguém a conhecer Jesus, aprender seus ensinamentos, praticar sua vontade e crescer em sua relação com Deus e com a comunidade. Esse processo não termina quando alguém toma uma decisão; ele amadurece à medida que a pessoa aprende a viver como discípulo.",
+          "E há um horizonte ainda maior: multiplicação. Paulo orienta Timóteo a transmitir o que recebeu a pessoas fiéis que também fossem capazes de ensinar outros. O discípulo amadurecido não é apenas alguém que cresceu; é alguém que também passa a participar da formação de outros.",
+          "Assim, o movimento pode ser compreendido desta forma: presença → relacionamento → anúncio → seguimento → formação → envio → multiplicação. A missão começa com a presença e encontra seu propósito quando discípulos ajudam outros discípulos a seguir Jesus."
         ],
         "artigo": {
           "titulo": "Como fazer discípulos? Da presença à multiplicação",
           "url": "https://feemmissao.com.br/2026/09/15/como-fazer-discipulos/"
         },
+        "desafioArtigo": "Pense em uma pessoa com quem você pode caminhar de maneira intencional. Ore por ela e dê hoje um primeiro passo para aprofundar esse relacionamento.",
         "diarioPerguntas": [
           "Tenho acompanhado alguém de maneira intencional em sua caminhada com Cristo?",
           "Minha evangelização aponta para uma caminhada ou termina na decisão inicial?",

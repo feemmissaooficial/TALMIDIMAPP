@@ -663,35 +663,130 @@ export const stages: Stage[] = [
         "title": "Dia 1",
         "confronto": "Nos últimos 7 dias, você falou sobre Jesus com alguém fora da sua bolha cristã?",
         "direcao": "Estação 3: Evangelização Discipuladora. A boa notícia não é guardada — é passada adiante. O discípulo vive para ser luz onde há escuridão.",
-        "acao": "Liste 5 pessoas do seu círculo que não têm fé ou não frequentam uma igreja.\nOre por cada uma pelo nome hoje.\nGuarde essa lista — ela guiará sua intercessão nos próximos 21 dias."
+        "acao": "Liste 5 pessoas do seu círculo que não têm fé ou não frequentam uma igreja.\nOre por cada uma pelo nome hoje.\nGuarde essa lista — ela guiará sua intercessão nos próximos 21 dias.",
+        "artigoRico": {
+          "titulo": "Todo cristão deve evangelizar? Entenda por que todo discípulo é enviado",
+          "texto": "Todo cristão deve evangelizar porque a missão não foi entregue apenas a especialistas, mas faz parte da identidade de quem foi reconciliado com Deus."
+        },
+        "resumoTelas": [
+          "Todo cristão deve evangelizar porque a missão não foi entregue apenas a especialistas, mas faz parte da identidade de quem foi reconciliado com Deus.",
+          "A evangelização não deve ocupar apenas um espaço periférico na vida cristã — ela está ligada à própria identidade da Igreja. O discípulo não é chamado só para receber a mensagem, mas para participar da missão daquele que o alcançou.",
+          "Paulo afirma que Deus nos reconciliou consigo por meio de Cristo e nos confiou o ministério da reconciliação (2Coríntios 5.18). Isso não significa que todos tenham o mesmo dom — mas a diversidade de funções não elimina a responsabilidade missionária comum.",
+          "Você não precisa esperar uma grande oportunidade. Sua missão começa nas relações que já fazem parte da sua vida: família, amigos, vizinhos, colegas. A missão cotidiana começa quando deixamos de perguntar \"quem vai evangelizar?\" e passamos a perguntar \"como Deus pode me usar aqui?\""
+        ],
+        "artigo": {
+          "titulo": "Todo cristão deve evangelizar? Entenda por que todo discípulo é enviado",
+          "url": "https://feemmissao.com.br/2026/09/15/todo-cristao-deve-evangelizar/"
+        },
+        "diarioPerguntas": [
+          "Tenho tratado a evangelização como responsabilidade pessoal ou como tarefa de outras pessoas?",
+          "Quem Deus já colocou no meu círculo de relacionamentos?",
+          "Qual passo concreto posso dar esta semana para viver minha identidade missionária?"
+        ]
       },
       {
         "day": 2,
         "title": "Dia 2",
         "confronto": "Você tem vergonha do Evangelho ou tem vergonha de como alguns cristãos o apresentam?",
         "direcao": "'Não me envergonho do Evangelho de Cristo, porque é o poder de Deus para salvação.' — Romanos 1:16",
-        "acao": "Leia Romanos 1:16.\nPergunte a si mesmo: o que me impede de falar de Jesus naturalmente?\nOre sobre a resposta.\nHoje: mencione Deus em uma conversa comum — sem forçar, sem pregar."
+        "acao": "Leia Romanos 1:16.\nPergunte a si mesmo: o que me impede de falar de Jesus naturalmente?\nOre sobre a resposta.\nHoje: mencione Deus em uma conversa comum — sem forçar, sem pregar.",
+        "artigoRico": {
+          "titulo": "Como evangelizar no dia a dia: quando a fé transborda para a vida",
+          "texto": "Aprender como evangelizar no dia a dia começa por integrar a fé à rotina, permitindo que atitudes, relacionamentos, conversas e cuidado expressem o evangelho."
+        },
+        "resumoTelas": [
+          "Evangelizar no cotidiano não significa transformar cada conversa em um discurso religioso. Significa viver uma fé integrada à rotina — Jesus ensinou que a luz deve brilhar diante das pessoas (Mateus 5.16).",
+          "As oportunidades estão nas conversas comuns. Uma pessoa compartilha uma dor, outra fala sobre uma dúvida — o discípulo atento não precisa fabricar oportunidades, aprende a reconhecê-las.",
+          "Ouça antes de falar. A escuta nos impede de transformar a evangelização em uma apresentação pronta. O evangelho é sempre anunciado a pessoas concretas, não a abstrações.",
+          "Quando houver abertura, fale com simplicidade sobre Cristo. A pergunta deixa de ser \"quando vou evangelizar?\" e passa a ser \"como minha fé está aparecendo na vida que já estou vivendo?\""
+        ],
+        "artigo": {
+          "titulo": "Como evangelizar no dia a dia: quando a fé transborda para a vida",
+          "url": "https://feemmissao.com.br/2026/09/15/como-evangelizar-no-dia-a-dia/"
+        },
+        "diarioPerguntas": [
+          "Minha fé é percebida nas minhas atitudes cotidianas?",
+          "Tenho mais pressa de falar ou disposição para ouvir?",
+          "Que situação comum da minha rotina pode se tornar uma oportunidade de cuidado e testemunho?"
+        ]
       },
       {
         "day": 3,
         "title": "Dia 3",
         "confronto": "Quando foi a última vez que você convidou alguém sem igreja para um culto ou para uma conversa sobre fé?",
         "direcao": "Evangelização não é programa da igreja — é estilo de vida do discípulo.",
-        "acao": "Escolha uma das 5 pessoas da sua lista.\nEntre em contato hoje — não para evangelizar, para cuidar.\nPergunte como ela está de verdade.\nOuça. Relacionamento antes de mensagem."
+        "acao": "Escolha uma das 5 pessoas da sua lista.\nEntre em contato hoje — não para evangelizar, para cuidar.\nPergunte como ela está de verdade.\nOuça. Relacionamento antes de mensagem.",
+        "artigoRico": {
+          "titulo": "Onde Deus já está trabalhando? Como perceber oportunidades para evangelizar",
+          "texto": "Perceber oportunidades para evangelizar exige atenção ao que Deus já está fazendo na vida das pessoas e disposição para participar com sabedoria, amor e presença."
+        },
+        "resumoTelas": [
+          "Deus está agindo no mundo antes de chegarmos a qualquer pessoa. Jesus afirmou que o Pai continua trabalhando (João 5.17). A missão não começa em nossa capacidade de produzir resultados, mas na iniciativa de Deus.",
+          "Uma oração simples pode mudar nossa maneira de caminhar: \"Senhor, leva-me às pessoas nas quais Tu já estás agindo.\" Quando oramos assim, começamos a prestar atenção.",
+          "Perceber oportunidades não significa transformar pessoas em alvos. Cada pessoa possui história, dores, perguntas e dignidade. Às vezes, participar do que Deus está fazendo significa simplesmente permanecer presente e cuidar.",
+          "Observe necessidades, conversas e momentos de abertura. Nem toda oportunidade exige uma longa explicação — às vezes o próximo passo é ouvir; em outra, é orar; em outra, compartilhar o evangelho."
+        ],
+        "artigo": {
+          "titulo": "Onde Deus já está trabalhando? Como perceber oportunidades para evangelizar",
+          "url": "https://feemmissao.com.br/2026/09/15/oportunidades-para-evangelizar/"
+        },
+        "diarioPerguntas": [
+          "Em quais pessoas percebo sinais de abertura, necessidade ou busca espiritual?",
+          "Tenho pedido a Deus que me mostre onde Ele já está trabalhando?",
+          "Quando foi a última vez que percebi uma oportunidade e decidi me aproximar?"
+        ]
       },
       {
         "day": 4,
         "title": "Dia 4",
         "confronto": "Você sabe compartilhar seu testemunho em 2 minutos? O que Jesus mudou em você?",
         "direcao": "Todo discípulo tem uma história. A sua é a ferramenta mais poderosa que você tem.",
-        "acao": "Escreva seu testemunho em 3 partes: como você era, o que aconteceu, o que mudou.\nMáximo 2 minutos falando.\nPratique em voz alta, sozinho.\nEsteja pronto para compartilhar quando a oportunidade surgir."
+        "acao": "Escreva seu testemunho em 3 partes: como você era, o que aconteceu, o que mudou.\nMáximo 2 minutos falando.\nPratique em voz alta, sozinho.\nEsteja pronto para compartilhar quando a oportunidade surgir.",
+        "artigoRico": {
+          "titulo": "Relacionamentos intencionais: como construir pontes para compartilhar o evangelho",
+          "texto": "Relacionamentos intencionais na evangelização não significam manipular amizades, mas amar pessoas conscientemente, estar presente e reconhecer oportunidades de oração, cuidado e testemunho."
+        },
+        "resumoTelas": [
+          "Relacionamentos intencionais na evangelização não significam manipular amizades, mas amar pessoas conscientemente. Ser intencional é escolher estar presente, conhecer a pessoa e permanecer disponível para o propósito de Deus.",
+          "Nos Evangelhos, Jesus encontra pessoas em diferentes contextos — conversa, pergunta, ouve, acolhe. O discipulador não procura apenas uma oportunidade para falar; procura conhecer pessoas e caminhar com elas.",
+          "1Tessalonicenses 2.8 fala do desejo de compartilhar não apenas o evangelho, mas a própria vida. Perguntas simples como \"Como você está de verdade?\" podem aprofundar relacionamentos e abrir espaço para conversas mais profundas.",
+          "Quando alguém demonstra interesse por Cristo, o relacionamento não termina — a evangelização discipuladora aponta para acompanhamento. A ponte construída para compartilhar o evangelho pode se tornar também um caminho de discipulado."
+        ],
+        "artigo": {
+          "titulo": "Relacionamentos intencionais: como construir pontes para compartilhar o evangelho",
+          "url": "https://feemmissao.com.br/2026/09/15/relacionamentos-intencionais-na-evangelizacao/"
+        },
+        "diarioPerguntas": [
+          "Tenho demonstrado interesse genuíno pelas pessoas ou apenas procurado oportunidades para falar?",
+          "Quem precisa de uma conversa, uma oração ou um gesto concreto de cuidado da minha parte?",
+          "Que relacionamento posso cultivar com mais intencionalidade nesta semana?"
+        ]
       },
       {
         "day": 5,
         "title": "Dia 5",
         "confronto": "Você ora diariamente pelas 5 pessoas da sua lista de evangelização?",
         "direcao": "Intercessão é o primeiro passo da evangelização. Antes da palavra, a oração.",
-        "acao": "Ore hoje pelos 5 nomes da sua lista.\nPeça a Deus que abra portas de conversa.\nPeça que Ele trabalhe no coração de cada um.\nEsteja disponível para ser a resposta da sua própria oração."
+        "acao": "Ore hoje pelos 5 nomes da sua lista.\nPeça a Deus que abra portas de conversa.\nPeça que Ele trabalhe no coração de cada um.\nEsteja disponível para ser a resposta da sua própria oração.",
+        "artigoRico": {
+          "titulo": "Como fazer discípulos? Da presença à multiplicação",
+          "texto": "Aprender como fazer discípulos é compreender que a missão de Jesus vai além de anunciar o evangelho: envolve acompanhar pessoas, ensiná-las a viver a fé e ajudá-las a multiplicar."
+        },
+        "resumoTelas": [
+          "Evangelização e discipulado não são duas etapas independentes da missão cristã. Na prática de Jesus e dos apóstolos, anúncio, relacionamento, formação e envio faziam parte de um mesmo movimento.",
+          "Uma profissão de fé é importante, mas o chamado de Jesus é para uma vida de seguimento. A pergunta não é apenas \"a pessoa aceitou?\", mas também \"como ela está caminhando?\"",
+          "Discipulado não se resume a transmitir informações. Envolve relacionamento, exemplo, prática, correção, encorajamento e obediência. Quem discipula não ocupa o centro — ajuda outra pessoa a olhar para Cristo.",
+          "2Timóteo 2.2 apresenta uma visão multiplicadora: aquilo que foi recebido é transmitido a pessoas fiéis que também poderão ensinar outros. O discipulado amadurece quando aquele que foi cuidado começa a cuidar de outros."
+        ],
+        "artigo": {
+          "titulo": "Como fazer discípulos? Da presença à multiplicação",
+          "url": "https://feemmissao.com.br/2026/09/15/como-fazer-discipulos/"
+        },
+        "diarioPerguntas": [
+          "Tenho acompanhado alguém de maneira intencional em sua caminhada com Cristo?",
+          "Minha evangelização aponta para uma caminhada ou termina na decisão inicial?",
+          "Quem poderia ser ajudado por mim a crescer e, depois, discipular outras pessoas?"
+        ]
       },
       {
         "day": 6,

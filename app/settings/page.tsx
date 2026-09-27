@@ -2,31 +2,70 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, Bell, BellRing, Clock, Save, Info, Users } from "lucide-react";
+import { ArrowLeft, Bell, BellRing, Clock, Save, Info, Users, MapPin } from "lucide-react";
 import BottomNav from "../components/BottomNav";
+import { createClient } from "../../utils/supabase/client";
 
 export default function SettingsPage() {
   const router = useRouter();
-  
+  const supabase = createClient();
+
   const [mounted, setMounted] = useState(false);
   const [permission, setPermission] = useState<NotificationPermission>("default");
-  
+
   const [tsdTime, setTsdTime] = useState("06:30");
   const [pddTime, setPddTime] = useState("20:00");
   const [saved, setSaved] = useState(false);
+
+  // Perfil (estado, cidade, idade) — opcional, usado só para estatísticas do painel do pastor
+  const [estado, setEstado] = useState("");
+  const [cidade, setCidade] = useState("");
+  const [idade, setIdade] = useState("");
+  const [salvandoPerfil, setSalvandoPerfil] = useState(false);
+  const [perfilSalvo, setPerfilSalvo] = useState(false);
 
   useEffect(() => {
     setMounted(true);
     if ("Notification" in window) {
       setPermission(Notification.permission);
     }
-    
+
     // Load from local storage
     const savedTsd = localStorage.getItem("talmidim_tsd_time");
     const savedPdd = localStorage.getItem("talmidim_pdd_time");
     if (savedTsd) setTsdTime(savedTsd);
     if (savedPdd) setPddTime(savedPdd);
-  }, []);
+
+    const carregarPerfil = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) return;
+      const { data } = await supabase
+        .from("user_roles")
+        .select("estado, cidade, idade")
+        .eq("user_id", session.user.id)
+        .single();
+      if (data) {
+        if (data.estado) setEstado(data.estado);
+        if (data.cidade) setCidade(data.cidade);
+        if (data.idade) setIdade(String(data.idade));
+      }
+    };
+    carregarPerfil();
+  }, [supabase]);
+
+  const handleSalvarPerfil = async () => {
+    setSalvandoPerfil(true);
+    const { error } = await supabase.rpc("update_my_profile_details", {
+      p_estado: estado || null,
+      p_cidade: cidade || null,
+      p_idade: idade ? Number(idade) : null,
+    });
+    setSalvandoPerfil(false);
+    if (!error) {
+      setPerfilSalvo(true);
+      setTimeout(() => setPerfilSalvo(false), 3000);
+    }
+  };
 
   const requestPermission = async () => {
     if (!("Notification" in window)) {
@@ -96,7 +135,56 @@ export default function SettingsPage() {
         )}
 
         <div className="space-y-6">
-          
+
+          {/* Perfil: estado, cidade, idade */}
+          <div className="bg-bg-card border border-accent/20 rounded-2xl p-5 shadow-sm">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
+                <MapPin className="text-accent" size={20} />
+              </div>
+              <div>
+                <h3 className="text-[16px] font-bold text-text-main">Meu Perfil</h3>
+                <p className="text-[12px] text-text-muted leading-tight mt-1">
+                  Opcional. Ajuda sua igreja a entender melhor quem está na jornada.
+                </p>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-3 mb-3">
+              <input
+                type="text"
+                value={estado}
+                onChange={(e) => setEstado(e.target.value)}
+                placeholder="Estado (ex: AP)"
+                className="bg-bg-main border border-accent/30 rounded-xl p-3 text-text-main text-[14px]"
+              />
+              <input
+                type="text"
+                value={cidade}
+                onChange={(e) => setCidade(e.target.value)}
+                placeholder="Cidade"
+                className="bg-bg-main border border-accent/30 rounded-xl p-3 text-text-main text-[14px]"
+              />
+            </div>
+            <input
+              type="number"
+              value={idade}
+              onChange={(e) => setIdade(e.target.value)}
+              placeholder="Idade"
+              min={5}
+              max={120}
+              className="w-full bg-bg-main border border-accent/30 rounded-xl p-3 text-text-main text-[14px] mb-3"
+            />
+            <button
+              onClick={handleSalvarPerfil}
+              disabled={salvandoPerfil}
+              className={`w-full py-3 rounded-xl font-bold transition-all ${
+                perfilSalvo ? "bg-green-600 text-white" : "bg-text-main text-bg-main"
+              }`}
+            >
+              {perfilSalvo ? "Salvo!" : salvandoPerfil ? "Salvando..." : "Salvar Perfil"}
+            </button>
+          </div>
+
           {/* TSD Time */}
           <div className="bg-bg-card border border-accent/20 rounded-2xl p-5 shadow-sm">
             <div className="flex items-start gap-4 mb-4">

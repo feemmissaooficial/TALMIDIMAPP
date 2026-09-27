@@ -178,11 +178,18 @@ export default function PastorDashboard() {
 
         {/* Ações do Pastor */}
         <div className="space-y-3">
-          <button className="w-full bg-bg-main border border-accent/30 text-text-main py-4 rounded-xl font-bold active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+          <button
+            onClick={() => router.push("/pastor/membros")}
+            className="w-full bg-bg-main border border-accent/30 text-text-main py-4 rounded-xl font-bold active:scale-[0.98] transition-all flex items-center justify-center gap-2"
+          >
             Ver Lista de Membros
           </button>
-          <button className="w-full bg-bg-main border border-accent/30 text-text-main py-4 rounded-xl font-bold active:scale-[0.98] transition-all flex items-center justify-center gap-2">
-            Gerenciar Liderança
+          <button
+            disabled
+            title="Em breve"
+            className="w-full bg-bg-main border border-accent/10 text-text-muted py-4 rounded-xl font-bold opacity-50 cursor-not-allowed flex items-center justify-center gap-2"
+          >
+            Gerenciar Liderança (em breve)
           </button>
         </div>
 

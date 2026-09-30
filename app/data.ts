@@ -922,35 +922,40 @@ export const stages: Stage[] = [
         "title": "Dia 1",
         "confronto": "Nos últimos 7 dias, você viu alguém em necessidade e passou por cima — ou parou?",
         "direcao": "Estação 4: Compaixão e Graça. O discípulo não passa por cima da dor do outro. Ele para, desce e cuida. Como o bom samaritano.",
-        "acao": "Leia Lucas 10:30-37.\nPergunte: quem é meu próximo nesta semana?\nIdentifique uma pessoa em necessidade real ao seu redor.\nPlaneje uma ação concreta de cuidado para esta semana."
+        "acao": "Leia Lucas 10:30-37.\nPergunte: quem é meu próximo nesta semana?\nIdentifique uma pessoa em necessidade real ao seu redor.\nPlaneje uma ação concreta de cuidado para esta semana.",
+        "videoUrl": "https://youtu.be/ot5nwY3ENfk"
       },
       {
         "day": 2,
         "title": "Dia 2",
         "confronto": "Você participa das ações sociais da sua igreja — ou deixa isso para os que 'têm dom de misericórdia'?",
         "direcao": "Compaixão não é dom de poucos — é marca de todo discípulo de Jesus.",
-        "acao": "Verifique as ações sociais da sua igreja.\nEscolha uma para participar esta semana ou este mês.\nNão espere ser chamado — ofereça-se.\nDê um passo concreto hoje."
+        "acao": "Verifique as ações sociais da sua igreja.\nEscolha uma para participar esta semana ou este mês.\nNão espere ser chamado — ofereça-se.\nDê um passo concreto hoje.",
+        "videoUrl": "https://youtu.be/Jh4CEl_LL84"
       },
       {
         "day": 3,
         "title": "Dia 3",
         "confronto": "Você visita pessoas doentes, solitárias ou que não podem sair de casa?",
         "direcao": "'Visitei-me enfermo e me fostes ver.' — Mateus 25:36. Presença é ministério.",
-        "acao": "Identifique uma pessoa hospitalizada, idosa ou isolada.\nVisite ou ligue hoje.\nNão porque tem o que dizer — porque sua presença já é o ministério.\nFique o tempo que precisar."
+        "acao": "Identifique uma pessoa hospitalizada, idosa ou isolada.\nVisite ou ligue hoje.\nNão porque tem o que dizer — porque sua presença já é o ministério.\nFique o tempo que precisar.",
+        "videoUrl": "https://youtu.be/EjUKH-uMpKE"
       },
       {
         "day": 4,
         "title": "Dia 4",
         "confronto": "Quando você doa, doa com alegria — ou com obrigação calculada?",
         "direcao": "'Cada um dê conforme propôs no coração, não com tristeza nem por necessidade, porque Deus ama ao que dá com alegria.' — 2 Coríntios 9:7",
-        "acao": "Faça uma doação hoje — dinheiro, tempo ou recurso.\nEscolha com alegria, não por obrigação.\nSe possível: faça anonimamente.\nOre antes: 'Senhor, uso isso como ato de amor, não de performance.'"
+        "acao": "Faça uma doação hoje — dinheiro, tempo ou recurso.\nEscolha com alegria, não por obrigação.\nSe possível: faça anonimamente.\nOre antes: 'Senhor, uso isso como ato de amor, não de performance.'",
+        "videoUrl": "https://youtu.be/EcG2HtacXPA"
       },
       {
         "day": 5,
         "title": "Dia 5",
         "confronto": "Você tem se colocado disponível quando vê alguém em dificuldade — ou espera que alguém mais habilitado apareça?",
         "direcao": "Disponibilidade é a primeira forma de compaixão. Você não precisa ter todas as respostas.",
-        "acao": "Esta semana: quando ver necessidade, não passe para o lado.\nPergunta: 'Posso ajudar?'\nSe não souber como: 'Posso orar com você agora?'\nFaça isso ao menos uma vez hoje."
+        "acao": "Esta semana: quando ver necessidade, não passe para o lado.\nPergunta: 'Posso ajudar?'\nSe não souber como: 'Posso orar com você agora?'\nFaça isso ao menos uma vez hoje.",
+        "videoUrl": "https://youtu.be/dueJjlmD5QM"
       },
       {
         "day": 6,
@@ -1075,35 +1080,40 @@ export const stages: Stage[] = [
         "title": "Dia 1",
         "confronto": "Como você administra seu tempo? Ele reflete que Deus é prioridade — ou revela o contrário?",
         "direcao": "Estação 5: Mordomia Cristã. 'Do Senhor é a terra e tudo o que nela existe.' Tudo que você tem foi confiado a você. Gerencie com fidelidade.",
-        "acao": "Abra sua agenda desta semana.\nIdentifique 3 blocos de tempo que estão sendo gastos em algo que não edifica.\nSubstitua um deles por algo que serve a Deus ou ao próximo.\nFaça isso hoje."
+        "acao": "Abra sua agenda desta semana.\nIdentifique 3 blocos de tempo que estão sendo gastos em algo que não edifica.\nSubstitua um deles por algo que serve a Deus ou ao próximo.\nFaça isso hoje.",
+        "videoUrl": "https://youtu.be/zjfVLy0YyuM"
       },
       {
         "day": 2,
         "title": "Dia 2",
         "confronto": "Você é dizimista fiel — ou dá quando sobra?",
         "direcao": "O dízimo não é para a igreja prosperar — é para o discípulo aprender que Deus é o dono de tudo.",
-        "acao": "Verifique: você tem dado o dízimo regularmente?\nSe sim: ore de gratidão pela fidelidade.\nSe não: decida hoje. Calcule. Dê na próxima oportunidade.\nOre: 'Senhor, reconheço que tudo é Teu.'"
+        "acao": "Verifique: você tem dado o dízimo regularmente?\nSe sim: ore de gratidão pela fidelidade.\nSe não: decida hoje. Calcule. Dê na próxima oportunidade.\nOre: 'Senhor, reconheço que tudo é Teu.'",
+        "videoUrl": "https://youtu.be/huW7nNadV6c"
       },
       {
         "day": 3,
         "title": "Dia 3",
         "confronto": "Você gasta mais do que ganha? Suas finanças refletem disciplina ou impulsividade?",
         "direcao": "'O tolo gasta tudo o que tem; o sábio guarda para o futuro.' — Provérbios 21:20",
-        "acao": "Faça um levantamento honesto: quanto entra, quanto sai.\nIdentifique um gasto desnecessário.\nElimina-o esta semana.\nOre pedindo sabedoria para administrar o que Deus te deu."
+        "acao": "Faça um levantamento honesto: quanto entra, quanto sai.\nIdentifique um gasto desnecessário.\nElimina-o esta semana.\nOre pedindo sabedoria para administrar o que Deus te deu.",
+        "videoUrl": "https://youtu.be/ZRGaBrh1L-s"
       },
       {
         "day": 4,
         "title": "Dia 4",
         "confronto": "Você cuida da sua saúde como um mordomo fiel do corpo que Deus te deu?",
         "direcao": "Seu corpo é templo do Espírito Santo. Negligenciá-lo não é humildade — é irresponsabilidade.",
-        "acao": "Avalie: sono, alimentação, exercício.\nEscolha uma área para melhorar esta semana.\nFaça algo prático hoje: caminhe, durma mais cedo, escolha melhor o que comer.\nOre sobre sua saúde."
+        "acao": "Avalie: sono, alimentação, exercício.\nEscolha uma área para melhorar esta semana.\nFaça algo prático hoje: caminhe, durma mais cedo, escolha melhor o que comer.\nOre sobre sua saúde.",
+        "videoUrl": "https://youtu.be/W4MdZHN61gc"
       },
       {
         "day": 5,
         "title": "Dia 5",
         "confronto": "Você reserva um dia de descanso semanal — ou o descanso é o que sobra depois de tudo?",
         "direcao": "O Sabbath não foi sugestão — foi mandamento. Descanso é ato de confiança em Deus.",
-        "acao": "Defina seu dia de descanso desta semana.\nO que você vai deixar de fazer nesse dia?\nPlaneje algo restaurador: caminhada, conversa, leitura prazerosa.\nProteja esse tempo como compromisso sagrado."
+        "acao": "Defina seu dia de descanso desta semana.\nO que você vai deixar de fazer nesse dia?\nPlaneje algo restaurador: caminhada, conversa, leitura prazerosa.\nProteja esse tempo como compromisso sagrado.",
+        "videoUrl": "https://youtu.be/Ajt47-qdF-A"
       },
       {
         "day": 6,

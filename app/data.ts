@@ -1391,35 +1391,133 @@ export const stages: Stage[] = [
         "title": "Dia 1",
         "confronto": "Você tem pessoas na sua igleja em quem confia como confidentes — ou vive a fé de forma isolada?",
         "direcao": "Estação 7: Comunhão com os Santos. 'Em Disto todos conhecerão que sois meus discípulos: se tiverdes amor uns aos outros.' — João 13:35",
-        "acao": "Liste pessoas de fé com quem você tem vínculos reais.\nSe a lista estiver vazia ou com poucos nomes: isso é o ponto de partida desta estação.\nOre: 'Senhor, dá-me comunidade real.'"
+        "acao": "Liste pessoas de fé com quem você tem vínculos reais.\nSe a lista estiver vazia ou com poucos nomes: isso é o ponto de partida desta estação.\nOre: 'Senhor, dá-me comunidade real.'",
+        "artigoRico": {
+          "titulo": "Comunhão cristã: por que não vivemos a fé sozinhos",
+          "texto": "Estar conectado não é ter comunhão. É possível frequentar o mesmo culto, cantar as mesmas canções e ainda assim viver a fé de forma individualizada."
+        },
+        "resumoTelas": [
+          "Conexão não significa comunhão. Estamos conectados a muitas pessoas, mas isso não garante vínculos profundos — nem dentro da igreja.",
+          "A experiência cristã pode se tornar individualizada mesmo dentro do templo: a igreja pode parecer uma fila de cinema, onde todos compartilham o espaço, mas pouco se conectam. Ou um shopping, onde cada um pega o que precisa e vai embora.",
+          "A comunhão não é detalhe da vida cristã. Em Atos 2.42, os primeiros cristãos perseveravam na comunhão, e Jesus ligou a identidade dos discípulos ao amor mútuo (João 13.34–35).",
+          "A pergunta não é só \"estou frequentando a igreja?\", mas \"estou vivendo a fé com meus irmãos?\". Comunhão é participação, sociedade e amizade — ter vida em comum."
+        ],
+        "artigo": {
+          "titulo": "Comunhão cristã: por que não vivemos a fé sozinhos",
+          "url": "https://feemmissao.com.br/2026/10/05/comunhao-crista-fe-nao-vivida-sozinho/"
+        },
+        "diarioPerguntas": [
+          "Você sente que pertence à igreja, que é parte dela?",
+          "Em quais momentos sua experiência cristã corre o risco de ficar concentrada apenas em você?",
+          "Você tem construído vínculos com irmãos de fé para além dos encontros formais da igreja?"
+        ]
       },
       {
         "day": 2,
         "title": "Dia 2",
         "confronto": "Você fica após os cultos conversando com seus irmãos de fé — ou vai embora assim que termina?",
         "direcao": "'Não deixando de nos reunirmos.' — Hebreus 10:25. Comunhão acontece no tempo não programado.",
-        "acao": "No próximo culto ou reunião: fique ao menos 30 minutos depois.\nConverse. Pergunte. Ouça.\nNão para cumprir tarefa — para fazer conexão real."
+        "acao": "No próximo culto ou reunião: fique ao menos 30 minutos depois.\nConverse. Pergunte. Ouça.\nNão para cumprir tarefa — para fazer conexão real.",
+        "artigoRico": {
+          "titulo": "Frequentar a igreja é o mesmo que pertencer?",
+          "texto": "Frequentar não é pertencer. Pertencer é mais profundo do que ocupar um espaço: envolve reconhecer que minha história está ligada à de outros irmãos."
+        },
+        "resumoTelas": [
+          "É possível estar anos em uma igreja sem sentir pertencimento. A diferença está entre \"eu vou à igreja\" e \"eu sou igreja com essas pessoas\".",
+          "Na Bíblia, os cristãos são \"concidadãos dos santos e da família de Deus\" (Efésios 2.19). Pertencer é reconhecer-se parte da comunidade, não apenas estar perto dela.",
+          "O pertencimento não nasce automaticamente: ambientes e programações não produzem vínculos profundos por si só. Ele exige iniciativa de se aproximar de quem ainda não faz parte do seu círculo.",
+          "Um passo simples: no próximo domingo, converse antes e depois do culto com duas pessoas que não fazem parte do seu círculo mais próximo. Comunhão pode começar com uma conversa."
+        ],
+        "artigo": {
+          "titulo": "Frequentar a igreja é o mesmo que pertencer?",
+          "url": "https://feemmissao.com.br/2026/10/05/pertencimento-a-igreja/"
+        },
+        "diarioPerguntas": [
+          "Você se sente parte da igreja ou apenas alguém que frequenta a igreja?",
+          "Que fatores têm impedido você de aprofundar relacionamentos com seus irmãos de fé?",
+          "Quais pessoas estão ao seu redor, mas ainda não fazem parte do seu círculo de relacionamento?"
+        ]
       },
       {
         "day": 3,
         "title": "Dia 3",
         "confronto": "Quando foi a última vez que você foi à casa de um irmão de fé — ou o convidou para a sua casa?",
         "direcao": "Comunhão acontece em mesas, casas e conversas. Não só em templos e programações formais.",
-        "acao": "Convide um irmão de fé para sua casa esta semana.\nRefeição simples, café, conversa.\nSem grande produção — só presença.\nSe não tiver espaço em casa: proponha um café fora."
+        "acao": "Convide um irmão de fé para sua casa esta semana.\nRefeição simples, café, conversa.\nSem grande produção — só presença.\nSe não tiver espaço em casa: proponha um café fora.",
+        "artigoRico": {
+          "titulo": "Comunhão cristã na prática: convivência além do culto",
+          "texto": "A reciprocidade bíblica só é possível através da convivência: comunhão exige tempo e presença, além dos encontros formais da igreja."
+        },
+        "resumoTelas": [
+          "Podemos acompanhar pessoas pelas redes e por mensagens, mas existe uma dimensão da comunhão que exige presença e convivência.",
+          "No culto encontramos irmãos em um momento específico. É na convivência que conhecemos histórias, percebemos crises, alegrias e quem precisa de companhia.",
+          "Hebreus 10.24–25 liga a reunião dos cristãos ao encorajamento mútuo. Um café, um passeio ou uma refeição podem abrir conversas que nunca aconteceriam no corredor da igreja. Às vezes, comunhão é simplesmente estar junto.",
+          "A convivência pode ser desconfortável, porque somos diferentes. Mas é essa multiplicidade que produz crescimento. Comunhão não é aumentar contatos: é aprofundar a qualidade dos vínculos."
+        ],
+        "artigo": {
+          "titulo": "Comunhão cristã na prática: convivência além do culto",
+          "url": "https://feemmissao.com.br/2026/10/05/comunhao-crista-na-pratica/"
+        },
+        "diarioPerguntas": [
+          "Com quais irmãos você convive além dos momentos formais da igreja?",
+          "Quando foi a última vez que você encontrou alguém da igreja simplesmente para estar junto?",
+          "Seu círculo de relacionamento dentro da igreja é amplo ou está concentrado sempre nas mesmas pessoas?",
+          "Que passo concreto você pode dar nesta semana para cultivar uma amizade cristã?"
+        ]
       },
       {
         "day": 4,
         "title": "Dia 4",
         "confronto": "Você tem pessoas que consideram amigos de fé — com quem pode ser vulnerable e honesto?",
         "direcao": "Amizade espiritual não é sobre ter alguém para orar junto nos eventos — é sobre ser conhecido de verdade.",
-        "acao": "Identifique uma pessoa de fé com quem você poderia ter uma conversa honesta.\nMarque um encontro esta semana.\nNa conversa: seja real. Não performance. Não devocional decorado.\nSeja você."
+        "acao": "Identifique uma pessoa de fé com quem você poderia ter uma conversa honesta.\nMarque um encontro esta semana.\nNa conversa: seja real. Não performance. Não devocional decorado.\nSeja você.",
+        "artigoRico": {
+          "titulo": "Uns aos outros na Bíblia: a prática da comunhão",
+          "texto": "A expressão \"uns aos outros\" torna concreta a ideia de comunhão: uma comunidade em que os membros cuidam uns dos outros."
+        },
+        "resumoTelas": [
+          "A Bíblia usa a linguagem da reciprocidade: amar, orar, carregar cargas, edificar, admoestar e exortar \"uns aos outros\". Não é só alguém fazendo algo por outro — é uma comunidade cuidando de si.",
+          "Amar uns aos outros (João 13.34–35) é o sinal do discipulado. Não depende de afinidade: é possível decidir tratar com amor quem não é do nosso círculo.",
+          "Orar uns pelos outros (Tiago 5.16) e carregar as cargas uns dos outros (Gálatas 6.2) significa não permanecer indiferente: perceber, aproximar-se e oferecer o que está ao nosso alcance.",
+          "Edificar, admoestar e exortar (1Ts 5.11; Rm 15.14) exigem vínculos profundos, com verdade e graça. Eu não existo só para receber da comunidade — minha vida também serve e cuida dos irmãos."
+        ],
+        "artigo": {
+          "titulo": "Uns aos outros na Bíblia: a prática da comunhão",
+          "url": "https://feemmissao.com.br/2026/10/05/uns-aos-outros-na-biblia/"
+        },
+        "diarioPerguntas": [
+          "Quem são as pessoas da sua comunidade pelas quais você tem orado?",
+          "Existe alguém cuja carga você poderia ajudar a carregar?",
+          "Você tem relacionamentos nos quais consegue receber conselho e também oferecer cuidado?",
+          "De que maneira sua presença tem contribuído para edificar outras pessoas?"
+        ]
       },
       {
         "day": 5,
         "title": "Dia 5",
         "confronto": "Você sai com seus irmãos de fé para encontros informais — fora das programações da igreja?",
         "direcao": "Os primeiros discípulos comiam juntos, andavam juntos, sofriam juntos. Comunhão é cotidiana, não só litúrgica.",
-        "acao": "Organize ou participe de um encontro informal com irmãos esta semana.\nRestaurante, praça, casa.\nSem pauta religiosa obrigatória — só vida compartilhada.\nIsso é comunhão."
+        "acao": "Organize ou participe de um encontro informal com irmãos esta semana.\nRestaurante, praça, casa.\nSem pauta religiosa obrigatória — só vida compartilhada.\nIsso é comunhão.",
+        "artigoRico": {
+          "titulo": "Como viver como igreja: de espectador a participante",
+          "texto": "A comunhão nos leva a uma mudança de posição: de espectador para participante. O espectador pergunta o que a igreja oferece; o participante, como pode contribuir."
+        },
+        "resumoTelas": [
+          "A igreja não é um serviço que consumimos. Na lógica do consumo, o relacionamento é substituído pela utilidade — e a comunhão perde espaço.",
+          "Paulo descreve a igreja como um corpo (1Co 12.27): cada pessoa é parte de algo maior, e sua presença tem relação com a vida dos demais.",
+          "Participar não é necessariamente ocupar uma função. Começa em conhecer pessoas, ser conhecido, ouvir, celebrar com quem celebra e aproximar-se de quem sofre.",
+          "Comunhão não acontece de uma vez: é construída na convivência, na reciprocidade e na disposição de caminhar juntos. Pense nos nomes das pessoas, não só na frequência aos cultos."
+        ],
+        "artigo": {
+          "titulo": "Como viver como igreja: de espectador a participante",
+          "url": "https://feemmissao.com.br/2026/10/05/como-viver-como-igreja/"
+        },
+        "desafioArtigo": "Nesta semana, tenha um tempo de qualidade com um irmão ou uma irmã da igreja. Além disso, converse, antes ou depois do culto, com duas pessoas que não fazem parte do seu círculo de amizade mais próximo. Não transforme isso em tarefa mecânica: conheça pessoas, escute, pergunte, esteja presente.",
+        "diarioPerguntas": [
+          "Você sente que pertence à igreja, que é parte dela?",
+          "Quem conhece suas lutas e alegrias na sua comunidade?",
+          "Que passo concreto você pode dar nesta semana para deixar de ser espectador e passar a participar?"
+        ]
       },
       {
         "day": 6,

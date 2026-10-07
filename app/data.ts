@@ -437,7 +437,8 @@ export const stages: Stage[] = [
         "desafioArtigo": "Olhe para sua casa com novos olhos. Hoje, observe conscientemente sua maneira de se relacionar com sua família. Perceba suas palavras, suas reações, seus momentos de presença e também aquilo que costuma gerar tensão. Não tente resolver tudo. Apenas observe e pergunte: O que da minha caminhada com Deus já pode ser percebido na maneira como trato minha família?",
         "diarioPerguntas": [
           "O que percebi sobre mim hoje?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/ouZmLZuQpdY"
       },
       {
         "day": 2,
@@ -462,7 +463,8 @@ export const stages: Stage[] = [
         "desafioArtigo": "Esteja presente. Escolha hoje um momento para estar com sua família de forma intencional. Pode ser uma refeição, uma conversa, uma caminhada ou uma atividade simples. Durante esse momento: deixe de lado as distrações; escute de verdade; faça perguntas; esteja inteiro naquele encontro. Não precisa fazer algo especial. Precisa estar presente.",
         "diarioPerguntas": [
           "Como foi estar verdadeiramente presente? O que percebi sobre minha família e sobre mim?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/uQWJipvAdYo"
       },
       {
         "day": 3,
@@ -488,7 +490,8 @@ export const stages: Stage[] = [
         "desafioArtigo": "Escolha uma atitude de amor. Hoje, faça intencionalmente algo que demonstre amor, respeito ou cuidado por alguém da sua família. Se você é casado(a): separe um período de qualidade com seu cônjuge. Planeje esse momento, proteja-o das interrupções e esteja verdadeiramente presente. Não precisa ser algo caro ou extraordinário. O importante é que o outro perceba que ele é importante para você.",
         "diarioPerguntas": [
           "O que fiz para demonstrar amor? Como foi servir e estar presente?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/6hV1c6d3TZA"
       },
       {
         "day": 4,
@@ -513,7 +516,8 @@ export const stages: Stage[] = [
         "desafioArtigo": "Tempo de qualidade e fé em família. Hoje, separe um tempo intencional para estar com sua família. Conversem. Ouçam uns aos outros. Compartilhem algo sobre o dia. Depois, reservem alguns minutos para um momento simples de culto doméstico: leiam um pequeno texto bíblico; compartilhem um motivo de gratidão; conversem brevemente sobre o texto; orem juntos. Não se preocupe em fazer algo longo ou elaborado.",
         "diarioPerguntas": [
           "Como foi separar esse tempo para minha família? O que percebi quando buscamos a Deus juntos?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/zgcXNUwU5Ek"
       },
       {
         "day": 5,
@@ -538,7 +542,8 @@ export const stages: Stage[] = [
         "desafioArtigo": "Compartilhe sua fé. Hoje, escolha um momento para conversar com alguém da sua família sobre aquilo que Deus tem feito em sua vida. Você pode: contar uma experiência em que percebeu o cuidado de Deus; compartilhar uma resposta de oração; falar sobre algo que Deus tem ensinado a você; lembrar uma situação difícil em que Deus sustentou você. Depois, pergunte: \"E você? O que Deus tem feito ou ensinado em sua vida?\" Não transforme o momento em um sermão.",
         "diarioPerguntas": [
           "O que compartilhei sobre minha fé? Como essa conversa aconteceu?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/lv_RkGUmPdU"
       },
       {
         "day": 6,
@@ -684,7 +689,8 @@ export const stages: Stage[] = [
           "Tenho tratado a evangelização como responsabilidade pessoal ou como tarefa de outras pessoas?",
           "Quem Deus já colocou no meu círculo de relacionamentos?",
           "Qual passo concreto posso dar esta semana para viver minha identidade missionária?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/AvFZthWqA1A"
       },
       {
         "day": 2,
@@ -712,7 +718,8 @@ export const stages: Stage[] = [
           "Minha fé é percebida nas minhas atitudes cotidianas?",
           "Tenho mais pressa de falar ou disposição para ouvir?",
           "Que situação comum da minha rotina pode se tornar uma oportunidade de cuidado e testemunho?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/ksdxAg4OyVQ"
       },
       {
         "day": 3,
@@ -740,7 +747,8 @@ export const stages: Stage[] = [
           "Em quais pessoas percebo sinais de abertura, necessidade ou busca espiritual?",
           "Tenho pedido a Deus que me mostre onde Ele já está trabalhando?",
           "Quando foi a última vez que percebi uma oportunidade e decidi me aproximar?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/_jzpXnT5o2U"
       },
       {
         "day": 4,
@@ -768,7 +776,8 @@ export const stages: Stage[] = [
           "Tenho demonstrado interesse genuíno pelas pessoas ou apenas procurado oportunidades para falar?",
           "Quem precisa de uma conversa, uma oração ou um gesto concreto de cuidado da minha parte?",
           "Que relacionamento posso cultivar com mais intencionalidade nesta semana?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/A62x5V1gf6s"
       },
       {
         "day": 5,
@@ -797,7 +806,8 @@ export const stages: Stage[] = [
           "Tenho acompanhado alguém de maneira intencional em sua caminhada com Cristo?",
           "Minha evangelização aponta para uma caminhada ou termina na decisão inicial?",
           "Quem poderia ser ajudado por mim a crescer e, depois, discipular outras pessoas?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/ZvLC-zyLojI"
       },
       {
         "day": 6,

@@ -923,7 +923,26 @@ export const stages: Stage[] = [
         "confronto": "Nos últimos 7 dias, você viu alguém em necessidade e passou por cima — ou parou?",
         "direcao": "Estação 4: Compaixão e Graça. O discípulo não passa por cima da dor do outro. Ele para, desce e cuida. Como o bom samaritano.",
         "acao": "Leia Lucas 10:30-37.\nPergunte: quem é meu próximo nesta semana?\nIdentifique uma pessoa em necessidade real ao seu redor.\nPlaneje uma ação concreta de cuidado para esta semana.",
-        "videoUrl": "https://youtu.be/ot5nwY3ENfk"
+        "videoUrl": "https://youtu.be/ot5nwY3ENfk",
+        "artigoRico": {
+          "titulo": "Compaixão à maneira de Cristo: quando o evangelho alcança o ser humano por inteiro",
+          "texto": "A compaixão cristã nos ensina a enxergar e cuidar do ser humano por inteiro, tornando o evangelho visível na vida."
+        },
+        "resumoTelas": [
+          "Frequentemente reduzimos as pessoas àquilo que enxergamos de imediato, mas ninguém cabe em uma única necessidade. O evangelho encontra pessoas inteiras: corpo, alma, relacionamentos, história e contexto.",
+          "Os Evangelhos mostram Jesus percebendo quem passaria despercebido. Diante da viúva de Naim, ele viu aquela mulher e teve compaixão — não como estratégia, mas porque viu a dor e respondeu a ela.",
+          "A compaixão faz parte de quem Deus é: Ele vê, se importa e age. Quando a igreja cuida de quem sofre, está refletindo o caráter de Deus. Não resolvemos todos os problemas, mas podemos nos recusar a passar indiferentes.",
+          "O evangelho todo é para o ser humano todo. Diminua a velocidade e pergunte: quem está sofrendo perto de mim? Quem precisa ser ouvido? Quem precisa de presença antes de precisar de uma resposta?"
+        ],
+        "artigo": {
+          "titulo": "Compaixão à maneira de Cristo: quando o evangelho alcança o ser humano por inteiro",
+          "url": "https://feemmissao.com.br/2026/10/06/compaixao-a-maneira-de-cristo/"
+        },
+        "diarioPerguntas": [
+          "Minha maneira de enxergar as pessoas considera apenas suas necessidades aparentes ou procura perceber a pessoa inteira?",
+          "Quem perto de mim pode estar sofrendo sem que eu tenha percebido?",
+          "Que atitude concreta posso tomar para enxergar e cuidar melhor de alguém nesta semana?"
+        ]
       },
       {
         "day": 2,
@@ -931,7 +950,26 @@ export const stages: Stage[] = [
         "confronto": "Você participa das ações sociais da sua igreja — ou deixa isso para os que 'têm dom de misericórdia'?",
         "direcao": "Compaixão não é dom de poucos — é marca de todo discípulo de Jesus.",
         "acao": "Verifique as ações sociais da sua igreja.\nEscolha uma para participar esta semana ou este mês.\nNão espere ser chamado — ofereça-se.\nDê um passo concreto hoje.",
-        "videoUrl": "https://youtu.be/Jh4CEl_LL84"
+        "videoUrl": "https://youtu.be/Jh4CEl_LL84",
+        "artigoRico": {
+          "titulo": "Como cultivar compaixão pelas pessoas: aprendendo com Jesus",
+          "texto": "Cultivar compaixão começa pela maneira de enxergar: deixar de olhar rapidamente para as pessoas e aprender a prestar atenção."
+        },
+        "resumoTelas": [
+          "Existe diferença entre saber que devemos amar as pessoas e aprender a olhar para elas com amor. Jesus não encontrava apenas multidões, enfermos ou necessitados: encontrava pessoas.",
+          "Há dores evidentes e muitas escondidas: gente que continua trabalhando e sorrindo enquanto enfrenta lutas profundas. Perceber exige atenção — ouvir além das palavras e perceber além das aparências.",
+          "Perceber o sofrimento não basta: é preciso ficar disponível. Muitas vezes quem sofre não precisa de explicação, mas de alguém que ouça, sem transformar a dor em conselho, julgamento ou comparação.",
+          "Jesus permaneceu fiel mesmo sabendo que nem todos responderiam. O amor cristão cuida sem controlar a resposta do outro. Peça a Deus que te ensine a ver as pessoas como Ele as vê."
+        ],
+        "artigo": {
+          "titulo": "Como cultivar compaixão pelas pessoas: aprendendo com Jesus",
+          "url": "https://feemmissao.com.br/2026/10/06/como-cultivar-compaixao-pelas-pessoas/"
+        },
+        "diarioPerguntas": [
+          "Tenho percebido as pessoas ao meu redor ou apenas aquilo que preciso realizar?",
+          "Que tipo de sofrimento costumo ignorar porque não sei como responder a ele?",
+          "Quem precisa que eu simplesmente pare, ouça e esteja presente?"
+        ]
       },
       {
         "day": 3,
@@ -939,7 +977,26 @@ export const stages: Stage[] = [
         "confronto": "Você visita pessoas doentes, solitárias ou que não podem sair de casa?",
         "direcao": "'Visitei-me enfermo e me fostes ver.' — Mateus 25:36. Presença é ministério.",
         "acao": "Identifique uma pessoa hospitalizada, idosa ou isolada.\nVisite ou ligue hoje.\nNão porque tem o que dizer — porque sua presença já é o ministério.\nFique o tempo que precisar.",
-        "videoUrl": "https://youtu.be/EjUKH-uMpKE"
+        "videoUrl": "https://youtu.be/EjUKH-uMpKE",
+        "artigoRico": {
+          "titulo": "Compaixão cristã na prática: como transformar cuidado em ação",
+          "texto": "A compaixão precisa se transformar em atitude: o amor cristão encontra expressão concreta no cuidado."
+        },
+        "resumoTelas": [
+          "Ser tocado pelo sofrimento não é o ponto final. A Primeira Carta de João confronta quem percebe a necessidade de um irmão e fecha o coração. A fé não pode ficar só nas intenções: o amor precisa de expressão concreta.",
+          "O cuidado começa com presença. Nem sempre temos respostas ou recursos, mas podemos visitar, sentar ao lado, ouvir e não desaparecer quando a situação fica difícil. Ouvir também é cuidar.",
+          "Ajudar de forma concreta pode envolver alimento, transporte, tempo ou acompanhamento — dentro das possibilidades de cada um. O cuidado cristão não exige resolver tudo, mas fazer o que está ao nosso alcance, mesmo quando custa tempo, energia ou conforto.",
+          "Servir sem transformar pessoas em instrumentos: cuidamos porque pessoas importam. O cuidado torna visível aquilo que anunciamos."
+        ],
+        "artigo": {
+          "titulo": "Compaixão cristã na prática: como transformar cuidado em ação",
+          "url": "https://feemmissao.com.br/2026/10/06/compaixao-crista-na-pratica/"
+        },
+        "diarioPerguntas": [
+          "Quando percebo uma necessidade, costumo agir ou espero que outra pessoa faça alguma coisa?",
+          "Que tipo de ajuda concreta está ao meu alcance hoje?",
+          "Existe alguém cuja necessidade conheço, mas ainda não transformei em cuidado?"
+        ]
       },
       {
         "day": 4,
@@ -947,7 +1004,26 @@ export const stages: Stage[] = [
         "confronto": "Quando você doa, doa com alegria — ou com obrigação calculada?",
         "direcao": "'Cada um dê conforme propôs no coração, não com tristeza nem por necessidade, porque Deus ama ao que dá com alegria.' — 2 Coríntios 9:7",
         "acao": "Faça uma doação hoje — dinheiro, tempo ou recurso.\nEscolha com alegria, não por obrigação.\nSe possível: faça anonimamente.\nOre antes: 'Senhor, uso isso como ato de amor, não de performance.'",
-        "videoUrl": "https://youtu.be/EcG2HtacXPA"
+        "videoUrl": "https://youtu.be/EcG2HtacXPA",
+        "artigoRico": {
+          "titulo": "Graça de Deus: como viver e demonstrar a graça no dia a dia",
+          "texto": "A graça recebida de Deus transforma a maneira como tratamos as pessoas e torna o amor visível no dia a dia."
+        },
+        "resumoTelas": [
+          "A graça não deve ficar só como verdade que afirmamos sobre Deus: ela começa a transformar nossa maneira de viver. O que muda no modo como tratamos as pessoas quando entendemos a graça que recebemos?",
+          "É fácil falar de graça quando somos nós que a recebemos; difícil é oferecê-la a quem nos decepciona. A graça não ignora a verdade, mas trata pessoas sem abandonar a misericórdia.",
+          "Graça não é estratégia: o cuidado não é ferramenta de marketing nem de crescimento institucional. Onde há graça, há cuidado — ouvir, perdoar, acolher, dar segunda oportunidade — e isso começa dentro de casa.",
+          "Uma boa medida da graça é como tratamos quem não pode nos oferecer nada em troca. Recebemos um amor que não merecíamos, e isso forma em nós um novo jeito de amar."
+        ],
+        "artigo": {
+          "titulo": "Graça de Deus: como viver e demonstrar a graça no dia a dia",
+          "url": "https://feemmissao.com.br/2026/10/06/graca-de-deus-no-dia-a-dia/"
+        },
+        "diarioPerguntas": [
+          "Minha maneira de tratar as pessoas revela a graça que afirmo ter recebido de Deus?",
+          "Há alguém que precisa experimentar mais misericórdia e cuidado da minha parte?",
+          "Em que situação concreta posso demonstrar graça nesta semana?"
+        ]
       },
       {
         "day": 5,
@@ -955,7 +1031,26 @@ export const stages: Stage[] = [
         "confronto": "Você tem se colocado disponível quando vê alguém em dificuldade — ou espera que alguém mais habilitado apareça?",
         "direcao": "Disponibilidade é a primeira forma de compaixão. Você não precisa ter todas as respostas.",
         "acao": "Esta semana: quando ver necessidade, não passe para o lado.\nPergunta: 'Posso ajudar?'\nSe não souber como: 'Posso orar com você agora?'\nFaça isso ao menos uma vez hoje.",
-        "videoUrl": "https://youtu.be/dueJjlmD5QM"
+        "videoUrl": "https://youtu.be/dueJjlmD5QM",
+        "artigoRico": {
+          "titulo": "Evangelho e ação social: por que a missão cristã não pode ser dividida",
+          "texto": "Evangelho e ação social não precisam disputar espaço: a missão cristã alcança o ser humano inteiro."
+        },
+        "resumoTelas": [
+          "Tendemos a separar o anúncio do evangelho das ações de cuidado. Mas o evangelho alcança pessoas reais, com corpo, história, relacionamentos e necessidades. Dividir a missão é apresentá-la fragmentada.",
+          "Jesus ensinava, anunciava o Reino, chamava e formava discípulos — e também via a dor e respondia com misericórdia. Tudo fazia parte da mesma missão.",
+          "Dois extremos: reduzir a missão à assistência, perdendo o anúncio de Cristo; ou usar a ação social como mecanismo para atrair pessoas, o que contradiz a graça. O cuidado não substitui o evangelho: torna visível o que anunciamos.",
+          "A pergunta não é se devemos evangelizar ou ajudar, mas como anunciar e viver o evangelho diante das pessoas que Deus colocou ao nosso redor. Anunciamos, cuidamos, servimos, ouvimos, oramos, acolhemos."
+        ],
+        "artigo": {
+          "titulo": "Evangelho e ação social: por que a missão cristã não pode ser dividida",
+          "url": "https://feemmissao.com.br/2026/10/06/evangelho-e-acao-social/"
+        },
+        "diarioPerguntas": [
+          "Em minha maneira de viver a fé, existe alguma separação entre falar do evangelho e cuidar das pessoas?",
+          "Que necessidades das pessoas ao meu redor tenho percebido, mas ainda não transformei em cuidado?",
+          "Como posso unir, de maneira natural e verdadeira, anúncio de Cristo e cuidado com as pessoas nesta semana?"
+        ]
       },
       {
         "day": 6,
@@ -1081,7 +1176,26 @@ export const stages: Stage[] = [
         "confronto": "Como você administra seu tempo? Ele reflete que Deus é prioridade — ou revela o contrário?",
         "direcao": "Estação 5: Mordomia Cristã. 'Do Senhor é a terra e tudo o que nela existe.' Tudo que você tem foi confiado a você. Gerencie com fidelidade.",
         "acao": "Abra sua agenda desta semana.\nIdentifique 3 blocos de tempo que estão sendo gastos em algo que não edifica.\nSubstitua um deles por algo que serve a Deus ou ao próximo.\nFaça isso hoje.",
-        "videoUrl": "https://youtu.be/zjfVLy0YyuM"
+        "videoUrl": "https://youtu.be/zjfVLy0YyuM",
+        "artigoRico": {
+          "titulo": "Mordomia cristã: o que significa viver como administrador do que Deus confiou",
+          "texto": "Mordomia cristã é reconhecer que Deus é o Senhor de tudo e administrar com fidelidade o que Ele confiou às nossas mãos."
+        },
+        "resumoTelas": [
+          "A mordomia começa com uma mudança de perspectiva: nossa vida, tempo, recursos, capacidades e oportunidades pertencem ao Senhor. Em vez de perguntar só \"o que eu tenho?\", perguntamos como administrar o que Deus colocou em nossas mãos.",
+          "A Bíblia apresenta Deus como fonte de tudo (Salmo 24.1). Isso não diminui o trabalho nem as conquistas — só os coloca no lugar certo: recebemos a vida como responsabilidade confiada, não como propriedade absoluta.",
+          "Mordomo não é dono. O dono dispõe como quiser; o mordomo administra o que recebeu e responde por isso. E a mordomia alcança a vida inteira: trabalho, família, saúde, espiritualidade, descanso — não só dinheiro.",
+          "A bênção recebida carrega uma missão: Abraão foi abençoado para ser bênção. Somos meio, não fim. A pergunta que muda tudo: \"Para que Deus colocou isso em minhas mãos?\""
+        ],
+        "artigo": {
+          "titulo": "Mordomia cristã: o que significa viver como administrador do que Deus confiou",
+          "url": "https://feemmissao.com.br/2026/10/06/mordomia-crista-o-que-significa/"
+        },
+        "diarioPerguntas": [
+          "O que tenho tratado como propriedade exclusivamente minha, embora tenha recebido de Deus?",
+          "Que área da minha vida revela mais claramente minha compreensão — ou incompreensão — da mordomia?",
+          "O que Deus colocou em minhas mãos que pode se tornar bênção para outra pessoa?"
+        ]
       },
       {
         "day": 2,
@@ -1089,7 +1203,26 @@ export const stages: Stage[] = [
         "confronto": "Você é dizimista fiel — ou dá quando sobra?",
         "direcao": "O dízimo não é para a igreja prosperar — é para o discípulo aprender que Deus é o dono de tudo.",
         "acao": "Verifique: você tem dado o dízimo regularmente?\nSe sim: ore de gratidão pela fidelidade.\nSe não: decida hoje. Calcule. Dê na próxima oportunidade.\nOre: 'Senhor, reconheço que tudo é Teu.'",
-        "videoUrl": "https://youtu.be/huW7nNadV6c"
+        "videoUrl": "https://youtu.be/huW7nNadV6c",
+        "artigoRico": {
+          "titulo": "Tudo pertence a Deus: como essa verdade muda a maneira de viver",
+          "texto": "Tudo pertence a Deus: reconhecer isso reorganiza nossa relação com bens, trabalho, capacidades e escolhas."
+        },
+        "resumoTelas": [
+          "É fácil falar em \"meu dinheiro, meu tempo, meu trabalho\". A fé bíblica traz outra perspectiva: tudo o que administramos foi recebido. Isso não elimina nossa responsabilidade — a aprofunda.",
+          "O Salmo 24.1 diz que a terra e tudo o que nela se contém pertencem ao Senhor. Davi e Jó reconheceram que o que tinham veio de Deus. Reconhecer isso não é desprezar o que temos, mas saber de onde veio e diante de quem somos responsáveis.",
+          "Até a capacidade de trabalhar vem de Deus. O trabalho continua exigindo dedicação, mas é recebido com humildade. Recursos têm propósito: evita-se o extremo de acumular como finalidade e o de gastar sem responsabilidade.",
+          "Viver com as mãos abertas: confiança e disposição para administrar, sem construir a identidade sobre o que possuímos. Somos administradores, não o centro. A pergunta: \"O que estou fazendo com aquilo que recebi?\""
+        ],
+        "artigo": {
+          "titulo": "Tudo pertence a Deus: como essa verdade muda a maneira de viver",
+          "url": "https://feemmissao.com.br/2026/10/06/tudo-pertence-a-deus/"
+        },
+        "diarioPerguntas": [
+          "Que palavras ou atitudes revelam que considero certas áreas da vida exclusivamente minhas?",
+          "Como tenho usado meus recursos além das minhas necessidades pessoais?",
+          "Existe algo que Deus colocou em minhas mãos que eu poderia colocar a serviço de outra pessoa?"
+        ]
       },
       {
         "day": 3,
@@ -1097,7 +1230,26 @@ export const stages: Stage[] = [
         "confronto": "Você gasta mais do que ganha? Suas finanças refletem disciplina ou impulsividade?",
         "direcao": "'O tolo gasta tudo o que tem; o sábio guarda para o futuro.' — Provérbios 21:20",
         "acao": "Faça um levantamento honesto: quanto entra, quanto sai.\nIdentifique um gasto desnecessário.\nElimina-o esta semana.\nOre pedindo sabedoria para administrar o que Deus te deu.",
-        "videoUrl": "https://youtu.be/ZRGaBrh1L-s"
+        "videoUrl": "https://youtu.be/ZRGaBrh1L-s",
+        "artigoRico": {
+          "titulo": "Deus nos abençoa para sermos bênção: o propósito daquilo que recebemos",
+          "texto": "Deus nos abençoa para sermos bênção: aquilo que recebemos tem propósito e pode alcançar outras pessoas."
+        },
+        "resumoTelas": [
+          "Receber uma bênção desperta gratidão, mas a bênção também carrega propósito. A Abraão Deus disse: \"Sê tu uma bênção\" (Gênesis 12.2). A bênção não deveria terminar nele — deveria alcançar outros.",
+          "Recebemos capacidades, tempo, oportunidades, relacionamentos, experiências, recursos e uma história. Cada um pode ir além do benefício pessoal. A pergunta não é só \"o que Deus me deu?\", mas \"o que posso fazer com isso?\"",
+          "Recursos existem para cumprir propósitos: responsabilidades da família, provisão para tempos difíceis, cuidado com pessoas, obra de Deus. Capacidades e oportunidades também são bênção — podem se tornar serviço.",
+          "Somos meio, não fim. Mordomia é discernir quando guardar, usar ou compartilhar: \"aquilo que chegou às minhas mãos não precisa terminar nas minhas mãos\". Deus nos abençoa para sermos bênção."
+        ],
+        "artigo": {
+          "titulo": "Deus nos abençoa para sermos bênção: o propósito daquilo que recebemos",
+          "url": "https://feemmissao.com.br/2026/10/06/deus-nos-abencoa-para-sermos-bencao/"
+        },
+        "diarioPerguntas": [
+          "O que Deus colocou em minhas mãos que pode beneficiar outras pessoas?",
+          "Tenho usado minhas capacidades principalmente para mim ou também para servir?",
+          "Existe uma oportunidade que recebi recentemente que pode se transformar em bênção para alguém?"
+        ]
       },
       {
         "day": 4,
@@ -1105,7 +1257,26 @@ export const stages: Stage[] = [
         "confronto": "Você cuida da sua saúde como um mordomo fiel do corpo que Deus te deu?",
         "direcao": "Seu corpo é templo do Espírito Santo. Negligenciá-lo não é humildade — é irresponsabilidade.",
         "acao": "Avalie: sono, alimentação, exercício.\nEscolha uma área para melhorar esta semana.\nFaça algo prático hoje: caminhe, durma mais cedo, escolha melhor o que comer.\nOre sobre sua saúde.",
-        "videoUrl": "https://youtu.be/W4MdZHN61gc"
+        "videoUrl": "https://youtu.be/W4MdZHN61gc",
+        "artigoRico": {
+          "titulo": "Como administrar bem o tempo: prioridades, responsabilidade e sabedoria",
+          "texto": "Administrar bem o tempo não é fazer mais coisas, mas dar espaço ao que importa, com sabedoria e responsabilidade."
+        },
+        "resumoTelas": [
+          "O tempo é um recurso recebido para administrar. Aprender a administrá-lo é questão de sabedoria, responsabilidade e fidelidade — não apenas de produtividade. A vida reúne trabalho, família, saúde, espiritualidade e lazer; o desafio é saber o que precisa de atenção em cada momento.",
+          "Prioridades precisam aparecer na agenda: tempo com Deus, família e descanso não podem depender das sobras. Salmo 90.12: \"Ensina-nos a contar os nossos dias para que alcancemos corações sábios.\"",
+          "Escolher faz parte da mordomia: dizer sim a uma coisa é dizer não a outra, e procrastinar rouba espaço do essencial. Descanso, lazer e silêncio também têm valor — uma agenda cheia não é sinal de vida bem administrada.",
+          "A agenda revela prioridades: ela confirma o que digo ser importante? Planejar não é controlar o futuro, é viver com sabedoria o tempo que recebemos. A questão é de fidelidade: o que estou fazendo com os dias que recebi?"
+        ],
+        "artigo": {
+          "titulo": "Como administrar bem o tempo: prioridades, responsabilidade e sabedoria",
+          "url": "https://feemmissao.com.br/2026/10/06/como-administrar-bem-o-tempo/"
+        },
+        "diarioPerguntas": [
+          "Minha agenda revela as prioridades que afirmo ter?",
+          "Que atividade está ocupando espaço excessivo e roubando tempo do essencial?",
+          "Onde preciso aprender a descansar sem culpa e a trabalhar sem desorganização?"
+        ]
       },
       {
         "day": 5,
@@ -1113,7 +1284,26 @@ export const stages: Stage[] = [
         "confronto": "Você reserva um dia de descanso semanal — ou o descanso é o que sobra depois de tudo?",
         "direcao": "O Sabbath não foi sugestão — foi mandamento. Descanso é ato de confiança em Deus.",
         "acao": "Defina seu dia de descanso desta semana.\nO que você vai deixar de fazer nesse dia?\nPlaneje algo restaurador: caminhada, conversa, leitura prazerosa.\nProteja esse tempo como compromisso sagrado.",
-        "videoUrl": "https://youtu.be/Ajt47-qdF-A"
+        "videoUrl": "https://youtu.be/Ajt47-qdF-A",
+        "artigoRico": {
+          "titulo": "Mordomia cristã na prática: como reorganizar a vida à luz do senhorio de Deus",
+          "texto": "A mordomia cristã na prática começa quando \"tudo pertence a Deus\" deixa de ser ideia e passa a orientar nossas escolhas."
+        },
+        "resumoTelas": [
+          "Não precisamos mudar tudo de uma vez: o primeiro passo é olhar a vida com honestidade. Tenho administrado minha vida como quem pertence a Deus ou como dono de mim mesmo? Olhe para o conjunto — trabalho, família, saúde, espiritualidade, lazer.",
+          "Reorganizar começa pelas prioridades, que aparecem nas escolhas, não nas afirmações. Pequenas decisões repetidas com consistência reorganizam a vida: rever um gasto, proteger o descanso, reservar tempo para a família.",
+          "Planejar é forma de responsabilidade, não de controle. E os recursos também precisam ser examinados: vivemos dentro das possibilidades? Há espaço para generosidade? Servem só aos nossos interesses?",
+          "Mordomia é privilégio, não apenas peso: nossa vida, tempo, recursos e oportunidades podem honrar a Deus e alcançar outros. Comece pelo que está diante de você: uma decisão fiel hoje."
+        ],
+        "artigo": {
+          "titulo": "Mordomia cristã na prática: como reorganizar a vida à luz do senhorio de Deus",
+          "url": "https://feemmissao.com.br/2026/10/06/mordomia-crista-na-pratica/"
+        },
+        "diarioPerguntas": [
+          "Onde tenho agido como dono e não como mordomo?",
+          "O que preciso reorganizar com mais urgência?",
+          "Qual pequena decisão posso tomar hoje para alinhar minha vida ao senhorio de Deus?"
+        ]
       },
       {
         "day": 6,
@@ -1238,35 +1428,110 @@ export const stages: Stage[] = [
         "title": "Dia 1",
         "confronto": "Você participa de algum ministério ou área de serviço na sua igreja — ou frequenta como espectador?",
         "direcao": "Estação 6: Serviço Cristão. 'Somos feitura de Deus, criados para boas obras.' — Efésios 2:10. Você foi feito para servir, não para ser servido.",
-        "acao": "Liste os ministérios e áreas de serviço da sua igreja.\nIdentifique onde você poderia contribuir com suas habilidades.\nConverse com um líder esta semana sobre como servir.\nNão espere ser chamado — ofereça-se."
+        "acao": "Liste os ministérios e áreas de serviço da sua igreja.\nIdentifique onde você poderia contribuir com suas habilidades.\nConverse com um líder esta semana sobre como servir.\nNão espere ser chamado — ofereça-se.",
+        "videoUrl": "https://youtu.be/28P7fLs5K30",
+        "artigoRico": {
+          "titulo": "Serviço cristão: como Deus pode usar sua vida",
+          "texto": "Deus não chama apenas pessoas extraordinárias: usa pessoas comuns que se colocam à disposição dele."
+        },
+        "resumoTelas": [
+          "Serviço cristão começa quando entendemos que nossa vida não está separada dos propósitos de Deus. A pergunta não é só \"o que eu consigo fazer?\", mas \"como Deus pode usar minha vida?\"",
+          "Deus tem um propósito para cada pessoa, e nossas limitações não impedem isso: o diferencial está no poder de Deus agindo por meio de nós. O serviço não começa com autoconfiança, mas com dependência de Deus.",
+          "Deus não precisa de cópias. Temos histórias, capacidades e sensibilidades distintas, e essa singularidade pode ser justamente a forma de participarmos da missão. Em 2Coríntios 5.17–21, quem foi reconciliado passa a participar do ministério da reconciliação.",
+          "O serviço não se limita à igreja: acontece na família, no trabalho e na comunidade. A pergunta fundamental é \"estou disponível para Deus?\" Disponibilidade vem antes da capacidade."
+        ],
+        "artigo": {
+          "titulo": "Serviço cristão: como Deus pode usar sua vida",
+          "url": "https://feemmissao.com.br/2026/10/06/servico-cristao-como-deus-pode-usar-sua-vida/"
+        }
       },
       {
         "day": 2,
         "title": "Dia 2",
         "confronto": "Quando termina um evento ou programação da sua igreja, você ajuda a organizar — ou vai embora antes?",
         "direcao": "Servir nos bastidores é sinal de maturidade. O discípulo não serve só onde é visto.",
-        "acao": "No próximo evento ou culto: fique após o término.\nAjude a organizar, limpar, desmontar.\nFaça sem que ninguém precise pedir.\nSem anunciar o que fez."
+        "acao": "No próximo evento ou culto: fique após o término.\nAjude a organizar, limpar, desmontar.\nFaça sem que ninguém precise pedir.\nSem anunciar o que fez.",
+        "videoUrl": "https://youtu.be/kO4uob8N2-g",
+        "artigoRico": {
+          "titulo": "Dons espirituais: como descobrir o que Deus colocou em você",
+          "texto": "Deus distribui dons diferentes e forma pessoas com capacidades, experiências e sensibilidades distintas — para serem postas a serviço."
+        },
+        "resumoTelas": [
+          "Deus não chama pessoas iguais para a mesma tarefa. Paulo apresenta diferentes dons e funções no corpo de Cristo (Efésios 4.11): ninguém precisa ocupar todos os lugares nem reproduzir o serviço de outro.",
+          "Descobrir dons não é fazer um teste. É observar a própria vida: o que faço que ajuda pessoas? Em que situações percebo necessidades que outros não percebem? O que pessoas maduras na fé reconhecem em mim?",
+          "Dom não é título, é responsabilidade. Reconhecer uma capacidade não exige posição formal de liderança, e ela pode ser exercida em muitos contextos. Um dom não existe para autopromoção.",
+          "Sua singularidade tem lugar na missão: sua história e suas capacidades contribuem para a maneira como você serve. Deus não distribui dons para serem admirados, mas para serem colocados a serviço."
+        ],
+        "artigo": {
+          "titulo": "Dons espirituais: como descobrir o que Deus colocou em você",
+          "url": "https://feemmissao.com.br/2026/10/06/dons-espirituais-como-descobrir/"
+        }
       },
       {
         "day": 3,
         "title": "Dia 3",
         "confronto": "Você já identificou quais são seus dons e habilidades para servir ao corpo de Cristo?",
         "direcao": "'Cada um recebeu algum dom; empregai-o uns para os outros.' — 1 Pedro 4:10. Você sabe qual é o seu?",
-        "acao": "Liste 3 habilidades ou capacidades que você tem.\nPara cada uma: como poderia ser usada a serviço de Deus ou da comunidade?\nFale com alguém de liderança sobre como colocá-las em prática."
+        "acao": "Liste 3 habilidades ou capacidades que você tem.\nPara cada uma: como poderia ser usada a serviço de Deus ou da comunidade?\nFale com alguém de liderança sobre como colocá-las em prática.",
+        "videoUrl": "https://youtu.be/2YbOIdDSxMQ",
+        "artigoRico": {
+          "titulo": "Chamado para servir: quando Deus nos convida a participar",
+          "texto": "O chamado para servir nem sempre vem com certeza ou sensação de capacidade: começa com disponibilidade."
+        },
+        "resumoTelas": [
+          "Na Bíblia, pessoas chamadas por Deus perceberam suas limitações e ainda assim responderam. Em Isaías 6.8: \"Eis-me aqui. Envia-me.\" Antes de discutir capacidade, Isaías se colocou à disposição.",
+          "O chamado nem sempre é uma experiência extraordinária. Às vezes Deus nos faz perceber uma necessidade que parece exigir nossa participação — na família, na igreja, na comunidade. Nem toda necessidade é nossa de resolver, mas precisamos prestar atenção.",
+          "Ser chamado não é sentir-se preparado: o chamado pode produzir crise, ao evidenciar nossas limitações. Essa crise pode levar à dependência de Deus. A obra pertence a Ele; participamos como instrumentos.",
+          "Disponibilidade não é ausência de medo, é não deixar o medo ter a palavra final. O chamado leva a uma resposta concreta. Quem se dispõe a Deus não precisa conhecer todo o caminho para dar o próximo passo."
+        ],
+        "artigo": {
+          "titulo": "Chamado para servir: quando Deus nos convida a participar",
+          "url": "https://feemmissao.com.br/2026/10/06/chamado-para-servir/"
+        }
       },
       {
         "day": 4,
         "title": "Dia 4",
         "confronto": "Você serve por gratidão — ou por obrigação e pressão de líderes?",
         "direcao": "Serviço que vem de gratidão renova. Serviço que vem de obrigação esgota. Verifique sua motivação.",
-        "acao": "Leia João 13:1-17 — Jesus lavando os pés dos discípulos.\nPergunta: o que motivou Jesus a servir desta forma?\nO que motiva o seu serviço?\nOre sobre a resposta."
+        "acao": "Leia João 13:1-17 — Jesus lavando os pés dos discípulos.\nPergunta: o que motivou Jesus a servir desta forma?\nO que motiva o seu serviço?\nOre sobre a resposta.",
+        "videoUrl": "https://youtu.be/q6sReKUSc48",
+        "artigoRico": {
+          "titulo": "Como desenvolver seus dons e servir a Deus com propósito",
+          "texto": "Descobrir um dom é só o começo: para servir bem, é preciso desenvolver aquilo que recebemos."
+        },
+        "resumoTelas": [
+          "Uma capacidade pode existir sem estar madura: quem tem facilidade para ensinar ainda precisa aprender a comunicar; quem tem sensibilidade para cuidar precisa amadurecer. Reconhecer um dom é assumir a responsabilidade de desenvolvê-lo, com aprendizado, prática e perseverança.",
+          "O propósito não é a realização pessoal. Na perspectiva cristã, desenvolver é preparar-se para servir: \"como aquilo que estou desenvolvendo pode servir ao propósito de Deus?\"",
+          "Deus usa capacidades em diferentes lugares: profissão, habilidade técnica, organização, experiência de vida. O cristão não deixa de servir quando sai da igreja — o lugar onde você está pode ser onde Deus quer usar o que você desenvolveu.",
+          "Desenvolver exige prática: quem ensina precisa ensinar, quem cuida precisa cuidar. Não espere estar perfeitamente preparado: comece com fidelidade e aprenda no caminho."
+        ],
+        "artigo": {
+          "titulo": "Como desenvolver seus dons e servir a Deus com propósito",
+          "url": "https://feemmissao.com.br/2026/10/06/como-desenvolver-seus-dons/"
+        }
       },
       {
         "day": 5,
         "title": "Dia 5",
         "confronto": "Há necessidades reais ao seu redor que você poderia suprir e está ignorando?",
         "direcao": "Serviço cristão não é só dentro da igreja. É em qualquer lugar onde há necessidade e você tem capacidade de agir.",
-        "acao": "Olhe ao seu redor hoje com intenção.\nIdentifique 2 necessidades reais — na igreja, no trabalho, na vizinhança.\nDê 1 passo prático para suprir uma delas esta semana."
+        "acao": "Olhe ao seu redor hoje com intenção.\nIdentifique 2 necessidades reais — na igreja, no trabalho, na vizinhança.\nDê 1 passo prático para suprir uma delas esta semana.",
+        "videoUrl": "https://youtu.be/j-iiSBS52xQ",
+        "artigoRico": {
+          "titulo": "Serviço cristão na prática: vivendo como instrumento de Deus",
+          "texto": "Servir na prática é transformar disponibilidade em ações concretas, onde Deus nos colocou."
+        },
+        "resumoTelas": [
+          "Não basta reconhecer capacidades, perceber um chamado ou desenvolver dons: em algum momento é preciso passar da intenção para a prática. Serviço não é só ocupar uma função na igreja, é viver como instrumento de Deus onde Ele nos colocou.",
+          "O serviço começa muitas vezes em coisas pequenas: organizar um espaço, cuidar de alguém, oferecer tempo, perceber uma necessidade. Seu valor não depende da visibilidade — no Reino, servir é colocar-se à disposição do propósito de Deus.",
+          "Servimos onde Deus nos colocou: na família, pelo cuidado e presença; no trabalho, pela responsabilidade e testemunho; na igreja, pelos dons; na sociedade, pelo amor ao próximo. Não precisamos esperar a oportunidade ideal.",
+          "Do espectador ao participante: o espectador percebe a necessidade e espera outro agir; o participante pergunta \"o que Deus deseja que eu faça diante disso?\". Comece onde está, use o que recebeu e confie em Deus, que trabalha por meio de instrumentos imperfeitos."
+        ],
+        "artigo": {
+          "titulo": "Serviço cristão na prática: vivendo como instrumento de Deus",
+          "url": "https://feemmissao.com.br/2026/10/06/servico-cristao-na-pratica/"
+        }
       },
       {
         "day": 6,
@@ -1410,7 +1675,8 @@ export const stages: Stage[] = [
           "Você sente que pertence à igreja, que é parte dela?",
           "Em quais momentos sua experiência cristã corre o risco de ficar concentrada apenas em você?",
           "Você tem construído vínculos com irmãos de fé para além dos encontros formais da igreja?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/Su9OcAK_Wv4"
       },
       {
         "day": 2,
@@ -1436,7 +1702,8 @@ export const stages: Stage[] = [
           "Você se sente parte da igreja ou apenas alguém que frequenta a igreja?",
           "Que fatores têm impedido você de aprofundar relacionamentos com seus irmãos de fé?",
           "Quais pessoas estão ao seu redor, mas ainda não fazem parte do seu círculo de relacionamento?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/JLq5MsCqIlM"
       },
       {
         "day": 3,
@@ -1463,7 +1730,8 @@ export const stages: Stage[] = [
           "Quando foi a última vez que você encontrou alguém da igreja simplesmente para estar junto?",
           "Seu círculo de relacionamento dentro da igreja é amplo ou está concentrado sempre nas mesmas pessoas?",
           "Que passo concreto você pode dar nesta semana para cultivar uma amizade cristã?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/Z25cJgTRHuY"
       },
       {
         "day": 4,
@@ -1490,7 +1758,8 @@ export const stages: Stage[] = [
           "Existe alguém cuja carga você poderia ajudar a carregar?",
           "Você tem relacionamentos nos quais consegue receber conselho e também oferecer cuidado?",
           "De que maneira sua presença tem contribuído para edificar outras pessoas?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/cAIabueJv58"
       },
       {
         "day": 5,
@@ -1517,7 +1786,8 @@ export const stages: Stage[] = [
           "Você sente que pertence à igreja, que é parte dela?",
           "Quem conhece suas lutas e alegrias na sua comunidade?",
           "Que passo concreto você pode dar nesta semana para deixar de ser espectador e passar a participar?"
-        ]
+        ],
+        "videoUrl": "https://youtu.be/iDLCjVivaP0"
       },
       {
         "day": 6,
